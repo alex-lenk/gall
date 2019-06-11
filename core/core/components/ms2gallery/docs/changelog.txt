@@ -1,5 +1,75 @@
 Changelog for ms2Gallery.
 
+2.0.7-pl
+==============
+- Improved compatibility with MySQL 5.7+
+
+2.0.6-pl
+==============
+- Update schema to work with utf8mb4.
+
+2.0.5-pl
+==============
+- Small fixes.
+
+2.0.4-pl
+==============
+- Returned back the ability to transliterate names  of an uploaded files.
+
+2.0.3-pl
+==============
+- Fixed possible javascript error in ms2Gallery.utils.formatDate.
+
+2.0.2-pl
+==============
+- Fixed bug of gallery with drag-over in Firefox.
+- Added checking of availability of exif_read_data function.
+- Added displaying of exif date in image window if available.
+- Forced some settings for friendly names generation.
+- Recalculation of the rank of images when some of them are deleted.
+- New option &getPreviewProperties in the snippet ms2Gallery.
+
+2.0.1-pl
+==============
+- Fixed infinite loop when ms2GalleryResources called within pdoPage.
+
+2.0.0-pl
+==============
+- PSR-2.
+- Media source option "thumbnails" now uses key of array with parameters as alias for thumbnail.
+- Added "exif_date" in file properties if available.
+- New Fenom chunk for ms2Gallery with Fotorama script.
+- Ability to sync files with miniShop2 gallery.
+- Ability to sync files with Tickets uploaded.
+- Improved the sorting of images.
+- Removed system settings "ms2gallery_thumbnail_size" and "ms2gallery_exact_sorting".
+- Minimum required MODX version is 2.3+.
+
+1.6.1-pl
+==============
+- Improved sort of thumbnails.
+- Fixed wrong media source in the panel of resource.
+
+1.6.0-pl
+==============
+- Returned system setting "ms2gallery_thumbnail_size".
+- Fixed pagination in the 2.5.2 manager.
+
+1.5.9-pl
+==============
+- Improved compatibility with MySQL 5.7.
+- Improved compatibility with MODX 2.5.2.
+
+1.5.8-pl
+==============
+- Fixed possible bug with missing tab in MODX 2.5.1 with Tickets.
+
+1.5.7-pl
+==============
+- Improved preview in popup window for images.
+- Ability to use @INLINE and @FILE chunks in "ms2gallery_placeholders_tpl".
+- Ability to use names for previews instead of sizes.
+
 1.5.6-pl
 ==============
 - Fixed preview in popup window for images from remote media sources.
