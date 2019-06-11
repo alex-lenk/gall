@@ -1,16 +1,16 @@
 <?php
 /**
-* Products Russian Lexicon Entries for ms2Gallery
-*
-* @package ms2gallery
-* @subpackage lexicon
-*/
+ * Products Russian Lexicon Entries for ms2Gallery
+ *
+ * @package ms2gallery
+ * @subpackage lexicon
+ */
 include_once('setting.inc.php');
 $files = scandir(dirname(__FILE__));
 foreach ($files as $file) {
-	if (strpos($file, 'msp.') === 0) {
-		@include_once($file);
-	}
+    if (strpos($file, 'msp.') === 0) {
+        @include_once($file);
+    }
 }
 
 $_lang['ms2gallery'] = 'Галерея';
