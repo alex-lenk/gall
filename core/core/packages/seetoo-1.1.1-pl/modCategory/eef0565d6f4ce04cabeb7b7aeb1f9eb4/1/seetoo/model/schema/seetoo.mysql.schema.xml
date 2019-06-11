@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="seetoo" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="SeeToo"
+	   version="1.1">
+
+	<object class="SeeTooResource" table="see_too_resources" extends="xPDOSimpleObject">
+		<field key="resource_from" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default="" index="index"/>
+		<field key="resource_to" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default=""/>
+		<field key="key" dbtype="varchar" precision="128" phptype="string" null="false" default="view" index="index"/>
+		<field key="active" dbtype="tinyint" precision="1" attributes="unsigned" phptype="boolean" null="false" default="1" index="index" />
+		<field key="view" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="true" default="1" index="index"/>
+
+		<index alias="view" name="view" primary="false" unique="false" type="BTREE">
+			<column key="view" length="" collation="A" null="true"/>
+		</index>
+		<index alias="resource_from" name="resource_from" primary="false" unique="false" type="BTREE">
+			<column key="resource_from" length="" collation="A" null="false"/>
+		</index>
+		<index alias="key" name="key" primary="false" unique="false" type="BTREE">
+			<column key="key" length="" collation="A" null="false"/>
+		</index>
+		<index alias="active" name="active" primary="false" unique="false" type="BTREE">
+			<column key="active" length="" collation="A" null="false" />
+		</index>
+
+		<aggregate alias="ResourceFrom" class="modResource" local="resource_from" foreign="id" owner="foreign" cardinality="one" />
+		<aggregate alias="ResourceTo" class="modResource" local="resource_to" foreign="id" owner="foreign" cardinality="one" />
+
+	</object>
+
+</model>

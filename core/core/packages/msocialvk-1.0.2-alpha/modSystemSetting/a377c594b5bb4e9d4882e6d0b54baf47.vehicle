@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e54d9d81705f62f2b05857323870a13c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a377c594b5bb4e9d4882e6d0b54baf47',
+  'native_key' => 'msocial_im_fg',
+  'object' => '{"key":"msocial_im_fg","value":false,"xtype":"combo-boolean","namespace":"msocial","area":"Vkontakte","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'dd1bcbe2462aad3131ee706b4a104063',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'db0f71caeaad40d5a2f8007e2557370d',
+  'native_key' => 'ec_message_window_layout',
+  'object' => '{"key":"ec_message_window_layout","value":"{\\"main\\": {\\"name\\": \\"main\\",\\"columns\\": {\\"column0\\":[\\"user_name\\",\\"user_email\\"],\\"column1\\":[\\"date\\",\\"user_contacts\\"]},\\"fields\\": [\\"subject\\",\\"rating\\",\\"text\\",\\"published\\"]},\\"reply\\":{\\"name\\": \\"reply\\", \\"columns\\": {}, \\"fields\\": [\\"reply_author\\",\\"reply_text\\",\\"notify\\",\\"notify_date\\"]},\\"settings\\":{\\"name\\": \\"settings\\", \\"columns\\": {}, \\"fields\\": [ \\"thread\\",\\"ip\\",\\"extended\\"]}}","xtype":"textfield","namespace":"easycomm","area":"ec_main","editedon":null}',
+);

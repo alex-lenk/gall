@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0f8c1d7dfc50e2400581d03ca5a51830',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd6807732e73361d2798f9f3c16b6b1ec',
+  'native_key' => 'msocial_vk_tp',
+  'object' => '{"key":"msocial_vk_tp","value":"tpl.msocial.vk","xtype":"textfield","namespace":"msocial","area":"Vkontakte","editedon":null}',
+);

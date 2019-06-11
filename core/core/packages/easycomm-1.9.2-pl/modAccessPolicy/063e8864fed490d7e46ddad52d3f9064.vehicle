@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '36704890406c9b22c5deee90cabf9c40',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => '063e8864fed490d7e46ddad52d3f9064',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"easyCommPolicy","description":"A policy for create and update messages.","parent":0,"template":0,"class":"","data":"{\\"ec_message_save\\":true,\\"ec_message_delete\\":true,\\"ec_message_remove\\":true,\\"ec_message_publish\\":true,\\"ec_thread_save\\":true,\\"ec_thread_remove\\":true}","lexicon":"easycomm:permissions"}',
+);

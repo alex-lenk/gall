@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'easycomm-1.9.2-pl/xPDOScriptVehicle/320991250bfcbac8ef4f18cced45f65d.resolve.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '24c92f79b61e533bee51c31cd0883fb9',
+  'package' => '',
+  'signature' => '320991250bfcbac8ef4f18cced45f65d',
+  'native_key' => '24c92f79b61e533bee51c31cd0883fb9',
+);

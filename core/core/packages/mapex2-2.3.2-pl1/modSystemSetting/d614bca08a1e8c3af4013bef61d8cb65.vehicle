@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mapex2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a0fde6d6d6682b11708cedcecdffb77a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd614bca08a1e8c3af4013bef61d8cb65',
+  'native_key' => 'mapex2_manager_show_input',
+  'object' => '{"key":"mapex2_manager_show_input","value":true,"xtype":"combo-boolean","namespace":"mapex2","area":"mapex2_manager","editedon":null}',
+);

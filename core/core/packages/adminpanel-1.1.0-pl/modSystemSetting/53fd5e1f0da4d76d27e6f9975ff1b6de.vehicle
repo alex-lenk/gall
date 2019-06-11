@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'adminpanel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c55af086c8729711eba20e0caba7e789',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '53fd5e1f0da4d76d27e6f9975ff1b6de',
+  'native_key' => 'ap_controllers_path',
+  'object' => '{"key":"ap_controllers_path","value":"[[+corePath]]controllers\\/","xtype":"textfield","namespace":"adminpanel","area":"ap_main","editedon":null}',
+);

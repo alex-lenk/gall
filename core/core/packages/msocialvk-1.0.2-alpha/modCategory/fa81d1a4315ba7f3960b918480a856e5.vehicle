@@ -1,0 +1,85 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'bd6b3933b0d7184e2d3cac41620ad385' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.msocial.vk","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+pagetitle]][[+content]]","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/msocialvk\\/elements\\/chunks\\/chunk.msocialVk.tpl","content":"[[+pagetitle]][[+content]]"}',
+        'guid' => '5caf26b48ef5284966c3c402fa50246a',
+        'native_key' => 0,
+        'signature' => 'dec2464770ed59d251eb917f659ebe16',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msocialvk-1.0.2-alpha\\/modCategory\\/fa81d1a4315ba7f3960b918480a856e5\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/msocial\\/custom\\/network\\/\';","name":"vk"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msocialvk-1.0.2-alpha\\/modCategory\\/fa81d1a4315ba7f3960b918480a856e5\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/msocial\\/elements\\/chunks\\/\';","name":"chunk.msocialVk.tpl"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msocialvk-1.0.2-alpha\\/modCategory\\/fa81d1a4315ba7f3960b918480a856e5.resolve.setup.resolver","type":"php","name":"resolve.setup"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msocialvk-1.0.2-alpha\\/modCategory\\/fa81d1a4315ba7f3960b918480a856e5.resolve.tv.resolver","type":"php","name":"resolve.tv"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6c2c5e603bfd30771a76e5bff0bcb798',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'fa81d1a4315ba7f3960b918480a856e5',
+  'native_key' => 45,
+  'object' => '{"id":45,"parent":0,"category":"msocial","rank":0}',
+);

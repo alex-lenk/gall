@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ms2gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8676758beeca19edca742d9561789639',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6bda82a98d2cf1ddb86d4f5836eb7e1c',
+  'native_key' => 'ms2gallery_placeholders_thumbs',
+  'object' => '{"key":"ms2gallery_placeholders_thumbs","value":"","xtype":"textfield","namespace":"ms2gallery","area":"ms2gallery_frontend","editedon":null}',
+);

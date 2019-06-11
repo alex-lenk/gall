@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'formit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7131aac09c140e180fda4dcc040970bb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6d8db07b4b0ab00d4d44f16fed7358f7',
+  'native_key' => 'formit.attachment.mediasource',
+  'object' => '{"key":"formit.attachment.mediasource","value":1,"xtype":"modx-combo-source","namespace":"formit","area":"formit","editedon":null}',
+);

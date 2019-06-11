@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mapex2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '917ce16331b06a7199eeabb696c76403',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'eff315a4dfcf7ae79b59712f58adcd6d',
+  'native_key' => 'mapex2_manager_add_placemark_on_search',
+  'object' => '{"key":"mapex2_manager_add_placemark_on_search","value":false,"xtype":"combo-boolean","namespace":"mapex2","area":"mapex2_manager","editedon":null}',
+);

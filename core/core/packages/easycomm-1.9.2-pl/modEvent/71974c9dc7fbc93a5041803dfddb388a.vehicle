@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c50112f4dd97b73cd0df83f0a42a2e91',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '71974c9dc7fbc93a5041803dfddb388a',
+  'native_key' => 'OnBeforeEcMessageSave',
+  'object' => '{"name":"OnBeforeEcMessageSave","service":6,"groupname":"easyComm"}',
+);

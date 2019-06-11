@@ -1,0 +1,11 @@
+@import url("./lib/jquery.jgrowl.min.css");
+
+.office-message-success { background-color: green !important; }
+
+.office-message-error { background-color: brown !important; }
+
+.office-message-info { background-color: black !important; }
+
+#office-auth-form .red {
+    color: darkred;
+}

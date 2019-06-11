@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msearch2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '21ea50f06f8b7ae70f24090ec1bc5f80',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '99ffafce2dd6cbceb55fc88f72aa9be9',
+  'native_key' => 'mse2_search_like_match_bonus',
+  'object' => '{"key":"mse2_search_like_match_bonus","value":3,"xtype":"numberfield","namespace":"msearch2","area":"mse2_search","editedon":null}',
+);

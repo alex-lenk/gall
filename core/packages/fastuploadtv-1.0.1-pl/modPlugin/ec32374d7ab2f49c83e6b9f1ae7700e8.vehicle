@@ -1,0 +1,142 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '3f6e9789e60e6261ffbf8edfe85a328b' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+        'guid' => 'a312e9cfaa44be8a518da0e015520961',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTVInputRenderList',
+        ),
+        'signature' => '1101939a03ed5a6aec185e2698e222b2',
+      ),
+      '57b6a8f95d05c7a6058ac18f3f915cfd' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+        'guid' => '541e1585212224c2414f941bb8d83aa3',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTVInputPropertiesList',
+        ),
+        'signature' => 'dc63f325620fdf2ce57675a8db537d5d',
+      ),
+      '72028eaf12f3b742a25ebe0ced45aeb3' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+        'guid' => '00979c61d60fd9d3c12eff302a71c3ba',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnDocFormPrerender',
+        ),
+        'signature' => '1b0a0f454e518ae3a108e0215463fa7a',
+      ),
+      '9a35c2271417d85cf0023b57f92b716a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnFileManagerUpload","priority":0,"propertyset":0}',
+        'guid' => '0f76401a8b9627b4af796b7f0733d1e6',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnFileManagerUpload',
+        ),
+        'signature' => 'fd8a90b3baf6f728dc971ac68c712b5b',
+      ),
+      '7f79f75e21f32bc6c48f4a5326c9bc7f' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnWebPageInit","priority":0,"propertyset":0}',
+        'guid' => '5bf5fc156bdb0bfb7e64d9bbea89d717',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnWebPageInit',
+        ),
+        'signature' => 'c6e9120246e1e3be106fe0c87d188903',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'fastuploadtv',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fastuploadtv-1.0.1-pl\\/modPlugin\\/ec32374d7ab2f49c83e6b9f1ae7700e8\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"fastuploadtv"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fastuploadtv-1.0.1-pl\\/modPlugin\\/ec32374d7ab2f49c83e6b9f1ae7700e8\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"fastuploadtv"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cbd46a2e5e320091c829d37dc95068b3',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => 'ec32374d7ab2f49c83e6b9f1ae7700e8',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"FastUploadTV","description":"FastUploadTV 1.0.1-pl plugin for MODx Revolution","editor_type":0,"category":0,"cache_type":0,"plugincode":"$corePath = $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/fastuploadtv\\/\';\\n$assetsUrl = $modx->getOption(\'assets_url\',null,MODX_ASSETS_URL).\'components\\/fastuploadtv\\/\';\\n\\n$modx->lexicon->load(\'fastuploadtv:default\');\\n\\nswitch ($modx->event->name) {\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/options\\/\');\\n        break;\\n    case \'OnDocFormPrerender\':\\n        $js  = $modx->getOption(\'assets_url\').\'components\\/fastuploadtv\\/mgr\\/js\\/\';\\n        $modx->regClientStartupScript($js.\'widgets\\/modx.form.filefield.js\');\\n        $modx->regClientStartupScript($js.\'FastUploadTV.js\');\\n        $modx->regClientStartupScript($js.\'FastUploadTV.form.FastUploadTVField.js\');\\n        break;\\n    case \'OnWebPageInit\':\\n        $mTypes = $modx->getOption(\'manipulatable_url_tv_output_types\',null,\'image,file\').\',fastuploadtv\';\\n        $modx->setOption(\'manipulatable_url_tv_output_types\', $mTypes);\\n        break;\\n    case \'OnFileManagerUpload\':\\n        if ((bool)$modx->getOption(\'fastuploadtv.translit\', null, false))\\n        {\\n            $fat = $modx->getOption(\'friendly_alias_translit\');\\n            $friendly_alias_translit = (empty($fat) || $fat == \'none\') ? false : true;\\n            \\n            foreach($files as $file)\\n            {\\n                if($file[\'error\'] == 0)\\n                {\\n                    $pathInfo = pathinfo($file[\'name\']);\\n                    $oldPath = $directory.$file[\'name\'];\\n                    \\n                    $filename = modResource::filterPathSegment($modx, $pathInfo[\'filename\']); \\/\\/ cleanAlias (translate)\\n                    if ($friendly_alias_translit)\\n                    {\\n                        $filename = preg_replace(\'\\/[^A-Za-z0-9_-]\\/\', \'\', $filename); \\/\\/ restrict segment to alphanumeric characters only\\n                    }\\n                    $filename = preg_replace(\'\\/-{2,}\\/\',\'-\',$filename); \\/\\/ remove double symbol \\"-\\"\\n                    $filename = trim($filename, \'-\'); \\/\\/ remove first symbol \\"-\\"\\n                    \\n                    $newPath = $filename . \'.\' . strtolower($pathInfo[\'extension\']);\\n                    \\n                    if ($newPath !== $file[\'name\']) {\\n                        $source->renameObject($oldPath, $newPath);\\n                    }\\n                }\\n            }\\n        }\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"$corePath = $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/fastuploadtv\\/\';\\n$assetsUrl = $modx->getOption(\'assets_url\',null,MODX_ASSETS_URL).\'components\\/fastuploadtv\\/\';\\n\\n$modx->lexicon->load(\'fastuploadtv:default\');\\n\\nswitch ($modx->event->name) {\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/options\\/\');\\n        break;\\n    case \'OnDocFormPrerender\':\\n        $js  = $modx->getOption(\'assets_url\').\'components\\/fastuploadtv\\/mgr\\/js\\/\';\\n        $modx->regClientStartupScript($js.\'widgets\\/modx.form.filefield.js\');\\n        $modx->regClientStartupScript($js.\'FastUploadTV.js\');\\n        $modx->regClientStartupScript($js.\'FastUploadTV.form.FastUploadTVField.js\');\\n        break;\\n    case \'OnWebPageInit\':\\n        $mTypes = $modx->getOption(\'manipulatable_url_tv_output_types\',null,\'image,file\').\',fastuploadtv\';\\n        $modx->setOption(\'manipulatable_url_tv_output_types\', $mTypes);\\n        break;\\n    case \'OnFileManagerUpload\':\\n        if ((bool)$modx->getOption(\'fastuploadtv.translit\', null, false))\\n        {\\n            $fat = $modx->getOption(\'friendly_alias_translit\');\\n            $friendly_alias_translit = (empty($fat) || $fat == \'none\') ? false : true;\\n            \\n            foreach($files as $file)\\n            {\\n                if($file[\'error\'] == 0)\\n                {\\n                    $pathInfo = pathinfo($file[\'name\']);\\n                    $oldPath = $directory.$file[\'name\'];\\n                    \\n                    $filename = modResource::filterPathSegment($modx, $pathInfo[\'filename\']); \\/\\/ cleanAlias (translate)\\n                    if ($friendly_alias_translit)\\n                    {\\n                        $filename = preg_replace(\'\\/[^A-Za-z0-9_-]\\/\', \'\', $filename); \\/\\/ restrict segment to alphanumeric characters only\\n                    }\\n                    $filename = preg_replace(\'\\/-{2,}\\/\',\'-\',$filename); \\/\\/ remove double symbol \\"-\\"\\n                    $filename = trim($filename, \'-\'); \\/\\/ remove first symbol \\"-\\"\\n                    \\n                    $newPath = $filename . \'.\' . strtolower($pathInfo[\'extension\']);\\n                    \\n                    if ($newPath !== $file[\'name\']) {\\n                        $source->renameObject($oldPath, $newPath);\\n                    }\\n                }\\n            }\\n        }\\n        break;\\n}"}',
+);

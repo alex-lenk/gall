@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fastuploadtv',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c3a9f9c6ca0bd8d1be4aa32628b4187a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd9d93c0378bb8a252b670994ad9446de',
+  'native_key' => 'fastuploadtv.preview_width_max',
+  'object' => '{"key":"fastuploadtv.preview_width_max","value":150,"xtype":"textfield","namespace":"fastuploadtv","area":"Default","editedon":null}',
+);

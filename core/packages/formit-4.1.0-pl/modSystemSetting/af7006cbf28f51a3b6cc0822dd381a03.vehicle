@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'formit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8b35784ec982f64dd3126f564e545b71',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'af7006cbf28f51a3b6cc0822dd381a03',
+  'native_key' => 'formit.export_csv_delimiter',
+  'object' => '{"key":"formit.export_csv_delimiter","value":";","xtype":"textfield","namespace":"formit","area":"system","editedon":null}',
+);

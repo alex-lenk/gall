@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'adminpanel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '82e94d1fc41e283e6f308ded4dfe914c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5569acb165809ec95328cbebf17235e0',
+  'native_key' => 'ap_theme',
+  'object' => '{"key":"ap_theme","value":"dark","xtype":"textfield","namespace":"adminpanel","area":"ap_style","editedon":null}',
+);

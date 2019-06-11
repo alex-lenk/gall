@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'seetoo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a0ffcceb657922e087f4c7fd48cd0dc4',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '503ccb9fd8f8c33c8c349fcc862c4047',
+  'native_key' => 'seetoo_excluder_class',
+  'object' => '{"key":"seetoo_excluder_class","value":"SeeTooExcluder","xtype":"textfield","namespace":"seetoo","area":"seetoo_main","editedon":null}',
+);

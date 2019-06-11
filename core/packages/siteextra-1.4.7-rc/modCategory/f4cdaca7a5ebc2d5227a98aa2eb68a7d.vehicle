@@ -1,0 +1,425 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '1f3dc8c0322bc614e987179fd5a2415a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"head","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<title>{$_modx->resource.pagetitle}<\\/title>\\n<base href=\\"{$_modx->config.site_url}\\">\\n\\n<meta charset=\\"utf-8\\">\\n<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">\\n<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">\\n{if $_modx->resource.searchable}<meta name=\\"robots\\" content=\\"index, follow\\">\\n{else}<meta name=\\"robots\\" content=\\"noindex, nofollow\\">{\\/if}\\n{if !$_modx->resource.description && !($_modx->resource.content | ellipsis : \\"500\\" | match : \'*{*\')}\\n{var $description = $_modx->resource.content | stripmodxtags | striptags | strip : true | ellipsis : \\"180\\"}\\n{else}{var $description = $_modx->resource.description}{\\/if}\\n<meta name=\\"description\\" content=\\"{$description | replace :\' \\"\':\' \\u00ab\' | replace :\'\\"\':\'\\u00bb\'}\\">\\n<meta name=\\"keywords\\" content=\\"{$_modx->resource.keywords | replace :\' \\"\':\' \\u00ab\' | replace :\'\\"\':\'\\u00bb\'}\\" \\/>\\n{if $_modx->resource.img}<meta property=\\"og:image\\" content=\\"{$_modx->config.site_url | rtrim : \'\\/\'}{$_modx->resource.img | phpthumbon : \\"w=400&h=280\\"}\\" \\/>{\\/if}\\n\\n<link rel=\\"shortcut icon\\" href=\\"ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/web\\/img\\/favicon.ico\\" type=\\"image\\/x-icon\\">\\n\\n<script type=\\"text\\/javascript\\" src=\\"https:\\/\\/ajax.googleapis.com\\/ajax\\/libs\\/jquery\\/3.2.1\\/jquery.min.js\\"><\\/script>\\n<script>window.jQuery || document.write(\'<script src=\\"ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/web\\/vendor\\/jquery.min.js\\"><\\\\\\/script>\')<\\/script>\\n<!--[if lt IE 9]>\\n  <script src=\\"https:\\/\\/oss.maxcdn.com\\/html5shiv\\/3.7.3\\/html5shiv.min.js\\"><\\/script>\\n  <script src=\\"https:\\/\\/oss.maxcdn.com\\/respond\\/1.4.2\\/respond.min.js\\"><\\/script>\\n<![endif]-->\\n\\n{\'!MinifyX\' | snippet : [\\n  \'minifyCss\' => 1,\\n  \'minifyJs\' => 1,\\n  \'cssSources\' => \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/bootstrap\\/css\\/bootstrap.min.css,\' ~\\n                  \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/fancybox\\/source\\/jquery.fancybox.css\',\\n  \'jsSources\'  => \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/bootstrap\\/js\\/bootstrap.min.js,\' ~\\n                  \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/fancybox\\/source\\/jquery.fancybox.pack.js,\' ~\\n                  \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/web\\/js\\/script.js,\'\\n]}\\n{\'MinifyX.css\' | placeholder}\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<title>{$_modx->resource.pagetitle}<\\/title>\\n<base href=\\"{$_modx->config.site_url}\\">\\n\\n<meta charset=\\"utf-8\\">\\n<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">\\n<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">\\n{if $_modx->resource.searchable}<meta name=\\"robots\\" content=\\"index, follow\\">\\n{else}<meta name=\\"robots\\" content=\\"noindex, nofollow\\">{\\/if}\\n{if !$_modx->resource.description && !($_modx->resource.content | ellipsis : \\"500\\" | match : \'*{*\')}\\n{var $description = $_modx->resource.content | stripmodxtags | striptags | strip : true | ellipsis : \\"180\\"}\\n{else}{var $description = $_modx->resource.description}{\\/if}\\n<meta name=\\"description\\" content=\\"{$description | replace :\' \\"\':\' \\u00ab\' | replace :\'\\"\':\'\\u00bb\'}\\">\\n<meta name=\\"keywords\\" content=\\"{$_modx->resource.keywords | replace :\' \\"\':\' \\u00ab\' | replace :\'\\"\':\'\\u00bb\'}\\" \\/>\\n{if $_modx->resource.img}<meta property=\\"og:image\\" content=\\"{$_modx->config.site_url | rtrim : \'\\/\'}{$_modx->resource.img | phpthumbon : \\"w=400&h=280\\"}\\" \\/>{\\/if}\\n\\n<link rel=\\"shortcut icon\\" href=\\"ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/web\\/img\\/favicon.ico\\" type=\\"image\\/x-icon\\">\\n\\n<script type=\\"text\\/javascript\\" src=\\"https:\\/\\/ajax.googleapis.com\\/ajax\\/libs\\/jquery\\/3.2.1\\/jquery.min.js\\"><\\/script>\\n<script>window.jQuery || document.write(\'<script src=\\"ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/web\\/vendor\\/jquery.min.js\\"><\\\\\\/script>\')<\\/script>\\n<!--[if lt IE 9]>\\n  <script src=\\"https:\\/\\/oss.maxcdn.com\\/html5shiv\\/3.7.3\\/html5shiv.min.js\\"><\\/script>\\n  <script src=\\"https:\\/\\/oss.maxcdn.com\\/respond\\/1.4.2\\/respond.min.js\\"><\\/script>\\n<![endif]-->\\n\\n{\'!MinifyX\' | snippet : [\\n  \'minifyCss\' => 1,\\n  \'minifyJs\' => 1,\\n  \'cssSources\' => \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/bootstrap\\/css\\/bootstrap.min.css,\' ~\\n                  \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/fancybox\\/source\\/jquery.fancybox.css\',\\n  \'jsSources\'  => \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/bootstrap\\/js\\/bootstrap.min.js,\' ~\\n                  \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/fancybox\\/source\\/jquery.fancybox.pack.js,\' ~\\n                  \'ASSETS_URLcomponents\\/SITE_FOLDER_NAME\\/web\\/js\\/script.js,\'\\n]}\\n{\'MinifyX.css\' | placeholder}\\n"}',
+        'guid' => '7c0b58cbf5cfada568ddff19df929e92',
+        'native_key' => NULL,
+        'signature' => 'ed2cf72079c5ab2a90f67e0fc52ed161',
+      ),
+      '8cc385cef8a3cf5abd871c4c7eaf5c03' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"menu","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<nav class=\\"navbar navbar-default container row\\">\\n  {\'pdoMenu\' | snippet : [\\n    \'startId\' => 0,\\n    \'level\' => 1,\\n    \'resources\' => \'\',\\n    \'outerClass\' => \'nav navbar-nav\'\\n  ]}\\n<\\/nav>","locked":0,"properties":null,"static":0,"static_file":"","content":"<nav class=\\"navbar navbar-default container row\\">\\n  {\'pdoMenu\' | snippet : [\\n    \'startId\' => 0,\\n    \'level\' => 1,\\n    \'resources\' => \'\',\\n    \'outerClass\' => \'nav navbar-nav\'\\n  ]}\\n<\\/nav>"}',
+        'guid' => '21e97159480bab76bebd64027c6b50a2',
+        'native_key' => NULL,
+        'signature' => 'fe2102f8e083876b9246628f6f5b8c04',
+      ),
+      '9bb033d5ad0ed879e5cd0d4bc3e072de' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"child_list","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<br>\\n<div id=\\"child_list\\">\\n  <div class=\\"rows\\">\\n  {\'!pdoPage\' | snippet : [\\n    \'ajaxMode\' => \'default\',\\n    \\n    \'tpl\' => \'@INLINE <div class=\\"media\\">\\n          {if $img}\\n          <div class=\\"media-left\\">\\n            <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n              <img class=\\"media-object\\" src=\\"{$img | phpthumbon : \\"w=120&h=90&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n            <\\/a>\\n          <\\/div>\\n          {\\/if}\\n          <div class=\\"media-body\\">\\n            <h4 class=\\"media-heading\\"><a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><\\/h4>\\n            <p class=\\"text-muted\\"><span class=\\"glyphicon glyphicon-calendar\\"><\\/span> {$publishedon | date_format : \\"%d.%m.%Y \\u0433.\\"}<\\/p>\\n            {$content | striptags | ellipsis : \\"250\\"}\\n          <\\/div>\\n        <\\/div>\',\\n    \'limit\' => 15,\\n    \'includeTVs\' => \'img\',\\n    \'tvPrefix\' => \'\',\\n    \'includeContent\' => 1,\\n    \\n    \'tplPageWrapper\' => \'@INLINE <div class=\\"pagination\\"><ul class=\\"pagination pagination-lg\\">{$prev}{$pages}{$next}<\\/ul><\\/div>\',\\n    \'tplPage\' => \'@INLINE <li><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n    \'tplPageActive\' => \'@INLINE <li class=\\"active\\"><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n    \'tplPagePrev\' => \'@INLINE <li rel=\\"prev\\"><a href=\\"{$href}\\">\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434<\\/a><\\/li>\',\\n    \'tplPageNext\' => \'@INLINE <li rel=\\"next\\"><a href=\\"{$href}\\">\\u0414\\u0430\\u043b\\u044c\\u0448\\u0435 \\u00bb<\\/a><\\/li>\',\\n    \'tplPagePrevEmpty\' => \'@INLINE \',\\n    \'tplPageNextEmpty\' => \'@INLINE \',\\n    \'ajaxElemWrapper\' => \'#child_list\',\\n    \'ajaxElemRows\' => \'#child_list .rows\',\\n    \'ajaxElemPagination\' => \'#child_list .pagination\',\\n    \'ajaxElemLink\' => \'#child_list .pagination a\',\\n  ]}\\n  <\\/div>\\n  {$_modx->getPlaceholder(\'page.nav\')}\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"","content":"<br>\\n<div id=\\"child_list\\">\\n  <div class=\\"rows\\">\\n  {\'!pdoPage\' | snippet : [\\n    \'ajaxMode\' => \'default\',\\n    \\n    \'tpl\' => \'@INLINE <div class=\\"media\\">\\n          {if $img}\\n          <div class=\\"media-left\\">\\n            <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n              <img class=\\"media-object\\" src=\\"{$img | phpthumbon : \\"w=120&h=90&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n            <\\/a>\\n          <\\/div>\\n          {\\/if}\\n          <div class=\\"media-body\\">\\n            <h4 class=\\"media-heading\\"><a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><\\/h4>\\n            <p class=\\"text-muted\\"><span class=\\"glyphicon glyphicon-calendar\\"><\\/span> {$publishedon | date_format : \\"%d.%m.%Y \\u0433.\\"}<\\/p>\\n            {$content | striptags | ellipsis : \\"250\\"}\\n          <\\/div>\\n        <\\/div>\',\\n    \'limit\' => 15,\\n    \'includeTVs\' => \'img\',\\n    \'tvPrefix\' => \'\',\\n    \'includeContent\' => 1,\\n    \\n    \'tplPageWrapper\' => \'@INLINE <div class=\\"pagination\\"><ul class=\\"pagination pagination-lg\\">{$prev}{$pages}{$next}<\\/ul><\\/div>\',\\n    \'tplPage\' => \'@INLINE <li><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n    \'tplPageActive\' => \'@INLINE <li class=\\"active\\"><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n    \'tplPagePrev\' => \'@INLINE <li rel=\\"prev\\"><a href=\\"{$href}\\">\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434<\\/a><\\/li>\',\\n    \'tplPageNext\' => \'@INLINE <li rel=\\"next\\"><a href=\\"{$href}\\">\\u0414\\u0430\\u043b\\u044c\\u0448\\u0435 \\u00bb<\\/a><\\/li>\',\\n    \'tplPagePrevEmpty\' => \'@INLINE \',\\n    \'tplPageNextEmpty\' => \'@INLINE \',\\n    \'ajaxElemWrapper\' => \'#child_list\',\\n    \'ajaxElemRows\' => \'#child_list .rows\',\\n    \'ajaxElemPagination\' => \'#child_list .pagination\',\\n    \'ajaxElemLink\' => \'#child_list .pagination a\',\\n  ]}\\n  <\\/div>\\n  {$_modx->getPlaceholder(\'page.nav\')}\\n<\\/div>"}',
+        'guid' => '92ef53703dd04e2b92cd7166b2bf07bb',
+        'native_key' => NULL,
+        'signature' => '824db107af88d72aea2553b34b27e560',
+      ),
+      '8c0af8e16479fb14ca39cfc4e0900944' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"header","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{var $cnt = SITE_CONTACTS_ID}\\n<header class=\\"page-header row\\">\\n  <div class=\\"col-sm-4\\">\\n    <h2>\\n      <a href=\\"{$_modx->config.site_url}\\" id=\\"logo\\">\\n        <nobr><span class=\\"glyphicon glyphicon-send\\" style=\\"margin-right: 0.5em\\"><\\/span>{$_modx->config.site_name}<\\/nobr>\\n      <\\/a>\\n    <\\/h2>\\n  <\\/div>\\n  <div class=\\"col-sm-4\\">\\n    <p style=\\"margin-top: 27px;\\">\\n      {$cnt | resource : \'address\'}\\n    <\\/p>\\n  <\\/div>\\n  <div class=\\"col-sm-4\\">\\n    <h2 class=\\"text-right\\">\\n      <nobr><a href=\\"tel:{$cnt | resource : \'phone\'  | clearPhone}\\">{$cnt | resource : \'phone\'}<\\/a><\\/nobr>\\n    <\\/h2>\\n  <\\/div>\\n<\\/header>","locked":0,"properties":null,"static":0,"static_file":"","content":"{var $cnt = SITE_CONTACTS_ID}\\n<header class=\\"page-header row\\">\\n  <div class=\\"col-sm-4\\">\\n    <h2>\\n      <a href=\\"{$_modx->config.site_url}\\" id=\\"logo\\">\\n        <nobr><span class=\\"glyphicon glyphicon-send\\" style=\\"margin-right: 0.5em\\"><\\/span>{$_modx->config.site_name}<\\/nobr>\\n      <\\/a>\\n    <\\/h2>\\n  <\\/div>\\n  <div class=\\"col-sm-4\\">\\n    <p style=\\"margin-top: 27px;\\">\\n      {$cnt | resource : \'address\'}\\n    <\\/p>\\n  <\\/div>\\n  <div class=\\"col-sm-4\\">\\n    <h2 class=\\"text-right\\">\\n      <nobr><a href=\\"tel:{$cnt | resource : \'phone\'  | clearPhone}\\">{$cnt | resource : \'phone\'}<\\/a><\\/nobr>\\n    <\\/h2>\\n  <\\/div>\\n<\\/header>"}',
+        'guid' => '48c48756ae043fb2fd5c1b7e89083035',
+        'native_key' => NULL,
+        'signature' => '42542bee0684925f6fb3bb07c92c1e8e',
+      ),
+      '3d76d8451027cccabb0c5d02d57dac4e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"content","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{var $default = true}\\n{switch $_modx->resource.id}\\n    {case SITE_SPECS_ID}\\n        {var $default = false}\\n        {include \'specialists\'}\\n{\\/switch}\\n{switch $_modx->resource.parent}\\n    {case SITE_SPECS_ID}\\n        {var $default = false}\\n        {include \'content_specialist\'}\\n{\\/switch}\\n{if $default}\\n    {include \'content_default\'}\\n{\\/if}\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"{var $default = true}\\n{switch $_modx->resource.id}\\n    {case SITE_SPECS_ID}\\n        {var $default = false}\\n        {include \'specialists\'}\\n{\\/switch}\\n{switch $_modx->resource.parent}\\n    {case SITE_SPECS_ID}\\n        {var $default = false}\\n        {include \'content_specialist\'}\\n{\\/switch}\\n{if $default}\\n    {include \'content_default\'}\\n{\\/if}\\n"}',
+        'guid' => 'd49a10b4d9b7dd47ebf0d3206465a070',
+        'native_key' => NULL,
+        'signature' => '8568f6b623575b4a82afb860da14b0b4',
+      ),
+      '16b62a94ca28112e3f2335f7174e6b68' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"content_default","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{block \'wrapper\'}\\n  <h1>{$_modx->resource.longtitle ?: $_modx->resource.pagetitle}<\\/h1>\\n  {block \'before_content\'}{\\/block}\\n  {block \'content\'}\\n    {var $show_on_page = $_modx->resource.show_on_page}\\n    {if $show_on_page | match : \'*content*\'}\\n      {$_modx->resource.content}\\n    {\\/if}\\n    {if $show_on_page | match : \'*gallery*\'}\\n      {include \'gallery\'}\\n    {\\/if}\\n    {if $_modx->resource.id == $_modx->config.site_start}\\n      {include \'block.gallery\'}\\n    {\\/if}\\n    {if $show_on_page | match : \'*children*\'}\\n      {include \'child_list\'}\\n    {\\/if}\\n  {\\/block}\\n  {block \'after_content\'}{\\/block}\\n{\\/block}\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"{block \'wrapper\'}\\n  <h1>{$_modx->resource.longtitle ?: $_modx->resource.pagetitle}<\\/h1>\\n  {block \'before_content\'}{\\/block}\\n  {block \'content\'}\\n    {var $show_on_page = $_modx->resource.show_on_page}\\n    {if $show_on_page | match : \'*content*\'}\\n      {$_modx->resource.content}\\n    {\\/if}\\n    {if $show_on_page | match : \'*gallery*\'}\\n      {include \'gallery\'}\\n    {\\/if}\\n    {if $_modx->resource.id == $_modx->config.site_start}\\n      {include \'block.gallery\'}\\n    {\\/if}\\n    {if $show_on_page | match : \'*children*\'}\\n      {include \'child_list\'}\\n    {\\/if}\\n  {\\/block}\\n  {block \'after_content\'}{\\/block}\\n{\\/block}\\n"}',
+        'guid' => '31e13382644150c17bdd69dadcd6d3bc',
+        'native_key' => NULL,
+        'signature' => 'b08879cd752a95cc1aa73670c139721d',
+      ),
+      'ff2550c659f73ffc6989c0a00e4adbc5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"content_specialist","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{extends \'content_default\'}\\n{block \'before_content\'}\\n  {if $_modx->resource.img}\\n    <img src=\\"{$_modx->resource.img | phpthumbon : \\"w=262&h=300&zc=1\\"}\\" alt=\\"{$pagetitle}\\" style=\\"float: left; margin: 0 15px 25px 0;\\">\\n  {\\/if}\\n  {if $_modx->resource.subtitle}\\n    <h2>{$_modx->resource.subtitle}<\\/h2>\\n  {\\/if}\\n{\\/block}","locked":0,"properties":null,"static":0,"static_file":"","content":"{extends \'content_default\'}\\n{block \'before_content\'}\\n  {if $_modx->resource.img}\\n    <img src=\\"{$_modx->resource.img | phpthumbon : \\"w=262&h=300&zc=1\\"}\\" alt=\\"{$pagetitle}\\" style=\\"float: left; margin: 0 15px 25px 0;\\">\\n  {\\/if}\\n  {if $_modx->resource.subtitle}\\n    <h2>{$_modx->resource.subtitle}<\\/h2>\\n  {\\/if}\\n{\\/block}"}',
+        'guid' => '1bbb32b72c41e83e711484b2a5fc7a23',
+        'native_key' => NULL,
+        'signature' => '3181ef02742aee45c1c0f726b7268f60',
+      ),
+      '0536b2369914b83b18a3ede02d3ef53e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"aside","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<br><hr>\\n{\'pdoResources\' | snippet : [\\n    \'parents\' => SITE_NEWS_ID,\\n    \'limit\' => 3,\\n    \'tpl\' => \'@INLINE <div class=\\"media\\">\\n          {if $img}\\n          <div class=\\"media-left\\">\\n            <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n              <img class=\\"media-object\\" src=\\"{$img | phpthumbon : \\"w=60&h=60&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n            <\\/a>\\n          <\\/div>\\n          {\\/if}\\n          <div class=\\"media-body\\">\\n            <h4 class=\\"media-heading\\"><a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><\\/h4>\\n            <p class=\\"text-muted\\"><span class=\\"glyphicon glyphicon-calendar\\"><\\/span> {$publishedon | date_format : \\"%d.%m.%Y \\u0433.\\"}<\\/p>\\n            <small>{$content | striptags | ellipsis : \\"110\\"}<\\/small>\\n          <\\/div>\\n        <\\/div>\',\\n    \'includeContent\' => 1,\\n    \'includeTVs\' => \'img\',\\n    \'tvPrefix\' => \'\',\\n]}\\n<br><hr>\\n<h3><a href=\\"{SITE_SPECS_ID | url}\\">\\u041d\\u0430\\u0448\\u0438 \\u0441\\u043f\\u0435\\u0446\\u0438\\u0430\\u043b\\u0438\\u0441\\u0442\\u044b<\\/a><\\/h3>\\n<br>\\n<div class=\\"row\\">\\n    {\'pdoResources\' | snippet : [\\n        \'parents\' => SITE_SPECS_ID,\\n        \'limit\' => 2,\\n        \'sortby\' => \'{\\"menuindex\\":\\"ASC\\"}\',\\n        \'tpl\' => \'@INLINE <div class=\\"col-md-6\\">\\n            <div class=\\"thumbnail\\">\\n              <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n                  <img src=\\"{$img | phpthumbon : \\"w=155&h=155&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n              <\\/a>\\n              <div class=\\"caption\\">\\n                <p class=\\"text-center\\">\\n                    <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><br>\\n                    {$subtitle}\\n                <\\/p>\\n              <\\/div>\\n            <\\/div>\\n          <\\/div>\',\\n        \'includeContent\' => 1,\\n        \'includeTVs\' => \'img,subtitle\',\\n        \'tvPrefix\' => \'\',\\n    ]}\\n    <div class=\\"hidden-sm hidden-xs\\">\\n        {\'pdoResources\' | snippet : [\\n            \'parents\' => SITE_SPECS_ID,\\n            \'limit\' => 2,\\n            \'offset\' => 2,\\n            \'sortby\' => \'{\\"menuindex\\":\\"ASC\\"}\',\\n            \'tpl\' => \'@INLINE <div class=\\"col-md-6\\">\\n                <div class=\\"thumbnail\\">\\n                  <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n                      <img src=\\"{$img | phpthumbon : \\"w=155&h=155&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n                  <\\/a>\\n                  <div class=\\"caption\\">\\n                    <p class=\\"text-center\\">\\n                        <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><br>\\n                        {$subtitle}\\n                    <\\/p>\\n                  <\\/div>\\n                <\\/div>\\n              <\\/div>\',\\n            \'includeContent\' => 1,\\n            \'includeTVs\' => \'img,subtitle\',\\n            \'tvPrefix\' => \'\',\\n        ]}\\n    <\\/div>\\n<\\/div>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<br><hr>\\n{\'pdoResources\' | snippet : [\\n    \'parents\' => SITE_NEWS_ID,\\n    \'limit\' => 3,\\n    \'tpl\' => \'@INLINE <div class=\\"media\\">\\n          {if $img}\\n          <div class=\\"media-left\\">\\n            <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n              <img class=\\"media-object\\" src=\\"{$img | phpthumbon : \\"w=60&h=60&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n            <\\/a>\\n          <\\/div>\\n          {\\/if}\\n          <div class=\\"media-body\\">\\n            <h4 class=\\"media-heading\\"><a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><\\/h4>\\n            <p class=\\"text-muted\\"><span class=\\"glyphicon glyphicon-calendar\\"><\\/span> {$publishedon | date_format : \\"%d.%m.%Y \\u0433.\\"}<\\/p>\\n            <small>{$content | striptags | ellipsis : \\"110\\"}<\\/small>\\n          <\\/div>\\n        <\\/div>\',\\n    \'includeContent\' => 1,\\n    \'includeTVs\' => \'img\',\\n    \'tvPrefix\' => \'\',\\n]}\\n<br><hr>\\n<h3><a href=\\"{SITE_SPECS_ID | url}\\">\\u041d\\u0430\\u0448\\u0438 \\u0441\\u043f\\u0435\\u0446\\u0438\\u0430\\u043b\\u0438\\u0441\\u0442\\u044b<\\/a><\\/h3>\\n<br>\\n<div class=\\"row\\">\\n    {\'pdoResources\' | snippet : [\\n        \'parents\' => SITE_SPECS_ID,\\n        \'limit\' => 2,\\n        \'sortby\' => \'{\\"menuindex\\":\\"ASC\\"}\',\\n        \'tpl\' => \'@INLINE <div class=\\"col-md-6\\">\\n            <div class=\\"thumbnail\\">\\n              <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n                  <img src=\\"{$img | phpthumbon : \\"w=155&h=155&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n              <\\/a>\\n              <div class=\\"caption\\">\\n                <p class=\\"text-center\\">\\n                    <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><br>\\n                    {$subtitle}\\n                <\\/p>\\n              <\\/div>\\n            <\\/div>\\n          <\\/div>\',\\n        \'includeContent\' => 1,\\n        \'includeTVs\' => \'img,subtitle\',\\n        \'tvPrefix\' => \'\',\\n    ]}\\n    <div class=\\"hidden-sm hidden-xs\\">\\n        {\'pdoResources\' | snippet : [\\n            \'parents\' => SITE_SPECS_ID,\\n            \'limit\' => 2,\\n            \'offset\' => 2,\\n            \'sortby\' => \'{\\"menuindex\\":\\"ASC\\"}\',\\n            \'tpl\' => \'@INLINE <div class=\\"col-md-6\\">\\n                <div class=\\"thumbnail\\">\\n                  <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n                      <img src=\\"{$img | phpthumbon : \\"w=155&h=155&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n                  <\\/a>\\n                  <div class=\\"caption\\">\\n                    <p class=\\"text-center\\">\\n                        <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><br>\\n                        {$subtitle}\\n                    <\\/p>\\n                  <\\/div>\\n                <\\/div>\\n              <\\/div>\',\\n            \'includeContent\' => 1,\\n            \'includeTVs\' => \'img,subtitle\',\\n            \'tvPrefix\' => \'\',\\n        ]}\\n    <\\/div>\\n<\\/div>\\n"}',
+        'guid' => '522053e6b5a880dc6f7720443f5129c0',
+        'native_key' => NULL,
+        'signature' => 'e18e61ffea57ef8d09917f1972e7b5d4',
+      ),
+      '7ddbddd3892767dd796340fe32f95c63' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"footer","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<footer>\\n    <hr>\\n\\t<div class=\\"row\\">\\n\\t\\t<div class=\\"col-xs-6\\">\\n\\t\\t\\t<p>&copy;\\n\\t\\t\\t  {var $year = \'\' | date : \'Y\'}\\n\\t\\t\\t  {if $year == 2016}2016{else}2016\\u2014{$year}{\\/if}\\n\\t\\t\\t  {$_modx->config.site_name}\\n\\t\\t\\t<\\/p>\\n\\t\\t<\\/div>\\n\\t\\t<div class=\\"col-xs-6\\">\\n\\t\\t\\t<p class=\\"text-right\\">\\n\\t\\t\\t  <small><a href=\\"https:\\/\\/ilyaut.ru\\/\\">\\u0418\\u043b\\u044c\\u044f \\u0423\\u0442\\u043a\\u0438\\u043d<\\/a><\\/small>\\n\\t\\t\\t<\\/p>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n<\\/footer>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<footer>\\n    <hr>\\n\\t<div class=\\"row\\">\\n\\t\\t<div class=\\"col-xs-6\\">\\n\\t\\t\\t<p>&copy;\\n\\t\\t\\t  {var $year = \'\' | date : \'Y\'}\\n\\t\\t\\t  {if $year == 2016}2016{else}2016\\u2014{$year}{\\/if}\\n\\t\\t\\t  {$_modx->config.site_name}\\n\\t\\t\\t<\\/p>\\n\\t\\t<\\/div>\\n\\t\\t<div class=\\"col-xs-6\\">\\n\\t\\t\\t<p class=\\"text-right\\">\\n\\t\\t\\t  <small><a href=\\"https:\\/\\/ilyaut.ru\\/\\">\\u0418\\u043b\\u044c\\u044f \\u0423\\u0442\\u043a\\u0438\\u043d<\\/a><\\/small>\\n\\t\\t\\t<\\/p>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n<\\/footer>\\n"}',
+        'guid' => 'd4c0b921ae6b9bfa17297b3cd5fe1c9b',
+        'native_key' => NULL,
+        'signature' => '569e50c48df9f88edaf510d706c2017e',
+      ),
+      '54e9f8f9931b3466390d4414e90236a3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"contact_form","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{var $form     = $form     ?: \'form.contact_form\'}\\n{var $tpl      = $tpl      ?: \'tpl.contact_form\'}\\n{var $subject  = $subject  ?: \'\\u0421\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435 \\u0441 \\u0441\\u0430\\u0439\\u0442\\u0430 \' ~ $_modx->config.http_host}\\n{var $validate = $validate ?: \'name:required,phone:required,check:required\'}\\n{var $success  = $success  ?: \'<br><h3 style=\\"text-align: center;\\">\\u0412\\u0430\\u0448\\u0435 \\u0441\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043b\\u0435\\u043d\\u043e<\\/h3><br><p style=\\"text-align: center; width: 400px; line-height: 140%;\\">\\u041d\\u0430\\u0448\\u0438 \\u0441\\u043f\\u0435\\u0446\\u0438\\u0430\\u043b\\u0438\\u0441\\u0442\\u044b \\u0441\\u0432\\u044f\\u0436\\u0443\\u0442\\u0441\\u044f \\u0441 \\u0432\\u0430\\u043c\\u0438<br>\\u0432 \\u0431\\u043b\\u0438\\u0436\\u0430\\u0439\\u0448\\u0435\\u0435 \\u0432\\u0440\\u0435\\u043c\\u044f.<\\/p><br><br>\'}\\n{var $error    = $error    ?: \'\\u0412 \\u0444\\u043e\\u0440\\u043c\\u0435 \\u0441\\u043e\\u0434\\u0435\\u0440\\u0436\\u0430\\u0442\\u0441\\u044f \\u043e\\u0448\\u0438\\u0431\\u043a\\u0438!\'}\\n{var $emailto  = SITE_CONTACTS_ID | resource : \'email\'}\\n\\n{\'!AjaxForm\' | snippet : [\\n    \'snippet\' => \'FormIt\',\\n    \'hooks\' => \'email\',\\n    \'form\' => $form,\\n    \'emailFrom\' => $_modx->config.emailsender,\\n    \'emailSubject\' => $subject,\\n    \'emailTo\' => $emailto,\\n    \'emailTpl\' => $tpl,\\n    \'successMessage\' => $success,\\n    \'validate\' => $validate,\\n    \'validationErrorMessage\' => $error,\\n    \'name.vTextRequired\' => \'\\u041f\\u043e\\u0436\\u0430\\u043b\\u0443\\u0439\\u0441\\u0442\\u0430, \\u0443\\u043a\\u0430\\u0436\\u0438\\u0442\\u0435, \\u043a\\u0430\\u043a \\u043a \\u0432\\u0430\\u043c \\u043e\\u0431\\u0440\\u0430\\u0449\\u0430\\u0442\\u044c\\u0441\\u044f\',\\n    \'phone.vTextRequired\' => \'\\u041e\\u0441\\u0442\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0441\\u0432\\u043e\\u0439 \\u043d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430, \\u0447\\u0442\\u043e\\u0431\\u044b \\u043c\\u044b \\u043c\\u043e\\u0433\\u043b\\u0438 \\u0441 \\u0432\\u0430\\u043c\\u0438 \\u0441\\u0432\\u044f\\u0437\\u0430\\u0442\\u044c\\u0441\\u044f\',\\n    \'check.vTextRequired\' => \'\\u0412\\u044b \\u0434\\u043e\\u043b\\u0436\\u043d\\u044b \\u0434\\u0430\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0435\\u0448\\u0435\\u043d\\u0438\\u0435 \\u043d\\u0430 \\u043e\\u0431\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u0443 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u043f\\u0435\\u0440\\u0441\\u043e\\u043d\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0430\\u043d\\u043d\\u044b\\u0445\',\\n]}\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"{var $form     = $form     ?: \'form.contact_form\'}\\n{var $tpl      = $tpl      ?: \'tpl.contact_form\'}\\n{var $subject  = $subject  ?: \'\\u0421\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435 \\u0441 \\u0441\\u0430\\u0439\\u0442\\u0430 \' ~ $_modx->config.http_host}\\n{var $validate = $validate ?: \'name:required,phone:required,check:required\'}\\n{var $success  = $success  ?: \'<br><h3 style=\\"text-align: center;\\">\\u0412\\u0430\\u0448\\u0435 \\u0441\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043b\\u0435\\u043d\\u043e<\\/h3><br><p style=\\"text-align: center; width: 400px; line-height: 140%;\\">\\u041d\\u0430\\u0448\\u0438 \\u0441\\u043f\\u0435\\u0446\\u0438\\u0430\\u043b\\u0438\\u0441\\u0442\\u044b \\u0441\\u0432\\u044f\\u0436\\u0443\\u0442\\u0441\\u044f \\u0441 \\u0432\\u0430\\u043c\\u0438<br>\\u0432 \\u0431\\u043b\\u0438\\u0436\\u0430\\u0439\\u0448\\u0435\\u0435 \\u0432\\u0440\\u0435\\u043c\\u044f.<\\/p><br><br>\'}\\n{var $error    = $error    ?: \'\\u0412 \\u0444\\u043e\\u0440\\u043c\\u0435 \\u0441\\u043e\\u0434\\u0435\\u0440\\u0436\\u0430\\u0442\\u0441\\u044f \\u043e\\u0448\\u0438\\u0431\\u043a\\u0438!\'}\\n{var $emailto  = SITE_CONTACTS_ID | resource : \'email\'}\\n\\n{\'!AjaxForm\' | snippet : [\\n    \'snippet\' => \'FormIt\',\\n    \'hooks\' => \'email\',\\n    \'form\' => $form,\\n    \'emailFrom\' => $_modx->config.emailsender,\\n    \'emailSubject\' => $subject,\\n    \'emailTo\' => $emailto,\\n    \'emailTpl\' => $tpl,\\n    \'successMessage\' => $success,\\n    \'validate\' => $validate,\\n    \'validationErrorMessage\' => $error,\\n    \'name.vTextRequired\' => \'\\u041f\\u043e\\u0436\\u0430\\u043b\\u0443\\u0439\\u0441\\u0442\\u0430, \\u0443\\u043a\\u0430\\u0436\\u0438\\u0442\\u0435, \\u043a\\u0430\\u043a \\u043a \\u0432\\u0430\\u043c \\u043e\\u0431\\u0440\\u0430\\u0449\\u0430\\u0442\\u044c\\u0441\\u044f\',\\n    \'phone.vTextRequired\' => \'\\u041e\\u0441\\u0442\\u0430\\u0432\\u044c\\u0442\\u0435 \\u0441\\u0432\\u043e\\u0439 \\u043d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430, \\u0447\\u0442\\u043e\\u0431\\u044b \\u043c\\u044b \\u043c\\u043e\\u0433\\u043b\\u0438 \\u0441 \\u0432\\u0430\\u043c\\u0438 \\u0441\\u0432\\u044f\\u0437\\u0430\\u0442\\u044c\\u0441\\u044f\',\\n    \'check.vTextRequired\' => \'\\u0412\\u044b \\u0434\\u043e\\u043b\\u0436\\u043d\\u044b \\u0434\\u0430\\u0442\\u044c \\u0440\\u0430\\u0437\\u0440\\u0435\\u0448\\u0435\\u043d\\u0438\\u0435 \\u043d\\u0430 \\u043e\\u0431\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u0443 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u043f\\u0435\\u0440\\u0441\\u043e\\u043d\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0430\\u043d\\u043d\\u044b\\u0445\',\\n]}\\n"}',
+        'guid' => 'a48564bb0735535301f66eaf05015b3c',
+        'native_key' => NULL,
+        'signature' => '422d50fef768d5a84c78d9120abcefcf',
+      ),
+      'c9de277e5f4703bf5a23741da42e6749' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"form.contact_form","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<br><h2>\\u0417\\u0430\\u0434\\u0430\\u0442\\u044c \\u0432\\u043e\\u043f\\u0440\\u043e\\u0441<\\/h2><br>\\n<form action=\\"{$_modx->resource.id | url}\\" method=\\"post\\" class=\\"ajax_form form-horizontal well\\" style=\\"max-width: 530px;\\">\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<label class=\\"col-sm-4 control-label\\" for=\\"af_name\\">\\u0412\\u0430\\u0448\\u0435 \\u0438\\u043c\\u044f<\\/label>\\n\\t\\t<div class=\\"col-sm-8\\">\\n\\t\\t\\t<input type=\\"text\\" id=\\"af_name\\" name=\\"name\\" value=\\"\\" placeholder=\\"\\" class=\\"form-control\\" \\/>\\n\\t\\t\\t<span class=\\"error_name\\"><\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<label class=\\"col-sm-4 control-label\\" for=\\"af_phone\\">\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d<\\/label>\\n\\t\\t<div class=\\"col-sm-8\\">\\n\\t\\t\\t<input type=\\"tel\\" id=\\"af_phone\\" name=\\"phone\\" value=\\"\\" placeholder=\\"\\" class=\\"form-control\\" \\/>\\n\\t\\t\\t<span class=\\"error_phone\\"><\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<label class=\\"col-sm-4 control-label\\" for=\\"af_message\\">\\u0412\\u0430\\u0448 \\u0432\\u043e\\u043f\\u0440\\u043e\\u0441<\\/label>\\n\\t\\t<div class=\\"col-sm-8\\">\\n\\t\\t\\t<textarea id=\\"af_message\\" name=\\"message\\" class=\\"form-control\\" rows=\\"5\\"><\\/textarea>\\n\\t\\t\\t<span class=\\"error_message\\"><\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\n\\t<div class=\\"agreement form-group\\">\\n        <input type=\\"hidden\\" name=\\"check[]\\" value=\\"\\" \\/>\\n        <div class=\\"col-sm-offset-4 col-sm-8\\">\\n          <div class=\\"checkbox\\">\\n            <label>\\n              <input type=\\"checkbox\\" name=\\"check[]\\" id=\\"check\\" class=\\"check\\" checked>\\n              \\u042f \\u0434\\u0430\\u044e \\u0441\\u0432\\u043e\\u0435 \\u0441\\u043e\\u0433\\u043b\\u0430\\u0441\\u0438\\u0435 \\u043d\\u0430 \\u043e\\u0431\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u0443 \\u043f\\u0435\\u0440\\u0441\\u043e\\u043d\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0430\\u043d\\u043d\\u044b\\u0445\\n            <\\/label>\\n          <\\/div>\\n        <\\/div>\\n        <span class=\\"col-sm-offset-4 col-sm-8 error_check\\"><\\/span>\\n\\t<\\/div>\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<div class=\\"col-sm-offset-4 col-sm-8\\">\\n\\t\\t\\t<button type=\\"reset\\" class=\\"btn btn-default\\">\\u041e\\u0442\\u043c\\u0435\\u043d\\u0430<\\/button>\\n\\t\\t\\t<button type=\\"submit\\" class=\\"btn btn-primary\\">\\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u0438\\u0442\\u044c<\\/button>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n<\\/form>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<br><h2>\\u0417\\u0430\\u0434\\u0430\\u0442\\u044c \\u0432\\u043e\\u043f\\u0440\\u043e\\u0441<\\/h2><br>\\n<form action=\\"{$_modx->resource.id | url}\\" method=\\"post\\" class=\\"ajax_form form-horizontal well\\" style=\\"max-width: 530px;\\">\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<label class=\\"col-sm-4 control-label\\" for=\\"af_name\\">\\u0412\\u0430\\u0448\\u0435 \\u0438\\u043c\\u044f<\\/label>\\n\\t\\t<div class=\\"col-sm-8\\">\\n\\t\\t\\t<input type=\\"text\\" id=\\"af_name\\" name=\\"name\\" value=\\"\\" placeholder=\\"\\" class=\\"form-control\\" \\/>\\n\\t\\t\\t<span class=\\"error_name\\"><\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<label class=\\"col-sm-4 control-label\\" for=\\"af_phone\\">\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d<\\/label>\\n\\t\\t<div class=\\"col-sm-8\\">\\n\\t\\t\\t<input type=\\"tel\\" id=\\"af_phone\\" name=\\"phone\\" value=\\"\\" placeholder=\\"\\" class=\\"form-control\\" \\/>\\n\\t\\t\\t<span class=\\"error_phone\\"><\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<label class=\\"col-sm-4 control-label\\" for=\\"af_message\\">\\u0412\\u0430\\u0448 \\u0432\\u043e\\u043f\\u0440\\u043e\\u0441<\\/label>\\n\\t\\t<div class=\\"col-sm-8\\">\\n\\t\\t\\t<textarea id=\\"af_message\\" name=\\"message\\" class=\\"form-control\\" rows=\\"5\\"><\\/textarea>\\n\\t\\t\\t<span class=\\"error_message\\"><\\/span>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\n\\t<div class=\\"agreement form-group\\">\\n        <input type=\\"hidden\\" name=\\"check[]\\" value=\\"\\" \\/>\\n        <div class=\\"col-sm-offset-4 col-sm-8\\">\\n          <div class=\\"checkbox\\">\\n            <label>\\n              <input type=\\"checkbox\\" name=\\"check[]\\" id=\\"check\\" class=\\"check\\" checked>\\n              \\u042f \\u0434\\u0430\\u044e \\u0441\\u0432\\u043e\\u0435 \\u0441\\u043e\\u0433\\u043b\\u0430\\u0441\\u0438\\u0435 \\u043d\\u0430 \\u043e\\u0431\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u0443 \\u043f\\u0435\\u0440\\u0441\\u043e\\u043d\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0430\\u043d\\u043d\\u044b\\u0445\\n            <\\/label>\\n          <\\/div>\\n        <\\/div>\\n        <span class=\\"col-sm-offset-4 col-sm-8 error_check\\"><\\/span>\\n\\t<\\/div>\\n\\n\\t<div class=\\"form-group\\">\\n\\t\\t<div class=\\"col-sm-offset-4 col-sm-8\\">\\n\\t\\t\\t<button type=\\"reset\\" class=\\"btn btn-default\\">\\u041e\\u0442\\u043c\\u0435\\u043d\\u0430<\\/button>\\n\\t\\t\\t<button type=\\"submit\\" class=\\"btn btn-primary\\">\\u041e\\u0442\\u043f\\u0440\\u0430\\u0432\\u0438\\u0442\\u044c<\\/button>\\n\\t\\t<\\/div>\\n\\t<\\/div>\\n\\t\\n<\\/form>\\n"}',
+        'guid' => '8cb5f83b99f53ff4177813e1be1d92e6',
+        'native_key' => NULL,
+        'signature' => 'ad0ce65d05fc072d0057e970faabf004',
+      ),
+      'b698771252f167171621260df686f494' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tpl.contact_form","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<p>\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u043e\\u0441\\u0442\\u0430\\u0432\\u0438\\u043b \\u0437\\u0430\\u044f\\u0432\\u043a\\u0443 \\u043d\\u0430 \\u0441\\u0430\\u0439\\u0442\\u0435 {\'http_host\' | config}<\\/p>\\n<br>\\n<p><strong>\\u041a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442\\u044b<\\/strong><\\/p>\\n<p>\\u0418\\u043c\\u044f: {$name}<\\/p>\\n<p>\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d: {$phone}<\\/p>\\n<br>\\n<p><strong>\\u0421\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435<\\/strong><\\/p>\\n<p>{$message | nl2br}<\\/p>","locked":0,"properties":null,"static":0,"static_file":"","content":"<p>\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u043e\\u0441\\u0442\\u0430\\u0432\\u0438\\u043b \\u0437\\u0430\\u044f\\u0432\\u043a\\u0443 \\u043d\\u0430 \\u0441\\u0430\\u0439\\u0442\\u0435 {\'http_host\' | config}<\\/p>\\n<br>\\n<p><strong>\\u041a\\u043e\\u043d\\u0442\\u0430\\u043a\\u0442\\u044b<\\/strong><\\/p>\\n<p>\\u0418\\u043c\\u044f: {$name}<\\/p>\\n<p>\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d: {$phone}<\\/p>\\n<br>\\n<p><strong>\\u0421\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435<\\/strong><\\/p>\\n<p>{$message | nl2br}<\\/p>"}',
+        'guid' => 'c046a299207124846cf76ad32fbffb1a',
+        'native_key' => NULL,
+        'signature' => 'a4ae203999054d2e3525fdf2ce2d7e6a',
+      ),
+      '21611315481d90bbfcc80f479f2aff45' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"specialists","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{extends \'content_default\'}\\n{block \'after_content\'}\\n  <br>\\n  <div id=\\"child_list\\">\\n    <div class=\\"rows row\\">\\n    {\'!pdoPage\' | snippet : [\\n      \'ajaxMode\' => \'default\',\\n\\n      \'tpl\' => \'@INLINE <div class=\\"col-xs-6 col-md-4\\">\\n          <div class=\\"thumbnail\\">\\n            <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n                <img src=\\"{$img | phpthumbon : \\"w=220&h=160&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n            <\\/a>\\n            <div class=\\"caption\\">\\n              <h4 class=\\"text-center\\">\\n                  <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><br>\\n                  {$subtitle}\\n              <\\/h4>\\n            <\\/div>\\n          <\\/div>\\n        <\\/div>\',\\n      \'limit\' => 15,\\n      \'sortby\' => \'{\\"menuindex\\":\\"ASC\\"}\',\\n      \'includeTVs\' => \'img,subtitle\',\\n      \'tvPrefix\' => \'\',\\n      \'includeContent\' => 1,\\n\\n      \'tplPageWrapper\' => \'@INLINE <div class=\\"pagination\\"><ul class=\\"pagination pagination-lg\\">{$prev}{$pages}{$next}<\\/ul><\\/div>\',\\n      \'tplPage\' => \'@INLINE <li><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n      \'tplPageActive\' => \'@INLINE <li class=\\"active\\"><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n      \'tplPagePrev\' => \'@INLINE <li rel=\\"prev\\"><a href=\\"{$href}\\">\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434<\\/a><\\/li>\',\\n      \'tplPageNext\' => \'@INLINE <li rel=\\"next\\"><a href=\\"{$href}\\">\\u0414\\u0430\\u043b\\u044c\\u0448\\u0435 \\u00bb<\\/a><\\/li>\',\\n      \'tplPagePrevEmpty\' => \'@INLINE \',\\n      \'tplPageNextEmpty\' => \'@INLINE \',\\n      \'ajaxElemWrapper\' => \'#child_list\',\\n      \'ajaxElemRows\' => \'#child_list .rows\',\\n      \'ajaxElemPagination\' => \'#child_list .pagination\',\\n      \'ajaxElemLink\' => \'#child_list .pagination a\',\\n    ]}\\n    <\\/div>\\n    {$_modx->getPlaceholder(\'page.nav\')}\\n  <\\/div>\\n{\\/block}","locked":0,"properties":null,"static":0,"static_file":"","content":"{extends \'content_default\'}\\n{block \'after_content\'}\\n  <br>\\n  <div id=\\"child_list\\">\\n    <div class=\\"rows row\\">\\n    {\'!pdoPage\' | snippet : [\\n      \'ajaxMode\' => \'default\',\\n\\n      \'tpl\' => \'@INLINE <div class=\\"col-xs-6 col-md-4\\">\\n          <div class=\\"thumbnail\\">\\n            <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">\\n                <img src=\\"{$img | phpthumbon : \\"w=220&h=160&zc=1\\"}\\" alt=\\"{$pagetitle}\\">\\n            <\\/a>\\n            <div class=\\"caption\\">\\n              <h4 class=\\"text-center\\">\\n                  <a href=\\"{$uri}\\" title=\\"{$longtitle}\\">{$pagetitle}<\\/a><br>\\n                  {$subtitle}\\n              <\\/h4>\\n            <\\/div>\\n          <\\/div>\\n        <\\/div>\',\\n      \'limit\' => 15,\\n      \'sortby\' => \'{\\"menuindex\\":\\"ASC\\"}\',\\n      \'includeTVs\' => \'img,subtitle\',\\n      \'tvPrefix\' => \'\',\\n      \'includeContent\' => 1,\\n\\n      \'tplPageWrapper\' => \'@INLINE <div class=\\"pagination\\"><ul class=\\"pagination pagination-lg\\">{$prev}{$pages}{$next}<\\/ul><\\/div>\',\\n      \'tplPage\' => \'@INLINE <li><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n      \'tplPageActive\' => \'@INLINE <li class=\\"active\\"><a href=\\"{$href}\\">{$pageNo}<\\/a><\\/li>\',\\n      \'tplPagePrev\' => \'@INLINE <li rel=\\"prev\\"><a href=\\"{$href}\\">\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434<\\/a><\\/li>\',\\n      \'tplPageNext\' => \'@INLINE <li rel=\\"next\\"><a href=\\"{$href}\\">\\u0414\\u0430\\u043b\\u044c\\u0448\\u0435 \\u00bb<\\/a><\\/li>\',\\n      \'tplPagePrevEmpty\' => \'@INLINE \',\\n      \'tplPageNextEmpty\' => \'@INLINE \',\\n      \'ajaxElemWrapper\' => \'#child_list\',\\n      \'ajaxElemRows\' => \'#child_list .rows\',\\n      \'ajaxElemPagination\' => \'#child_list .pagination\',\\n      \'ajaxElemLink\' => \'#child_list .pagination a\',\\n    ]}\\n    <\\/div>\\n    {$_modx->getPlaceholder(\'page.nav\')}\\n  <\\/div>\\n{\\/block}"}',
+        'guid' => '453d59734a2d1ca8a4d59e49c6e6899a',
+        'native_key' => NULL,
+        'signature' => '809af643690856603ed755baca12797d',
+      ),
+      '9c7a976cc2440ac68e7d1dd3fb243365' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"gallery","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{var $gallery = $_modx->resource.elements | fromJSON}\\n<div class=\\"row\\">\\n  {foreach $gallery as $galItem}\\n    <div class=\\"col-xs-6 col-md-4\\">\\n      <br>\\n      <a href=\\"{$galItem.img}\\" title=\\"{$galItem.title}\\" class=\\"fancybox2\\"\\n        data-fancybox=\\"gallery-{$_modx->resource.id}\\" rel=\\"gallery-{$_modx->resource.id}\\">\\n        <img src=\\"{$galItem.img | phpthumbon : \\"w=220&h=150&zc=1\\"}\\" alt=\\"{$galItem.title}\\" class=\\"img-thumbnail\\">\\n      <\\/a>\\n      <br>\\n    <\\/div>\\n  {\\/foreach}\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"","content":"{var $gallery = $_modx->resource.elements | fromJSON}\\n<div class=\\"row\\">\\n  {foreach $gallery as $galItem}\\n    <div class=\\"col-xs-6 col-md-4\\">\\n      <br>\\n      <a href=\\"{$galItem.img}\\" title=\\"{$galItem.title}\\" class=\\"fancybox2\\"\\n        data-fancybox=\\"gallery-{$_modx->resource.id}\\" rel=\\"gallery-{$_modx->resource.id}\\">\\n        <img src=\\"{$galItem.img | phpthumbon : \\"w=220&h=150&zc=1\\"}\\" alt=\\"{$galItem.title}\\" class=\\"img-thumbnail\\">\\n      <\\/a>\\n      <br>\\n    <\\/div>\\n  {\\/foreach}\\n<\\/div>"}',
+        'guid' => '1152e1c51d1f5c37083d44664d49fbd3',
+        'native_key' => NULL,
+        'signature' => 'a0a11acd53837eb6b6841600aec006e1',
+      ),
+      '07c89ecff8979fcc5ebbe1641198c511' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"block.gallery","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{var $gallery = SITE_GALLERY_ID | resource : \'elements\' | fromJSON}\\n<div class=\\"row\\">\\n  {foreach $gallery as $idx => $galItem}\\n    {if $idx == 3}\\n    <\\/div>\\n    <div class=\\"hidden\\">\\n    {\\/if}\\n    <div class=\\"col-xs-6 col-md-4\\">\\n      <br>\\n      <a href=\\"{$galItem.img}\\" title=\\"{$galItem.title}\\" class=\\"fancybox2\\"\\n        data-fancybox=\\"gallery-{$_modx->resource.id}\\" rel=\\"gallery-{$_modx->resource.id}\\">\\n        <img src=\\"{$galItem.img | phpthumbon : \\"w=220&h=150&zc=1\\"}\\" alt=\\"{$galItem.title}\\" class=\\"img-thumbnail\\">\\n      <\\/a>\\n      <br>\\n    <\\/div>\\n  {\\/foreach}\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"","content":"{var $gallery = SITE_GALLERY_ID | resource : \'elements\' | fromJSON}\\n<div class=\\"row\\">\\n  {foreach $gallery as $idx => $galItem}\\n    {if $idx == 3}\\n    <\\/div>\\n    <div class=\\"hidden\\">\\n    {\\/if}\\n    <div class=\\"col-xs-6 col-md-4\\">\\n      <br>\\n      <a href=\\"{$galItem.img}\\" title=\\"{$galItem.title}\\" class=\\"fancybox2\\"\\n        data-fancybox=\\"gallery-{$_modx->resource.id}\\" rel=\\"gallery-{$_modx->resource.id}\\">\\n        <img src=\\"{$galItem.img | phpthumbon : \\"w=220&h=150&zc=1\\"}\\" alt=\\"{$galItem.title}\\" class=\\"img-thumbnail\\">\\n      <\\/a>\\n      <br>\\n    <\\/div>\\n  {\\/foreach}\\n<\\/div>"}',
+        'guid' => '8d14060b631a13db1f789d0cb9072e3d',
+        'native_key' => NULL,
+        'signature' => 'f2a24b15039b3e1522ab2f602a44d2f3',
+      ),
+      '4e61855298408dd5534128f5458c69e6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"scripts","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"{\'MinifyX.javascript\' | placeholder}\\n<script>\\n    $(document).ready(function() {\\n        \\/\\/ Removing AjaxForm success message\\n        if (typeof(AjaxForm) != \'undefined\') {\\n            AjaxForm.Message.success = function() {};\\n        }\\n    });\\n    \\n    \\/\\/ Show AjaxForm success message in modal\\n    $(document).on(\'af_complete\', function(event, response) {\\n        var form = response.form;\\n        if (response.success) {\\n            $.fancybox.close();\\n            $.fancybox.open(\'<div class=\\"popup\\" id=\\"popup-call\\"><div class=\\"popup-title\\">\' + response.message + \'<\\/div><\\/div>\');\\n        }\\n    });\\n<\\/script>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"{\'MinifyX.javascript\' | placeholder}\\n<script>\\n    $(document).ready(function() {\\n        \\/\\/ Removing AjaxForm success message\\n        if (typeof(AjaxForm) != \'undefined\') {\\n            AjaxForm.Message.success = function() {};\\n        }\\n    });\\n    \\n    \\/\\/ Show AjaxForm success message in modal\\n    $(document).on(\'af_complete\', function(event, response) {\\n        var form = response.form;\\n        if (response.success) {\\n            $.fancybox.close();\\n            $.fancybox.open(\'<div class=\\"popup\\" id=\\"popup-call\\"><div class=\\"popup-title\\">\' + response.message + \'<\\/div><\\/div>\');\\n        }\\n    });\\n<\\/script>\\n"}',
+        'guid' => 'b945d701f4ce1bba2a4e0626774be8e2',
+        'native_key' => NULL,
+        'signature' => '80eaefee17d0d3c11259d324d53512d1',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '59adc4ba734c6d2f0e753cb5e0dbdce4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"clearPhone","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"return str_replace(array(\' \',\'-\',\'(\',\')\'), \'\', strip_tags($input));","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"return str_replace(array(\' \',\'-\',\'(\',\')\'), \'\', strip_tags($input));"}',
+        'guid' => 'b87c3fff0a6f7859847ffa4d2762ac03',
+        'native_key' => NULL,
+        'signature' => '625ce821fb1c02880aa60ff1ea84f583',
+      ),
+      '12a240ffcfb36493832ad0fc3483a998' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"rtrim","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"return rtrim($input, $options?:\' \');","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"return rtrim($input, $options?:\' \');"}',
+        'guid' => '65f6b5bfea301ce81c65e9a1d4309118',
+        'native_key' => NULL,
+        'signature' => '5828ac2f28384a7b175ba850e7823749',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '0a3296c26396b9817ef3ecadc83eadec' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"addManagerCss","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/** @var modX $modx *\\/\\nswitch ($modx->event->name) {\\n    case \'OnManagerPageInit\':\\n        $modx->regClientCSS($modx->getOption(\'assets_url\') .\\n            \'components\\/SITE_FOLDER_NAME\\/mgr\\/style.css\');\\n        break;\\n    default:\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/** @var modX $modx *\\/\\nswitch ($modx->event->name) {\\n    case \'OnManagerPageInit\':\\n        $modx->regClientCSS($modx->getOption(\'assets_url\') .\\n            \'components\\/SITE_FOLDER_NAME\\/mgr\\/style.css\');\\n        break;\\n    default:\\n        break;\\n}"}',
+        'guid' => 'd829f707c0c2a6321add77b3a412d052',
+        'native_key' => NULL,
+        'signature' => 'd093a4eb6bf3d3ee3f903a4ad4724c8e',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '5d6f2b57589c77de66dc2483325485f5' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageInit","priority":0,"propertyset":0}',
+              'guid' => 'eddebb5f77e49306f565bfafe9c02b6e',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageInit',
+              ),
+              'signature' => '138ae859713556250d078b80b5cc8e0f',
+            ),
+          ),
+        ),
+      ),
+      'fece4731e9f952d6f345288de4953fc6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"siteRedirect","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"if ($modx->event->name != \\"OnHandleRequest\\" || $modx->context->key == \'mgr\') {\\n   return;\\n}\\n$tmp = explode(\'?\', $_SERVER[\'REQUEST_URI\']);\\n$link = trim($tmp[0], \'\\/\');\\nif (isset($tmp[1]) && $tmp[1]) {\\n    $params = \'?\' . $tmp[1];\\n} else {\\n    $params = \'\';\\n}\\n$uri = \'\\/\' . strtolower($link) . $params;\\n$http_host = $_SERVER[\'HTTP_HOST\'];\\n$site_url = str_replace(array(\'www.\', \'http:\\/\\/\', \'https:\\/\\/\', \'\\/\'), \'\', $modx->getOption(\'site_url\'));\\n\\n\\/\\/ for https set true\\n$https = false;\\n\\n\\/\\/ robots.txt allways without redirect\\nif ($uri == \'\\/robots.txt\') return;\\n\\nif ($https) {\\n    $protocol = \'https:\\/\\/\';\\n} else {\\n    $protocol = \'http:\\/\\/\';\\n}\\n\\nif ($http_host != $site_url || ($https && !$_SERVER[\'HTTPS\']) || $_SERVER[\'REQUEST_URI\'] != $uri) {\\n    $modx->sendRedirect($protocol.$site_url.$uri, array(\'responseCode\' => \'HTTP\\/1.1 301 Moved Permanently\'));\\n}\\nif ($_SERVER[\'REQUEST_URI\'] == \'\\/index.php\') {\\n    $modx->sendRedirect($protocol.$site_url, array(\'responseCode\' => \'HTTP\\/1.1 301 Moved Permanently\'));\\n}","locked":0,"properties":null,"disabled":1,"moduleguid":"","static":0,"static_file":"","content":"if ($modx->event->name != \\"OnHandleRequest\\" || $modx->context->key == \'mgr\') {\\n   return;\\n}\\n$tmp = explode(\'?\', $_SERVER[\'REQUEST_URI\']);\\n$link = trim($tmp[0], \'\\/\');\\nif (isset($tmp[1]) && $tmp[1]) {\\n    $params = \'?\' . $tmp[1];\\n} else {\\n    $params = \'\';\\n}\\n$uri = \'\\/\' . strtolower($link) . $params;\\n$http_host = $_SERVER[\'HTTP_HOST\'];\\n$site_url = str_replace(array(\'www.\', \'http:\\/\\/\', \'https:\\/\\/\', \'\\/\'), \'\', $modx->getOption(\'site_url\'));\\n\\n\\/\\/ for https set true\\n$https = false;\\n\\n\\/\\/ robots.txt allways without redirect\\nif ($uri == \'\\/robots.txt\') return;\\n\\nif ($https) {\\n    $protocol = \'https:\\/\\/\';\\n} else {\\n    $protocol = \'http:\\/\\/\';\\n}\\n\\nif ($http_host != $site_url || ($https && !$_SERVER[\'HTTPS\']) || $_SERVER[\'REQUEST_URI\'] != $uri) {\\n    $modx->sendRedirect($protocol.$site_url.$uri, array(\'responseCode\' => \'HTTP\\/1.1 301 Moved Permanently\'));\\n}\\nif ($_SERVER[\'REQUEST_URI\'] == \'\\/index.php\') {\\n    $modx->sendRedirect($protocol.$site_url, array(\'responseCode\' => \'HTTP\\/1.1 301 Moved Permanently\'));\\n}"}',
+        'guid' => '9c5f2194318b09e68da1988041784e71',
+        'native_key' => NULL,
+        'signature' => '0b0b1c96973145967eea69b187131130',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'f0b7170e10a24cab23a310ed28c50a5f' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnHandleRequest","priority":0,"propertyset":0}',
+              'guid' => '5e4b887184dfd28639245222a67ecfdb',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnHandleRequest',
+              ),
+              'signature' => 'a83f9b98a1878db7808f095b21edbf8b',
+            ),
+          ),
+        ),
+      ),
+    ),
+    'Templates' => 
+    array (
+      '39c11c161167f0233052367a1070eaf9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"templatename":"siteExtra","description":"","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<!DOCTYPE html>\\n<html>\\n<head>\\n{include \'head\'}\\n<\\/head>\\n<body>\\n  <div class=\\"container\\">\\n    {include \'header\'}\\n    {include \'menu\'}\\n    <section class=\\"row\\">\\n      <article class=\\"col-sm-8\\">\\n        {include \'content\'}\\n      <\\/article>\\n      <aside class=\\"col-sm-4\\">\\n        {include \'aside\'}\\n      <\\/aside>\\n    <\\/section>\\n    {include \'footer\'}\\n  <\\/div>\\n  {include \'scripts\'}\\n<\\/body>\\n<\\/html>","locked":0,"properties":null,"static":0,"static_file":""}',
+        'guid' => '7cec436a1a24ce334667401bf873843a',
+        'native_key' => NULL,
+        'signature' => '3e2f5d9662220428d36a72ea59e0eec3',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'templatename',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+  ),
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"siteextra"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"siteextra"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.providers.resolver","type":"php","name":"resolve.providers"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.addons.resolver","type":"php","name":"resolve.addons"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.rename_htaccess.resolver","type":"php","name":"resolve.rename_htaccess"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.remove_changelog.resolver","type":"php","name":"resolve.remove_changelog"}',
+    ),
+    6 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.cache_options.resolver","type":"php","name":"resolve.cache_options"}',
+    ),
+    7 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.template.resolver","type":"php","name":"resolve.template"}',
+    ),
+    8 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.tvs.resolver","type":"php","name":"resolve.tvs"}',
+    ),
+    9 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.resources.resolver","type":"php","name":"resolve.resources"}',
+    ),
+    10 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.settings.resolver","type":"php","name":"resolve.settings"}',
+    ),
+    11 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.set_start_year.resolver","type":"php","name":"resolve.set_start_year"}',
+    ),
+    12 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.fix_translit.resolver","type":"php","name":"resolve.fix_translit"}',
+    ),
+    13 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.content_type.resolver","type":"php","name":"resolve.content_type"}',
+    ),
+    14 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"siteextra-1.4.7-rc\\/modCategory\\/f4cdaca7a5ebc2d5227a98aa2eb68a7d.resolve.manager_customisation.resolver","type":"php","name":"resolve.manager_customisation"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2d16513af5f675a0c1bd9c350c374759',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'f4cdaca7a5ebc2d5227a98aa2eb68a7d',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"siteExtra","rank":0}',
+);

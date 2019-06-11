@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'adminpanel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a1810b76f8460f9907d1b8aab6dfc1d6',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b9e96be5c8ff76a0b96aacc4d6969cdc',
+  'native_key' => 'ap_tpl_group',
+  'object' => '{"key":"ap_tpl_group","value":"tpl.AdminPanel.group","xtype":"textfield","namespace":"adminpanel","area":"ap_style","editedon":null}',
+);

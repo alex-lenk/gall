@@ -1,0 +1,34 @@
+Changelog for SeeToo.
+
+1.1.1-pl (05.01.2018)
+==============
+### Fixed
+- Fix plugin SeeToo for nested links
+- Lexicon keys for russian language
+
+1.1.0-pl (24.01.2017)
+==============
+### Added
+- Turn on/off option "useRandom" for print random resources.
+- "seetoo_exclude_where" system setting for base excluder.
+- Class "SeeTooExcluder" that use "seetoo_exclude_where" system setting for exclude resources.
+- logic for exclude resource that use in "error_page", "site_unavailable_page", "unauthorized_page" system settings.
+- logic for customize excluder class, like miniShop2 or mSearch2.
+
+1.0.4-pl (18.09.2016)
+==============
+- Fix error finding table.
+
+1.0.3-pl (18.09.2016)
+==============
+- Fix printing debug information into error.log
+- Added system setting for filtering resources by MIME type
+
+1.0.2-beta (02.07.2016)
+==============
+- Fixed check remote referrer
+- Added unsigned attribute to "view" field on table "see_too_resources"
+
+1.0.1-beta (02.07.2016)
+==============
+- Fixed error on table "see_too_resources"

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9751f1e8ed81cb11d04232be78bd8ffa',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9b665f76438bf1b4402ec6d157613ffe',
+  'native_key' => 'office_ms2_order_product_fields',
+  'object' => '{"key":"office_ms2_order_product_fields","value":"product_pagetitle,product_article,weight,price,count,cost","xtype":"textarea","namespace":"office","area":"office_ms2","editedon":null}',
+);

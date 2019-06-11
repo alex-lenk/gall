@@ -1,0 +1,38 @@
+Changelog for simpleUpdater.
+
+2.1.6-rc2
+==============
+- Add menu resolver for fix
+
+2.1.6-rc
+==============
+- Fix old menu item
+
+2.1.5-rc
+==============
+- Fixed modAction deprecated error
+
+2.1.4-rc
+==============
+- Fix button margin
+
+2.1.3-rc
+==============
+- Removed unnecessary prices processors
+
+2.1.2-rc
+==============
+- Restrict the button to the Administrator group
+
+2.1.1-beta
+==============
+- Restored menu item
+
+2.1.0-beta
+==============
+- Show button on top menu
+- Removed menu item
+
+1.0.0-beta
+==============
+- Initial release

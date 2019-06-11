@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f8f3378867c51b42761853f9ede82d92',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bad384b19c882ea0a645bd5fa491cbde',
+  'native_key' => 'office_profile_page_id',
+  'object' => '{"key":"office_profile_page_id","value":0,"xtype":"numberfield","namespace":"office","area":"office_profile","editedon":null}',
+);

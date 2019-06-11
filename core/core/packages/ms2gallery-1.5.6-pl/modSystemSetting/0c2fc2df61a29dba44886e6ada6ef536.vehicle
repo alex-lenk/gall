@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ms2gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '23f43557a58ee9fa28bbc92f30f68f2e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0c2fc2df61a29dba44886e6ada6ef536',
+  'native_key' => 'ms2gallery_exact_sorting',
+  'object' => '{"key":"ms2gallery_exact_sorting","value":true,"xtype":"combo-boolean","namespace":"ms2gallery","area":"ms2gallery_resource","editedon":null}',
+);

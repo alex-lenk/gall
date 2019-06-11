@@ -1,0 +1,128 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      'da9c656aacded0769a9527f71108acab' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ec_message_save","description":"ec_message_save","value":1}',
+        'guid' => '053aa0002b8e16c8b96d5d1aad486ce4',
+        'native_key' => NULL,
+        'signature' => '79d7860e8ae9a8dd550ac1af66faf7e4',
+      ),
+      '035f37e884f6489af46d61176b95fb78' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ec_message_delete","description":"ec_message_delete","value":1}',
+        'guid' => 'b04e30326d8bfe278d69a54d7ab692ab',
+        'native_key' => NULL,
+        'signature' => '50292279188d7f88efa1d859a900a384',
+      ),
+      '83ad6d4dbe639739016245bec88ac04b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ec_message_remove","description":"ec_message_remove","value":1}',
+        'guid' => '2713c1ac6d4bc9d453669193330299cc',
+        'native_key' => NULL,
+        'signature' => '2e993675095ae190256512152b58443b',
+      ),
+      '9469d684d2a472a8336d5387e7aeab91' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ec_message_publish","description":"ec_message_publish","value":1}',
+        'guid' => '4c612a96f046ab9c1ba641c679a45828',
+        'native_key' => NULL,
+        'signature' => '2af6c0b18d7f804be52174dcec801bc7',
+      ),
+      '2c2f2fc9762da4c9735940fbcdb7da3f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ec_thread_save","description":"ec_thread_save","value":1}',
+        'guid' => '5767235c7988b2bed95b6ae02ec7e8cb',
+        'native_key' => NULL,
+        'signature' => 'da20a2116af913f9611c10431e3d4134',
+      ),
+      'be93d57caa47ee66cecb20459a015bfe' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ec_thread_remove","description":"ec_thread_remove","value":1}',
+        'guid' => '7f6c7aa6ea80023a14b1f5bf2b7cc03e',
+        'native_key' => NULL,
+        'signature' => '7c6150c9240f20defbc951e39c33a1ed',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a56e6495a95cc222bdbf85866159e475',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => '9c777f5b0a13aa3a722c241230c4cf83',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":1,"name":"easyCommPolicyTemplate","description":"A policy template for create and update messages.","lexicon":"easycomm:permissions","permissions":{"ec_message_save":[],"ec_message_delete":[],"ec_message_remove":[],"ec_message_publish":[],"ec_thread_save":[],"ec_thread_remove":[]}}',
+);

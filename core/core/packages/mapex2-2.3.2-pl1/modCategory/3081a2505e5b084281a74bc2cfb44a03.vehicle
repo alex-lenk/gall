@@ -1,0 +1,325 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '641d0fe3be8e3c9033d5b3fe49975520' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Map.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"[[+mapId]]\\"[[+style]][[+class]]><\\/div>\\r\\n<script type=\\"text\\/javascript\\">\\r\\n    ymaps.ready(function(){\\r\\n        [[+mapId]] = new ymaps.Map(\\"[[+mapId]]\\", {\\r\\n            center: [[+map.center]],\\r\\n            zoom: [[+map.zoom]]\\r\\n        });\\r\\n        [[+mapId]].setType(\\"[[+map.type]]\\");\\r\\n        var [[+mapId]]Controls = \\"[[+controls]]\\".split(\',\');\\r\\n        for(var i = 0; i < [[+mapId]]Controls.length; i++){\\r\\n            [[+mapId]].controls.add([[+mapId]]Controls[i]);\\r\\n        }\\r\\n[[+placemarks]]\\r\\n[[+polylines]]\\r\\n[[+polygons]]\\r\\n[[+routes]]\\r\\n    });\\r\\n<\\/script>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.map.tpl","content":"<div id=\\"[[+mapId]]\\"[[+style]][[+class]]><\\/div>\\r\\n<script type=\\"text\\/javascript\\">\\r\\n    ymaps.ready(function(){\\r\\n        [[+mapId]] = new ymaps.Map(\\"[[+mapId]]\\", {\\r\\n            center: [[+map.center]],\\r\\n            zoom: [[+map.zoom]]\\r\\n        });\\r\\n        [[+mapId]].setType(\\"[[+map.type]]\\");\\r\\n        var [[+mapId]]Controls = \\"[[+controls]]\\".split(\',\');\\r\\n        for(var i = 0; i < [[+mapId]]Controls.length; i++){\\r\\n            [[+mapId]].controls.add([[+mapId]]Controls[i]);\\r\\n        }\\r\\n[[+placemarks]]\\r\\n[[+polylines]]\\r\\n[[+polygons]]\\r\\n[[+routes]]\\r\\n    });\\r\\n<\\/script>"}',
+        'guid' => '756cc4988c54a6eb86339d28de8145ca',
+        'native_key' => 0,
+        'signature' => 'ce8b142e930b38f7df4287cf7e2d69e6',
+      ),
+      '87583f50c2187af56db61b202ff54e2b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Placemark.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        [[+mapId]].geoObjects.add(new ymaps.Placemark([[+coords]], [[+properties]], [[+options]]));","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.placemark.tpl","content":"        [[+mapId]].geoObjects.add(new ymaps.Placemark([[+coords]], [[+properties]], [[+options]]));"}',
+        'guid' => 'ad6a33b2357f6f632768d546636fa79d',
+        'native_key' => 0,
+        'signature' => '22c6a6b6f0331cc0aee3aa7cd71058fc',
+      ),
+      'fd18b31b0d7d141a04d47b4d2e042f83' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Polygon.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        [[+mapId]].geoObjects.add(new ymaps.Polygon(\\r\\n            [[+coords]],\\r\\n            [[+properties]],\\r\\n            [[+options]]\\r\\n        ));","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.polygon.tpl","content":"        [[+mapId]].geoObjects.add(new ymaps.Polygon(\\r\\n            [[+coords]],\\r\\n            [[+properties]],\\r\\n            [[+options]]\\r\\n        ));"}',
+        'guid' => '4960d2f98c046042dc7e548e8a21250a',
+        'native_key' => 0,
+        'signature' => '6d73e181bf82e2605e9c6a548a5c1aa4',
+      ),
+      'e4eaf248af4e211ec44b4431482e0f37' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Polyline.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        [[+mapId]].geoObjects.add(new ymaps.Polyline([[+coords]], [[+properties]], [[+options]]));","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.polyline.tpl","content":"        [[+mapId]].geoObjects.add(new ymaps.Polyline([[+coords]], [[+properties]], [[+options]]));"}',
+        'guid' => '9eed7cc36fd6ad70fc87afacb2de9bc6',
+        'native_key' => 0,
+        'signature' => 'bc204a42f4b008c1e6bc7a3479063672',
+      ),
+      '30b189cad394d6f95636d01ddee86e33' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Route.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        ymaps.route([[+coords]],{mapStateAutoApply: false}).then(function (route) {\\r\\n                [[+mapId]].geoObjects.add(route);\\r\\n                var points = route.getWayPoints();\\r\\n                points.get(0).options.set(\'preset\', \'twirl#carIcon\');\\r\\n                points.get(1).options.set(\'preset\', \'twirl#houseIcon\');\\r\\n            },\\r\\n            function (error) {\\r\\n                alert(error.message);\\r\\n        });","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.route.tpl","content":"        ymaps.route([[+coords]],{mapStateAutoApply: false}).then(function (route) {\\r\\n                [[+mapId]].geoObjects.add(route);\\r\\n                var points = route.getWayPoints();\\r\\n                points.get(0).options.set(\'preset\', \'twirl#carIcon\');\\r\\n                points.get(1).options.set(\'preset\', \'twirl#houseIcon\');\\r\\n            },\\r\\n            function (error) {\\r\\n                alert(error.message);\\r\\n        });"}',
+        'guid' => '0bfc6bf8fe7f5413e0db9e5bfa7bd27f',
+        'native_key' => 0,
+        'signature' => '03c15df61e0e9e12c27dde5a4146e311',
+      ),
+      'bd3ef25eb63625788fd1ff5de4bf4fcb' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Map21.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"[[+mapId]]\\"[[+style]][[+class]]><\\/div>\\r\\n<script type=\\"text\\/javascript\\">\\r\\n    ymaps.ready(function(){\\r\\n        [[+mapId]] = new ymaps.Map(\\"[[+mapId]]\\", {\\r\\n            center: [[+map.center]],\\r\\n            zoom: [[+map.zoom]],\\r\\n            controls: [[+controls21]]\\r\\n        });\\r\\n        [[+mapId]].setType(\\"[[+map.type]]\\");\\r\\n[[+placemarks]]\\r\\n[[+polylines]]\\r\\n[[+polygons]]\\r\\n[[+routes]]\\r\\n    });\\r\\n<\\/script>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.map21.tpl","content":"<div id=\\"[[+mapId]]\\"[[+style]][[+class]]><\\/div>\\r\\n<script type=\\"text\\/javascript\\">\\r\\n    ymaps.ready(function(){\\r\\n        [[+mapId]] = new ymaps.Map(\\"[[+mapId]]\\", {\\r\\n            center: [[+map.center]],\\r\\n            zoom: [[+map.zoom]],\\r\\n            controls: [[+controls21]]\\r\\n        });\\r\\n        [[+mapId]].setType(\\"[[+map.type]]\\");\\r\\n[[+placemarks]]\\r\\n[[+polylines]]\\r\\n[[+polygons]]\\r\\n[[+routes]]\\r\\n    });\\r\\n<\\/script>"}',
+        'guid' => '591cc302204f03d5729fcce6cebc9ca7',
+        'native_key' => 0,
+        'signature' => 'bd0e272e6e46874120668e73a95d2d20',
+      ),
+      'dd2a03d1a73185d3bff0ca84bd1f6c2a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Placemark21.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        [[+mapId]].geoObjects.add(new ymaps.Placemark([[+coords]], [[+properties]], [[+options21]]));","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.placemark21.tpl","content":"        [[+mapId]].geoObjects.add(new ymaps.Placemark([[+coords]], [[+properties]], [[+options21]]));"}',
+        'guid' => '9c2efab3a7c8815325a4a00145576d89',
+        'native_key' => 0,
+        'signature' => 'b0e435b85121894ef8bceeab0bf1892f',
+      ),
+      'ee15fa5df2ee064ffd8df76215408535' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Polygon21.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        [[+mapId]].geoObjects.add(new ymaps.Polygon(\\r\\n            [[+coords]],\\r\\n            [[+properties]],\\r\\n            [[+options]]\\r\\n        ));","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.polygon21.tpl","content":"        [[+mapId]].geoObjects.add(new ymaps.Polygon(\\r\\n            [[+coords]],\\r\\n            [[+properties]],\\r\\n            [[+options]]\\r\\n        ));"}',
+        'guid' => '23089fd745ac519a1727b93e241512f9',
+        'native_key' => 0,
+        'signature' => 'bf6961392b43b3afc800ed60787e833e',
+      ),
+      '9beec26e08c73336dd68497a18ea8983' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Polyline21.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        [[+mapId]].geoObjects.add(new ymaps.Polyline([[+coords]], [[+properties]], [[+options]]));","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.polyline21.tpl","content":"        [[+mapId]].geoObjects.add(new ymaps.Polyline([[+coords]], [[+properties]], [[+options]]));"}',
+        'guid' => '7481c66544e196c58d0e133054ec0da6',
+        'native_key' => 0,
+        'signature' => '4b70ab4d626c95101b8f2038cb4462c3',
+      ),
+      '5dfe2f1ccd6dfbdf9901d7c8d5458404' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapex.Route21.Tpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"        ymaps.route([[+coords]],{mapStateAutoApply: false}).then(function (route) {\\r\\n                [[+mapId]].geoObjects.add(route);\\r\\n            },\\r\\n            function (error) {\\r\\n                alert(error.message);\\r\\n        });","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/chunks\\/chunk.route21.tpl","content":"        ymaps.route([[+coords]],{mapStateAutoApply: false}).then(function (route) {\\r\\n                [[+mapId]].geoObjects.add(route);\\r\\n            },\\r\\n            function (error) {\\r\\n                alert(error.message);\\r\\n        });"}',
+        'guid' => '64dd1a92e81d855c7dc9f08ece3b920f',
+        'native_key' => 0,
+        'signature' => '10172b822ef08f72ba51ee04adbcc861',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '2cedc35437b8a351ad35f9f6daebde03' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapexMap","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/* @var array $scriptProperties *\\/\\n\\/* @var mapex2 $mapex2 *\\/\\n$mapex2 = $modx->getService(\'mapex2\', \'mapex2\', MODX_CORE_PATH . \'components\\/mapex2\\/model\\/mapex2\\/\');\\n\\n$map = $modx->getOption(\'map\', $scriptProperties, \'\');\\n\\nif(empty($map)) {\\n    $tvName = $modx->getOption(\'tvName\', $scriptProperties, \'\');\\n    if(empty($tvName)) {\\n        return \'\';\\n    }\\n    $resource = intval($modx->getOption(\'resource\', $scriptProperties, 0));\\n    if($resource == $modx->resource->get(\'id\') || $resource == 0) {\\n        $resource = $modx->resource;\\n    }\\n    else {\\n        $resource = $modx->getObject(\'modResource\', $resource);\\n    }\\n    if(empty($resource)) {\\n        return \'\';\\n    }\\n    $map = $resource->getTVValue($tvName);\\n}\\nif(empty($map)) {\\n    return \'\';\\n}\\n\\n\\/* templates *\\/\\n$mapTpl = $modx->getOption(\'mapTpl\', $scriptProperties, \'mapex.Map.Tpl\');\\n$placemarkTpl = $modx->getOption(\'placemarkTpl\', $scriptProperties, \'mapex.Placemark.Tpl\');\\n$polygonTpl = $modx->getOption(\'polygonTpl\', $scriptProperties, \'mapex.Polygon.Tpl\');\\n$polylineTpl = $modx->getOption(\'polylineTpl\', $scriptProperties, \'mapex.Polyline.Tpl\');\\n$routeTpl = $modx->getOption(\'routeTpl\', $scriptProperties, \'mapex.Route.Tpl\');\\n\\n$map = json_decode($map);\\n\\n\\/\\/ Map controls, can be: mapTools, typeSelector, zoomControl (or smallZoomControl), scaleLine, miniMap, searchControl, trafficControl\\n$controls = $modx->getOption(\'controls\', $scriptProperties, \'mapTools\');\\n\\n$mapId = $modx->getOption(\'mapId\', $scriptProperties, \'mapexMap\');\\n$width = $modx->getOption(\'width\', $scriptProperties, \'500px\');\\n$height = $modx->getOption(\'height\', $scriptProperties, \'400px\');\\n\\n$includeJs = $modx->getOption(\'includeJs\', $scriptProperties, 1);\\nif(!empty($includeJs)) {\\n    $lang = $modx->getOption(\'lang\', $scriptProperties, \'ru-RU\');\\n    $modx->regClientStartupScript(\'https:\\/\\/api-maps.yandex.ru\\/2.0\\/?load=package.full&lang=\'.$lang);\\n}\\n\\n$mapCss = $modx->getOption(\'containerCssClass\', $scriptProperties, \'\');\\n\\nreturn $mapex2->drawMap($map, $controls, $mapId, $mapCss, $mapTpl, $placemarkTpl, $polygonTpl, $polylineTpl, $routeTpl, $width, $height);","locked":0,"properties":"a:14:{s:3:\\"map\\";a:7:{s:4:\\"name\\";s:3:\\"map\\";s:4:\\"desc\\";s:15:\\"mapex2_prop_map\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"tvName\\";a:7:{s:4:\\"name\\";s:6:\\"tvName\\";s:4:\\"desc\\";s:18:\\"mapex2_prop_tvName\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"resource\\";a:7:{s:4:\\"name\\";s:8:\\"resource\\";s:4:\\"desc\\";s:20:\\"mapex2_prop_resource\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"mapId\\";a:7:{s:4:\\"name\\";s:5:\\"mapId\\";s:4:\\"desc\\";s:17:\\"mapex2_prop_mapId\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:8:\\"mapexMap\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"width\\";a:7:{s:4:\\"name\\";s:5:\\"width\\";s:4:\\"desc\\";s:17:\\"mapex2_prop_width\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:5:\\"500px\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"height\\";a:7:{s:4:\\"name\\";s:6:\\"height\\";s:4:\\"desc\\";s:18:\\"mapex2_prop_height\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:5:\\"400px\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:17:\\"containerCssClass\\";a:7:{s:4:\\"name\\";s:17:\\"containerCssClass\\";s:4:\\"desc\\";s:29:\\"mapex2_prop_containerCssClass\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"mapTpl\\";a:7:{s:4:\\"name\\";s:6:\\"mapTpl\\";s:4:\\"desc\\";s:18:\\"mapex2_prop_mapTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:13:\\"mapex.Map.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"placemarkTpl\\";a:7:{s:4:\\"name\\";s:12:\\"placemarkTpl\\";s:4:\\"desc\\";s:24:\\"mapex2_prop_placemarkTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:19:\\"mapex.Placemark.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"polygonTpl\\";a:7:{s:4:\\"name\\";s:10:\\"polygonTpl\\";s:4:\\"desc\\";s:22:\\"mapex2_prop_polygonTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:17:\\"mapex.Polygon.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"polylineTpl\\";a:7:{s:4:\\"name\\";s:11:\\"polylineTpl\\";s:4:\\"desc\\";s:23:\\"mapex2_prop_polylineTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:18:\\"mapex.Polyline.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"routeTpl\\";a:7:{s:4:\\"name\\";s:8:\\"routeTpl\\";s:4:\\"desc\\";s:20:\\"mapex2_prop_routeTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:15:\\"mapex.Route.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"controls\\";a:7:{s:4:\\"name\\";s:8:\\"controls\\";s:4:\\"desc\\";s:20:\\"mapex2_prop_controls\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:80:\\"mapTools,typeSelector,zoomControl,searchControl,miniMap,trafficControl,scaleLine\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"includeJs\\";a:7:{s:4:\\"name\\";s:9:\\"includeJs\\";s:4:\\"desc\\";s:21:\\"mapex2_prop_includeJs\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:1:\\"1\\";s:5:\\"value\\";s:1:\\"1\\";}i:1;a:2:{s:4:\\"text\\";s:1:\\"0\\";s:5:\\"value\\";s:1:\\"0\\";}}s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/snippets\\/snippet.mapexMap.php","content":"\\/* @var array $scriptProperties *\\/\\n\\/* @var mapex2 $mapex2 *\\/\\n$mapex2 = $modx->getService(\'mapex2\', \'mapex2\', MODX_CORE_PATH . \'components\\/mapex2\\/model\\/mapex2\\/\');\\n\\n$map = $modx->getOption(\'map\', $scriptProperties, \'\');\\n\\nif(empty($map)) {\\n    $tvName = $modx->getOption(\'tvName\', $scriptProperties, \'\');\\n    if(empty($tvName)) {\\n        return \'\';\\n    }\\n    $resource = intval($modx->getOption(\'resource\', $scriptProperties, 0));\\n    if($resource == $modx->resource->get(\'id\') || $resource == 0) {\\n        $resource = $modx->resource;\\n    }\\n    else {\\n        $resource = $modx->getObject(\'modResource\', $resource);\\n    }\\n    if(empty($resource)) {\\n        return \'\';\\n    }\\n    $map = $resource->getTVValue($tvName);\\n}\\nif(empty($map)) {\\n    return \'\';\\n}\\n\\n\\/* templates *\\/\\n$mapTpl = $modx->getOption(\'mapTpl\', $scriptProperties, \'mapex.Map.Tpl\');\\n$placemarkTpl = $modx->getOption(\'placemarkTpl\', $scriptProperties, \'mapex.Placemark.Tpl\');\\n$polygonTpl = $modx->getOption(\'polygonTpl\', $scriptProperties, \'mapex.Polygon.Tpl\');\\n$polylineTpl = $modx->getOption(\'polylineTpl\', $scriptProperties, \'mapex.Polyline.Tpl\');\\n$routeTpl = $modx->getOption(\'routeTpl\', $scriptProperties, \'mapex.Route.Tpl\');\\n\\n$map = json_decode($map);\\n\\n\\/\\/ Map controls, can be: mapTools, typeSelector, zoomControl (or smallZoomControl), scaleLine, miniMap, searchControl, trafficControl\\n$controls = $modx->getOption(\'controls\', $scriptProperties, \'mapTools\');\\n\\n$mapId = $modx->getOption(\'mapId\', $scriptProperties, \'mapexMap\');\\n$width = $modx->getOption(\'width\', $scriptProperties, \'500px\');\\n$height = $modx->getOption(\'height\', $scriptProperties, \'400px\');\\n\\n$includeJs = $modx->getOption(\'includeJs\', $scriptProperties, 1);\\nif(!empty($includeJs)) {\\n    $lang = $modx->getOption(\'lang\', $scriptProperties, \'ru-RU\');\\n    $modx->regClientStartupScript(\'https:\\/\\/api-maps.yandex.ru\\/2.0\\/?load=package.full&lang=\'.$lang);\\n}\\n\\n$mapCss = $modx->getOption(\'containerCssClass\', $scriptProperties, \'\');\\n\\nreturn $mapex2->drawMap($map, $controls, $mapId, $mapCss, $mapTpl, $placemarkTpl, $polygonTpl, $polylineTpl, $routeTpl, $width, $height);"}',
+        'guid' => 'cf9bad6d49915f6f2d3737aaf27ef804',
+        'native_key' => 0,
+        'signature' => '54cfc35ae90e9c810e9aafb1fcb2a9f0',
+      ),
+      'ff139f3ff6be4eb08b6f73d8865f9682' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"mapexMap21","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/* @var array $scriptProperties *\\/\\r\\n\\/* @var mapex2 $mapex2 *\\/\\r\\n$mapex2 = $modx->getService(\'mapex2\', \'mapex2\', MODX_CORE_PATH . \'components\\/mapex2\\/model\\/mapex2\\/\');\\r\\n\\r\\n$map = $modx->getOption(\'map\', $scriptProperties, \'\');\\r\\n\\r\\nif(empty($map)) {\\r\\n    $tvName = $modx->getOption(\'tvName\', $scriptProperties, \'\');\\r\\n    if(empty($tvName)) {\\r\\n        return \'\';\\r\\n    }\\r\\n    $resource = intval($modx->getOption(\'resource\', $scriptProperties, 0));\\r\\n    if($resource == $modx->resource->get(\'id\') || $resource == 0) {\\r\\n        $resource = $modx->resource;\\r\\n    }\\r\\n    else {\\r\\n        $resource = $modx->getObject(\'modResource\', $resource);\\r\\n    }\\r\\n    if(empty($resource)) {\\r\\n        return \'\';\\r\\n    }\\r\\n    $map = $resource->getTVValue($tvName);\\r\\n}\\r\\nif(empty($map)) {\\r\\n    return \'\';\\r\\n}\\r\\n\\r\\n\\/* templates *\\/\\r\\n$mapTpl = $modx->getOption(\'mapTpl\', $scriptProperties, \'mapex.Map.Tpl\');\\r\\n$placemarkTpl = $modx->getOption(\'placemarkTpl\', $scriptProperties, \'mapex.Placemark.Tpl\');\\r\\n$polygonTpl = $modx->getOption(\'polygonTpl\', $scriptProperties, \'mapex.Polygon.Tpl\');\\r\\n$polylineTpl = $modx->getOption(\'polylineTpl\', $scriptProperties, \'mapex.Polyline.Tpl\');\\r\\n$routeTpl = $modx->getOption(\'routeTpl\', $scriptProperties, \'mapex.Route.Tpl\');\\r\\n\\r\\n$map = json_decode($map);\\r\\n\\r\\n\\/\\/ Map controls, can be: smallMapDefaultSet, mediumMapDefaultSet (default), largeMapDefaultSet\\r\\n\\/\\/ or individual: geolocationControl, searchControl, routeEditor, trafficControl, typeSelector, fullscreenControl, zoomControl, rulerControl\\r\\n$controls = $modx->getOption(\'controls\', $scriptProperties, \'\');\\r\\n\\r\\n$mapId = $modx->getOption(\'mapId\', $scriptProperties, \'mapexMap\');\\r\\n$width = $modx->getOption(\'width\', $scriptProperties, \'500px\');\\r\\n$height = $modx->getOption(\'height\', $scriptProperties, \'400px\');\\r\\n\\r\\n$includeJs = $modx->getOption(\'includeJs\', $scriptProperties, 1);\\r\\nif(!empty($includeJs)) {\\r\\n    $lang = $modx->getOption(\'lang\', $scriptProperties, \'ru-RU\');\\r\\n    $modx->regClientStartupScript(\'https:\\/\\/api-maps.yandex.ru\\/2.1\\/?lang=\'.$lang);\\r\\n}\\r\\n\\r\\n$mapCss = $modx->getOption(\'containerCssClass\', $scriptProperties, \'\');\\r\\n\\r\\nreturn $mapex2->drawMap($map, $controls, $mapId, $mapCss, $mapTpl, $placemarkTpl, $polygonTpl, $polylineTpl, $routeTpl, $width, $height);","locked":0,"properties":"a:14:{s:3:\\"map\\";a:7:{s:4:\\"name\\";s:3:\\"map\\";s:4:\\"desc\\";s:15:\\"mapex2_prop_map\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"tvName\\";a:7:{s:4:\\"name\\";s:6:\\"tvName\\";s:4:\\"desc\\";s:18:\\"mapex2_prop_tvName\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"resource\\";a:7:{s:4:\\"name\\";s:8:\\"resource\\";s:4:\\"desc\\";s:20:\\"mapex2_prop_resource\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"mapId\\";a:7:{s:4:\\"name\\";s:5:\\"mapId\\";s:4:\\"desc\\";s:17:\\"mapex2_prop_mapId\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:8:\\"mapexMap\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"width\\";a:7:{s:4:\\"name\\";s:5:\\"width\\";s:4:\\"desc\\";s:17:\\"mapex2_prop_width\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:5:\\"500px\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"height\\";a:7:{s:4:\\"name\\";s:6:\\"height\\";s:4:\\"desc\\";s:18:\\"mapex2_prop_height\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:5:\\"400px\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:17:\\"containerCssClass\\";a:7:{s:4:\\"name\\";s:17:\\"containerCssClass\\";s:4:\\"desc\\";s:29:\\"mapex2_prop_containerCssClass\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"mapTpl\\";a:7:{s:4:\\"name\\";s:6:\\"mapTpl\\";s:4:\\"desc\\";s:18:\\"mapex2_prop_mapTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:15:\\"mapex.Map21.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"placemarkTpl\\";a:7:{s:4:\\"name\\";s:12:\\"placemarkTpl\\";s:4:\\"desc\\";s:24:\\"mapex2_prop_placemarkTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:21:\\"mapex.Placemark21.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"polygonTpl\\";a:7:{s:4:\\"name\\";s:10:\\"polygonTpl\\";s:4:\\"desc\\";s:22:\\"mapex2_prop_polygonTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:19:\\"mapex.Polygon21.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"polylineTpl\\";a:7:{s:4:\\"name\\";s:11:\\"polylineTpl\\";s:4:\\"desc\\";s:23:\\"mapex2_prop_polylineTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:20:\\"mapex.Polyline21.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"routeTpl\\";a:7:{s:4:\\"name\\";s:8:\\"routeTpl\\";s:4:\\"desc\\";s:20:\\"mapex2_prop_routeTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:17:\\"mapex.Route21.Tpl\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"controls\\";a:7:{s:4:\\"name\\";s:8:\\"controls\\";s:4:\\"desc\\";s:20:\\"mapex2_prop_controls\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:7:\\"default\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"includeJs\\";a:7:{s:4:\\"name\\";s:9:\\"includeJs\\";s:4:\\"desc\\";s:21:\\"mapex2_prop_includeJs\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:1:\\"1\\";s:5:\\"value\\";s:1:\\"1\\";}i:1;a:2:{s:4:\\"text\\";s:1:\\"0\\";s:5:\\"value\\";s:1:\\"0\\";}}s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:17:\\"mapex2:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/snippets\\/snippet.mapexMap21.php","content":"\\/* @var array $scriptProperties *\\/\\r\\n\\/* @var mapex2 $mapex2 *\\/\\r\\n$mapex2 = $modx->getService(\'mapex2\', \'mapex2\', MODX_CORE_PATH . \'components\\/mapex2\\/model\\/mapex2\\/\');\\r\\n\\r\\n$map = $modx->getOption(\'map\', $scriptProperties, \'\');\\r\\n\\r\\nif(empty($map)) {\\r\\n    $tvName = $modx->getOption(\'tvName\', $scriptProperties, \'\');\\r\\n    if(empty($tvName)) {\\r\\n        return \'\';\\r\\n    }\\r\\n    $resource = intval($modx->getOption(\'resource\', $scriptProperties, 0));\\r\\n    if($resource == $modx->resource->get(\'id\') || $resource == 0) {\\r\\n        $resource = $modx->resource;\\r\\n    }\\r\\n    else {\\r\\n        $resource = $modx->getObject(\'modResource\', $resource);\\r\\n    }\\r\\n    if(empty($resource)) {\\r\\n        return \'\';\\r\\n    }\\r\\n    $map = $resource->getTVValue($tvName);\\r\\n}\\r\\nif(empty($map)) {\\r\\n    return \'\';\\r\\n}\\r\\n\\r\\n\\/* templates *\\/\\r\\n$mapTpl = $modx->getOption(\'mapTpl\', $scriptProperties, \'mapex.Map.Tpl\');\\r\\n$placemarkTpl = $modx->getOption(\'placemarkTpl\', $scriptProperties, \'mapex.Placemark.Tpl\');\\r\\n$polygonTpl = $modx->getOption(\'polygonTpl\', $scriptProperties, \'mapex.Polygon.Tpl\');\\r\\n$polylineTpl = $modx->getOption(\'polylineTpl\', $scriptProperties, \'mapex.Polyline.Tpl\');\\r\\n$routeTpl = $modx->getOption(\'routeTpl\', $scriptProperties, \'mapex.Route.Tpl\');\\r\\n\\r\\n$map = json_decode($map);\\r\\n\\r\\n\\/\\/ Map controls, can be: smallMapDefaultSet, mediumMapDefaultSet (default), largeMapDefaultSet\\r\\n\\/\\/ or individual: geolocationControl, searchControl, routeEditor, trafficControl, typeSelector, fullscreenControl, zoomControl, rulerControl\\r\\n$controls = $modx->getOption(\'controls\', $scriptProperties, \'\');\\r\\n\\r\\n$mapId = $modx->getOption(\'mapId\', $scriptProperties, \'mapexMap\');\\r\\n$width = $modx->getOption(\'width\', $scriptProperties, \'500px\');\\r\\n$height = $modx->getOption(\'height\', $scriptProperties, \'400px\');\\r\\n\\r\\n$includeJs = $modx->getOption(\'includeJs\', $scriptProperties, 1);\\r\\nif(!empty($includeJs)) {\\r\\n    $lang = $modx->getOption(\'lang\', $scriptProperties, \'ru-RU\');\\r\\n    $modx->regClientStartupScript(\'https:\\/\\/api-maps.yandex.ru\\/2.1\\/?lang=\'.$lang);\\r\\n}\\r\\n\\r\\n$mapCss = $modx->getOption(\'containerCssClass\', $scriptProperties, \'\');\\r\\n\\r\\nreturn $mapex2->drawMap($map, $controls, $mapId, $mapCss, $mapTpl, $placemarkTpl, $polygonTpl, $polylineTpl, $routeTpl, $width, $height);"}',
+        'guid' => '46c2cf415c6e53457fe65275be2a2f89',
+        'native_key' => 0,
+        'signature' => '140f187020e5311b9db060c4f6c96770',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '3debffac9ad0f2288434040ef4f6e94c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"Mapex2","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"$corePath = $modx->getOption(\'core_path\', null, MODX_CORE_PATH).\'components\\/mapex2\\/\';\\r\\n$assetsUrl = $modx->getOption(\'assets_url\', null, MODX_CORE_PATH).\'components\\/mapex2\\/\';\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnTVInputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/input\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/output\\/\');\\r\\n        break;\\r\\n    case \'OnTVInputPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/inputoptions\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/properties\\/\');\\r\\n        break;\\r\\n    case \'OnDocFormRender\':\\r\\n        $modx->regClientCSS($assetsUrl.\'css\\/mgr\\/mapex.default.css\');\\r\\n\\r\\n        $jqueryUrl = $modx->getOption(\'mapex2_manager_jquery_url\', null, \'\');\\r\\n\\r\\n        if(!empty($jqueryUrl)) {\\r\\n            $modx->regClientStartupScript(\'\\r\\n        <script type=\\"text\\/javascript\\">\\r\\n            if(typeof jQuery == \\"undefined\\"){\\r\\n                document.write(\\\\\'<script type=\\"text\\/javascript\\" src=\\"\'.$jqueryUrl.\'\\" ><\\/\\\\\'+\\\\\'script>\\\\\');\\r\\n            };\\r\\n        <\\/script>\\r\\n        \', true);\\r\\n        }\\r\\n\\r\\n        $mapCenter = $modx->getOption(\'mapex2_manager_map_default_center\', null, \'55.751565, 37.617935\');\\r\\n        $mapZoom = $modx->getOption(\'mapex2_manager_map_default_zoom\', null, \'10\');\\r\\n        $mapType = $modx->getOption(\'mapex2_manager_map_default_type\', null, \'yandex#map\');\\r\\n        $showInput = intval($modx->getOption(\'mapex2_manager_show_input\', null, true));\\r\\n        $addPlacemarkOnSearch = intval($modx->getOption(\'mapex2_manager_add_placemark_on_search\', null, false));\\r\\n\\r\\n        $configScript = \'\\r\\n        <script type=\\"text\\/javascript\\">\\r\\n            mapex2Config = {\\r\\n                mapCenter: [\'.$mapCenter.\'],\\r\\n                mapZoom: \'.$mapZoom.\',\\r\\n                mapType: \\"\'.$mapType.\'\\",\\r\\n                showInput: \'.$showInput.\',\\r\\n                addPlacemarkOnSearch: \'.$addPlacemarkOnSearch.\'\\r\\n            }\\r\\n        <\\/script>\\r\\n        \';\\r\\n        $modx->regClientStartupScript($configScript, true);\\r\\n\\r\\n        $modx->regClientStartupScript(\'https:\\/\\/api-maps.yandex.ru\\/2.0\\/?load=package.full&lang=ru-RU\');\\r\\n\\r\\n        \\/\\/$modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.ym.js\');\\r\\n\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.init.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.storage.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.layouts.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.placemark.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.line.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.polygon.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.route.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.map.js\');\\r\\n\\r\\n        break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/mapex2\\/elements\\/plugins\\/plugin.mapex2.php","content":"$corePath = $modx->getOption(\'core_path\', null, MODX_CORE_PATH).\'components\\/mapex2\\/\';\\r\\n$assetsUrl = $modx->getOption(\'assets_url\', null, MODX_CORE_PATH).\'components\\/mapex2\\/\';\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnTVInputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/input\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/output\\/\');\\r\\n        break;\\r\\n    case \'OnTVInputPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/inputoptions\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/properties\\/\');\\r\\n        break;\\r\\n    case \'OnDocFormRender\':\\r\\n        $modx->regClientCSS($assetsUrl.\'css\\/mgr\\/mapex.default.css\');\\r\\n\\r\\n        $jqueryUrl = $modx->getOption(\'mapex2_manager_jquery_url\', null, \'\');\\r\\n\\r\\n        if(!empty($jqueryUrl)) {\\r\\n            $modx->regClientStartupScript(\'\\r\\n        <script type=\\"text\\/javascript\\">\\r\\n            if(typeof jQuery == \\"undefined\\"){\\r\\n                document.write(\\\\\'<script type=\\"text\\/javascript\\" src=\\"\'.$jqueryUrl.\'\\" ><\\/\\\\\'+\\\\\'script>\\\\\');\\r\\n            };\\r\\n        <\\/script>\\r\\n        \', true);\\r\\n        }\\r\\n\\r\\n        $mapCenter = $modx->getOption(\'mapex2_manager_map_default_center\', null, \'55.751565, 37.617935\');\\r\\n        $mapZoom = $modx->getOption(\'mapex2_manager_map_default_zoom\', null, \'10\');\\r\\n        $mapType = $modx->getOption(\'mapex2_manager_map_default_type\', null, \'yandex#map\');\\r\\n        $showInput = intval($modx->getOption(\'mapex2_manager_show_input\', null, true));\\r\\n        $addPlacemarkOnSearch = intval($modx->getOption(\'mapex2_manager_add_placemark_on_search\', null, false));\\r\\n\\r\\n        $configScript = \'\\r\\n        <script type=\\"text\\/javascript\\">\\r\\n            mapex2Config = {\\r\\n                mapCenter: [\'.$mapCenter.\'],\\r\\n                mapZoom: \'.$mapZoom.\',\\r\\n                mapType: \\"\'.$mapType.\'\\",\\r\\n                showInput: \'.$showInput.\',\\r\\n                addPlacemarkOnSearch: \'.$addPlacemarkOnSearch.\'\\r\\n            }\\r\\n        <\\/script>\\r\\n        \';\\r\\n        $modx->regClientStartupScript($configScript, true);\\r\\n\\r\\n        $modx->regClientStartupScript(\'https:\\/\\/api-maps.yandex.ru\\/2.0\\/?load=package.full&lang=ru-RU\');\\r\\n\\r\\n        \\/\\/$modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.ym.js\');\\r\\n\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.init.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.storage.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.layouts.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.placemark.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.line.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.polygon.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.route.js\');\\r\\n        $modx->regClientStartupScript($assetsUrl.\'js\\/mgr\\/mapex.map.js\');\\r\\n\\r\\n        break;\\r\\n}"}',
+        'guid' => '7c69b94a9424f1af04b59b6219000d2c',
+        'native_key' => NULL,
+        'signature' => 'c2862174cc6f81a97ce69edc868a9ebd',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '7b315d98ff85e3de6a9c6b373e29f9bd' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormRender","priority":0,"propertyset":0}',
+              'guid' => '1ff0015fc77de3345eb31b2a68e07fa2',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormRender',
+              ),
+              'signature' => '96ce881c527e3041466b11eaf3aa4011',
+            ),
+            '748534293d43b1f83ad4663b22967178' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+              'guid' => '0e67e53289f768eb2a9b38186f8920bc',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputPropertiesList',
+              ),
+              'signature' => 'a00f2431ca0510b79615b8ee86917b6b',
+            ),
+            '55084f0680fc1829e8a1ce2ff92272d2' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+              'guid' => 'dab48747d51c81d05ddabcd5e8818ff2',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputRenderList',
+              ),
+              'signature' => '391690c38cc19f20c3d755e226f7faf0',
+            ),
+            'e38ac08a09a92c565239c274e4723145' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderList","priority":0,"propertyset":0}',
+              'guid' => '349a3bc89a0788fcc98a6d4e954ff797',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderList',
+              ),
+              'signature' => '40d60807ef96a6e0c8ac086df577674f',
+            ),
+            'f81437680d61f90cdf9712b348a3b58b' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderPropertiesList","priority":0,"propertyset":0}',
+              'guid' => 'd27f213436d1d56321fb5ec1b3660125',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderPropertiesList',
+              ),
+              'signature' => '392d8efdbfcf94e66560c23b27d5623e',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'mapex2',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mapex2-2.3.2-pl1\\/modCategory\\/3081a2505e5b084281a74bc2cfb44a03\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"mapex2"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mapex2-2.3.2-pl1\\/modCategory\\/3081a2505e5b084281a74bc2cfb44a03\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"mapex2"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mapex2-2.3.2-pl1\\/modCategory\\/3081a2505e5b084281a74bc2cfb44a03.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mapex2-2.3.2-pl1\\/modCategory\\/3081a2505e5b084281a74bc2cfb44a03.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3cce56227c28857b08c3102c372a7340',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '3081a2505e5b084281a74bc2cfb44a03',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"mapex2"}',
+);

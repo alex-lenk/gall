@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'adminpanel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b9210cc195df6c70bbf51de060c02473',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2f627db8bf7f57a7531caa5108576dca',
+  'native_key' => 'ap_hide_templates',
+  'object' => '{"key":"ap_hide_templates","value":"0","xtype":"textfield","namespace":"adminpanel","area":"ap_main","editedon":null}',
+);

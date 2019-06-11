@@ -1,0 +1,26 @@
+#msGallery,
+.ms2Gallery {
+	text-align: center;
+}
+
+#msGallery #mainImage,
+.ms2Gallery . mainImage {
+	margin-bottom: 10px;
+	padding: 2px;
+	border: 1px solid #ddd;
+}
+
+#msGallery .span2,
+.ms2Gallery .span2 {
+	margin-left: 10px;
+	width: 120px;
+	padding: 2px;
+}
+
+.msGalleryLog,
+.ms2GalleryLog {
+	width: 100%;
+	overflow: auto;
+	word-wrap: normal;
+	white-space: pre;
+}

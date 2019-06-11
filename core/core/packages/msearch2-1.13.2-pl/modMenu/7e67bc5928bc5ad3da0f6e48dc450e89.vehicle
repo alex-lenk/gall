@@ -1,0 +1,30 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'msearch2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '37aa11f54e4f0bdb36ba4a33450a217f',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '7e67bc5928bc5ad3da0f6e48dc450e89',
+  'native_key' => 'msearch2',
+  'object' => '{"text":"msearch2","parent":"components","action":"home","description":"mse2_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"msearch2"}',
+);

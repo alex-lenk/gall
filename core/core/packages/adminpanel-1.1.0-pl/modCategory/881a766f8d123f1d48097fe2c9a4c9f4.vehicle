@@ -1,0 +1,141 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '7329050b34577e7904ff570f150d2f0b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.AdminPanel.outer","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<nav class=\\"adminpanel ap-navbar ap-navbar-fixed-bottom [[+class_theme]] [[+class_status]]\\" role=\\"navigation\\"\\n     style=\\"opacity:[[+inactive_opacity]];\\">\\n    <ul class=\\"ap-nav ap-navbar-nav\\">\\n        <li class=\\"ap-link-first\\"><a href=\\"[[+resource_update]]&id=[[*id]]\\" class=\\"ap-navbar-link\\">[[%ap_edit_this]]<\\/a>\\n        <\\/li>\\n        [[+groups]]\\n    <\\/ul>\\n\\n    <ul class=\\"ap-nav ap-navbar-nav ap-pull-right\\">\\n        <li>\\n            <a href=\\"https:\\/\\/modstore.pro\\/adminpanel\\" class=\\"ap-navbar-brand ap-pull-right\\" target=\\"_blank\\">[[%adminpanel]]<\\/a>\\n        <\\/li>\\n        <li>\\n            <a href=\\"#\\" class=\\"ap-scroll-up\\" style=\\"display:none;\\">\\n                &uarr;\\n            <\\/a>\\n        <\\/li>\\n    <\\/ul>\\n\\n    [[+msearch2_index:notempty=`\\n    <form class=\\"ap-navbar-form ap-pull-right ap-msearch2\\" role=\\"search\\" method=\\"get\\" action=\\"[[+msearch2_index]]\\"\\n          target=\\"_blank\\">\\n        <input type=\\"hidden\\" name=\\"a\\" value=\\"[[+msearch2_index_id]]\\">\\n        <input type=\\"text\\" name=\\"query\\" class=\\"ap-msearch-query\\" placeholder=\\"[[%ap_mse2_search]]\\" autocomplete=\\"off\\">\\n    <\\/form>\\n    `]]\\n<\\/nav>\\n<div class=\\"ap-close [[+class_theme]]\\"><b class=\\"ap-caret [[+class_status]]\\"><\\/b><\\/div>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/adminpanel\\/elements\\/chunks\\/chunk.outer.tpl","content":"<nav class=\\"adminpanel ap-navbar ap-navbar-fixed-bottom [[+class_theme]] [[+class_status]]\\" role=\\"navigation\\"\\n     style=\\"opacity:[[+inactive_opacity]];\\">\\n    <ul class=\\"ap-nav ap-navbar-nav\\">\\n        <li class=\\"ap-link-first\\"><a href=\\"[[+resource_update]]&id=[[*id]]\\" class=\\"ap-navbar-link\\">[[%ap_edit_this]]<\\/a>\\n        <\\/li>\\n        [[+groups]]\\n    <\\/ul>\\n\\n    <ul class=\\"ap-nav ap-navbar-nav ap-pull-right\\">\\n        <li>\\n            <a href=\\"https:\\/\\/modstore.pro\\/adminpanel\\" class=\\"ap-navbar-brand ap-pull-right\\" target=\\"_blank\\">[[%adminpanel]]<\\/a>\\n        <\\/li>\\n        <li>\\n            <a href=\\"#\\" class=\\"ap-scroll-up\\" style=\\"display:none;\\">\\n                &uarr;\\n            <\\/a>\\n        <\\/li>\\n    <\\/ul>\\n\\n    [[+msearch2_index:notempty=`\\n    <form class=\\"ap-navbar-form ap-pull-right ap-msearch2\\" role=\\"search\\" method=\\"get\\" action=\\"[[+msearch2_index]]\\"\\n          target=\\"_blank\\">\\n        <input type=\\"hidden\\" name=\\"a\\" value=\\"[[+msearch2_index_id]]\\">\\n        <input type=\\"text\\" name=\\"query\\" class=\\"ap-msearch-query\\" placeholder=\\"[[%ap_mse2_search]]\\" autocomplete=\\"off\\">\\n    <\\/form>\\n    `]]\\n<\\/nav>\\n<div class=\\"ap-close [[+class_theme]]\\"><b class=\\"ap-caret [[+class_status]]\\"><\\/b><\\/div>"}',
+        'guid' => 'b8c4cf825b373a0bfda2e5df7cd29215',
+        'native_key' => 0,
+        'signature' => '67ae4a11776e010d4529453eced4773c',
+      ),
+      'b0da3371e80d2259962974ed32b18e18' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.AdminPanel.group","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li class=\\"ap-dropdown\\">\\n    <a href=\\"#\\" class=\\"ap-dropdown-toggle\\" data-toggle=\\"ap_dropdown\\">[[%ap_[[+title]]]] <b class=\\"ap-caret\\"><\\/b><\\/a>\\n    <ul class=\\"dropdown-menu ap-dropdown-menu [[+title]]\\">\\n        [[+links]]\\n    <\\/ul>\\n<\\/li>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/adminpanel\\/elements\\/chunks\\/chunk.group.tpl","content":"<li class=\\"ap-dropdown\\">\\n    <a href=\\"#\\" class=\\"ap-dropdown-toggle\\" data-toggle=\\"ap_dropdown\\">[[%ap_[[+title]]]] <b class=\\"ap-caret\\"><\\/b><\\/a>\\n    <ul class=\\"dropdown-menu ap-dropdown-menu [[+title]]\\">\\n        [[+links]]\\n    <\\/ul>\\n<\\/li>"}',
+        'guid' => '7d6c819caa5e86851bd63a52ba5ac47a',
+        'native_key' => 0,
+        'signature' => '2e7bcd3aa004301abba74596aea492e0',
+      ),
+      'd7b7b4ebd6986fb2bf6979b49e70e98b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.AdminPanel.link","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li class=\\"[[+class]]\\">\\n    <a href=\\"[[+link]]\\" target=\\"[[+target]]\\">[[%ap_[[+title]]]]<\\/a>\\n<\\/li>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/adminpanel\\/elements\\/chunks\\/chunk.link.tpl","content":"<li class=\\"[[+class]]\\">\\n    <a href=\\"[[+link]]\\" target=\\"[[+target]]\\">[[%ap_[[+title]]]]<\\/a>\\n<\\/li>"}',
+        'guid' => 'd3da2c60e25b7e74ff9bfa01f69ffc4e',
+        'native_key' => 0,
+        'signature' => 'e8a54f8088392c47e7e0ef68dae3ead8',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '5992c1a6b703a02019fc1cb4f9b369e9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"AdminPanel","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/** @var array $scriptProperties *\\/\\nswitch ($modx->event->name) {\\n\\n    case \'OnWebPagePrerender\':\\n        $users = trim($modx->getOption(\'ap_show_users\'));\\n        $users_arr = array_map(\'trim\', explode(\',\', $users));\\n        $templates = trim($modx->getOption(\'ap_hide_templates\', null, \'0\'));\\n        $templates_arr = array_map(\'trim\', explode(\',\', $templates));\\n        $register = ($users == \'\' && $modx->user->hasSessionContext(\'mgr\')) ||\\n            ($modx->user->id > 0 && in_array($modx->user->id, $users_arr));\\n\\n        if ($register) {\\n            if ($templates == \'\' || !in_array($modx->resource->template, $templates_arr)) {\\n                $path = $modx->getOption(\'ap_core_path\', null, MODX_CORE_PATH . \'components\\/adminpanel\\/\');\\n                $AdminPanel = $modx->getService(\'adminpanel\', \'AdminPanel\', $path . \'model\\/adminpanel\\/\',\\n                    $scriptProperties);\\n\\n                if ($AdminPanel instanceof AdminPanel) {\\n                    $html = $AdminPanel->run();\\n\\n                    if (strpos($modx->resource->_output, \'<\\/body>\') !== false) {\\n                        $modx->resource->_output =\\n                            preg_replace(\\"#(<\\/body>)#i\\", $html . \\"\\\\n\\\\\\\\1\\", $modx->resource->_output, true);\\n                    } else {\\n                        $modx->resource->_output .= $html;\\n                    }\\n                }\\n            }\\n        }\\n        break;\\n\\n    \\/*\\n    case \'OnSiteSettingsRender\':\\n        $modx->controller->addLexiconTopic(\'adminpanel:setting\');\\n        $modx->controller->addHtml(\\"<script>\\n            Ext.onReady(function() {\\n                MODx.combo.apTheme = function(config) {\\n                    config = config || {};\\n                    Ext.applyIf(config,{\\n                        store: new Ext.data.SimpleStore({\\n                            fields: [\'d\',\'v\']\\n                            ,data: [[_(\'ap_theme_dark\'),\'dark\'],[_(\'ap_theme_light\'),\'light\']]\\n                        })\\n                        ,displayField: \'d\'\\n                        ,valueField: \'v\'\\n                        ,name: \'value\'\\n                        ,hiddenName: \'value\'\\n                        ,mode: \'local\'\\n                    });\\n                MODx.combo.apTheme.superclass.constructor.call(this,config);\\n            };\\n            Ext.extend(MODx.combo.apTheme,MODx.combo.ComboBox);\\n            Ext.reg(\'combo-ap-theme\',MODx.combo.apTheme);\\n        });\\n        <\\/script>\\");\\n        break;\\n    *\\/\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/adminpanel\\/elements\\/plugins\\/plugin.adminpanel.php","content":"\\/** @var array $scriptProperties *\\/\\nswitch ($modx->event->name) {\\n\\n    case \'OnWebPagePrerender\':\\n        $users = trim($modx->getOption(\'ap_show_users\'));\\n        $users_arr = array_map(\'trim\', explode(\',\', $users));\\n        $templates = trim($modx->getOption(\'ap_hide_templates\', null, \'0\'));\\n        $templates_arr = array_map(\'trim\', explode(\',\', $templates));\\n        $register = ($users == \'\' && $modx->user->hasSessionContext(\'mgr\')) ||\\n            ($modx->user->id > 0 && in_array($modx->user->id, $users_arr));\\n\\n        if ($register) {\\n            if ($templates == \'\' || !in_array($modx->resource->template, $templates_arr)) {\\n                $path = $modx->getOption(\'ap_core_path\', null, MODX_CORE_PATH . \'components\\/adminpanel\\/\');\\n                $AdminPanel = $modx->getService(\'adminpanel\', \'AdminPanel\', $path . \'model\\/adminpanel\\/\',\\n                    $scriptProperties);\\n\\n                if ($AdminPanel instanceof AdminPanel) {\\n                    $html = $AdminPanel->run();\\n\\n                    if (strpos($modx->resource->_output, \'<\\/body>\') !== false) {\\n                        $modx->resource->_output =\\n                            preg_replace(\\"#(<\\/body>)#i\\", $html . \\"\\\\n\\\\\\\\1\\", $modx->resource->_output, true);\\n                    } else {\\n                        $modx->resource->_output .= $html;\\n                    }\\n                }\\n            }\\n        }\\n        break;\\n\\n    \\/*\\n    case \'OnSiteSettingsRender\':\\n        $modx->controller->addLexiconTopic(\'adminpanel:setting\');\\n        $modx->controller->addHtml(\\"<script>\\n            Ext.onReady(function() {\\n                MODx.combo.apTheme = function(config) {\\n                    config = config || {};\\n                    Ext.applyIf(config,{\\n                        store: new Ext.data.SimpleStore({\\n                            fields: [\'d\',\'v\']\\n                            ,data: [[_(\'ap_theme_dark\'),\'dark\'],[_(\'ap_theme_light\'),\'light\']]\\n                        })\\n                        ,displayField: \'d\'\\n                        ,valueField: \'v\'\\n                        ,name: \'value\'\\n                        ,hiddenName: \'value\'\\n                        ,mode: \'local\'\\n                    });\\n                MODx.combo.apTheme.superclass.constructor.call(this,config);\\n            };\\n            Ext.extend(MODx.combo.apTheme,MODx.combo.ComboBox);\\n            Ext.reg(\'combo-ap-theme\',MODx.combo.apTheme);\\n        });\\n        <\\/script>\\");\\n        break;\\n    *\\/\\n}"}',
+        'guid' => 'f343ca066f24d245128925c50131723a',
+        'native_key' => NULL,
+        'signature' => '33529c90a08107507e0300afe517c0e9',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '692694bcb20c2985aaac8fe231d17b6b' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebPagePrerender","priority":10,"propertyset":0}',
+              'guid' => '950a3b71d2eeb97405675ad7e2715f02',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebPagePrerender',
+              ),
+              'signature' => 'f7cfdab97586369f24873407d7cade30',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'adminpanel',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"adminpanel-1.1.0-pl\\/modCategory\\/881a766f8d123f1d48097fe2c9a4c9f4\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"adminpanel"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"adminpanel-1.1.0-pl\\/modCategory\\/881a766f8d123f1d48097fe2c9a4c9f4\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"adminpanel"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"adminpanel-1.1.0-pl\\/modCategory\\/881a766f8d123f1d48097fe2c9a4c9f4.resolve.settings.resolver","type":"php","name":"resolve.settings"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"adminpanel-1.1.0-pl\\/modCategory\\/881a766f8d123f1d48097fe2c9a4c9f4.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a6e436455b6b4d7d24afa7b2a2c5ddf4',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '881a766f8d123f1d48097fe2c9a4c9f4',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"AdminPanel","rank":0}',
+);

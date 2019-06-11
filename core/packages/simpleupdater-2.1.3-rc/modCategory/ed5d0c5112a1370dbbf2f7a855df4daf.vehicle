@@ -1,0 +1,89 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'd3957056f32d2b8b864cea00855dfa97' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"simpleUpdater","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch ($modx->event->name) {\\n    case \'OnManagerPageBeforeRender\':\\n        if ($modx->user->isMember(\'Administrator\')) {\\n            $modx->controller->addLexiconTopic(\'simpleupdater:default\');\\n            $modx->controller->addJavascript($modx->getOption(\'assets_url\').\'components\\/simpleupdater\\/js\\/mgr\\/widgets\\/update.button.js\');\\n            $response = $modx->runProcessor(\'mgr\\/version\\/check\', array(), array(\'processors_path\' => $modx->getOption(\'core_path\') . \'components\\/simpleupdater\\/processors\\/\'));\\n            $resObj = $response->getObject();\\n            $_html = \\"<script>\\tvar simpleUpdateConfig = \\" . $modx->toJSON($resObj) . \\";<\\/script>\\";\\n            $modx->controller->addHtml($_html);\\n        }\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/simpleupdater\\/elements\\/plugins\\/plugin.simpleupdater.php","content":"switch ($modx->event->name) {\\n    case \'OnManagerPageBeforeRender\':\\n        if ($modx->user->isMember(\'Administrator\')) {\\n            $modx->controller->addLexiconTopic(\'simpleupdater:default\');\\n            $modx->controller->addJavascript($modx->getOption(\'assets_url\').\'components\\/simpleupdater\\/js\\/mgr\\/widgets\\/update.button.js\');\\n            $response = $modx->runProcessor(\'mgr\\/version\\/check\', array(), array(\'processors_path\' => $modx->getOption(\'core_path\') . \'components\\/simpleupdater\\/processors\\/\'));\\n            $resObj = $response->getObject();\\n            $_html = \\"<script>\\tvar simpleUpdateConfig = \\" . $modx->toJSON($resObj) . \\";<\\/script>\\";\\n            $modx->controller->addHtml($_html);\\n        }\\n        break;\\n}"}',
+        'guid' => '0c2a2c268bfedd5d9c2a8e04560a51bd',
+        'native_key' => NULL,
+        'signature' => 'c94c836aee1cd51570a02562f7f02691',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'b77ba10d0cbea0d27b03c7b6d03803e2' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+              'guid' => 'e601f48406f215f11a519e020966b2d5',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageBeforeRender',
+              ),
+              'signature' => 'f43c23511396bfa2aed4006aa779ade1',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'simpleupdater',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"simpleupdater-2.1.3-rc\\/modCategory\\/ed5d0c5112a1370dbbf2f7a855df4daf\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"simpleupdater"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"simpleupdater-2.1.3-rc\\/modCategory\\/ed5d0c5112a1370dbbf2f7a855df4daf\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"simpleupdater"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd6cef602f2c2ed38dea972d16ac4bedc',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'ed5d0c5112a1370dbbf2f7a855df4daf',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"simpleUpdater","rank":0}',
+);

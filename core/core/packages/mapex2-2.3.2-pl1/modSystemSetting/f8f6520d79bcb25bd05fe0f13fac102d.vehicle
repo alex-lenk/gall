@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mapex2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'df076ca7b219272973c66c8fb71fc57c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f8f6520d79bcb25bd05fe0f13fac102d',
+  'native_key' => 'mapex2_manager_map_default_zoom',
+  'object' => '{"key":"mapex2_manager_map_default_zoom","value":"10","xtype":"textfield","namespace":"mapex2","area":"mapex2_manager","editedon":null}',
+);

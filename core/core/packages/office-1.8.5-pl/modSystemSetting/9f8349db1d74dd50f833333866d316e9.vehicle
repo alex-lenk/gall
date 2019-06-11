@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '530fc7bd55716b16b96456cd8c148468',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9f8349db1d74dd50f833333866d316e9',
+  'native_key' => 'office_sms_key',
+  'object' => '{"key":"office_sms_key","value":"","xtype":"text-password","namespace":"office","area":"office_main","editedon":null}',
+);

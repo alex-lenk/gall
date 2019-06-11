@@ -1,0 +1,218 @@
+Changelog for ms2Gallery.
+
+1.5.6-pl
+==============
+- Fixed preview in popup window for images from remote media sources.
+
+1.5.5-pl
+==============
+- Fixed cleaning of temporary files at the root of site.
+
+1.5.4-pl
+==============
+- Fixed compatibility with non-filesystem media sources.
+
+1.5.3-pl
+==============
+- Improved upload panel.
+
+1.5.2-pl
+==============
+- Added check of default media source in context settings.
+
+1.5.1-pl
+==============
+- Fixed saving parent properties to generated thumbs.
+
+1.5.0-pl
+==============
+- Uploader grid was moved into popup window.
+- [#10] Fixed handling of preview names.
+- [#8] Upload processor will return object with uploaded file.
+
+1.4.8-pl1
+==============
+- Updated pdoTools version in the installer.
+
+1.4.7-pl
+==============
+- Improved upload of big files.
+- Upload processor can handle files from remote sources.
+
+1.4.6-pl
+==============
+- Improved handling of files with cyrillic names.
+
+1.4.5-pl
+==============
+- [#9] Fixed sort of non-image files.
+- Fixed bug with panel of msProduct.
+
+1.4.4-pl
+==============
+- New system setting "new_tab_mode".
+- New system setting "disable_for_ms2".
+
+1.4.3-pl
+==============
+- Ability to edit tags of multiple files.
+- Improved injection of gallery tab in resource page.
+- Improved compatibility with AjaxManager.
+- Improved multiple processors.
+- Improved styles for MODX < 2.3.
+
+1.4.2-pl
+==============
+- New system setting "exact_sorting".
+- Some code improvements.
+
+1.4.1-pl
+==============
+- New system setting "duplicate_check".
+- Fixed possible overwriting files with the equal names.
+
+1.4.0-pl
+==============
+- Removed extension from default file name on upload.
+- Added new fields in files: "add" and "alt".
+- Gallery view in manager now respects system parameter "ms2gallery_page_size".
+- Added ability to specify tags for files.
+- [ms2Gallery] Added parameter &tplSingle for such cases when retrieved only one file.
+- [ms2Gallery] Added parameter &parents so it can load files from multiple resources.
+- [ms2Gallery] Added parameter &tags for filtering files by tags.
+- [ms2Gallery] Added parameter &tagsVar for specifying &tags through $_REQUEST[&tagsVar].
+- [ms2Gallery] Added parameter &getTags to enable retrieving strings with tags of files.
+- [ms2Gallery] Added parameter &tplSingle. It`s empty by default.
+- Improved default javascript and css for calling multiple galleries on page.
+- Various UI improvements.
+- Fixed aggregate connection with resource in model.
+- Improved upload processor.
+- [#7] Fixed processing of system setting "ms2gallery_disable_for_templates".
+- Fixed bug with strange numbers in pagination in the manager.
+
+1.3.3-pl
+==============
+- Fixed sort processor.
+
+1.3.2-pl2
+==============
+- [#5] Added system setting for disabling gallery tab for specified templates.
+- [#3] Files are removed along with resources.
+- [#1] Added system setting for template placeholders with resource images.
+- Added system setting for limiting resources by templates ids for which placeholders will be set.
+- Removed "fr" and "de" lexicons.
+- Max upload size now taken from media source settings.
+
+1.3.1-pl
+==============
+- Extended capacity of field "rank".
+
+1.3.0-pl
+==============
+- Added snippet "ms2GalleryResources".
+- Removed snippet "ms2GalleryFirstImages".
+
+1.2.1-pl1
+==============
+- Fixed overwriting of resource properties on save.
+- Fixed pagination in the list of images.
+
+1.2.0-pl
+==============
+- Fixed adding of media_source in properties of new resource.
+
+1.2.0-rc3
+==============
+- Fixed connectors_url for previews in window.
+
+1.2.0-rc2
+==============
+- Removed TV "ms2Gallery".
+- Improved user interface.
+- Refactored gallery panel.
+- Fixed work with media sources.
+- Fixed panel resizing issues.
+- Fixed work with AjaxManager.
+- Improved getlist processor.
+- Disabled for msProducts pages.
+- Replaced Bootstrap icons to Font Awesome.
+
+1.1.0-pl
+==============
+- Fixed work with MODX 2.3.
+- Fixed sorting issues.
+
+1.1.0-rc2
+==============
+- Added new parameter for media source: "imageUploadDir".
+- Added new setting for component: "ms2gallery_page_size".
+
+1.1.0-rc1
+==============
+- Removed class msUtil
+- Refactored main class
+- Added support for upload non-image files
+- Removed ms2Gallery::initialize().
+- Moved scripts and styles parameters to snippet ms2Gallery.
+- Updated chunks for Bootstrap 3.
+- Ability to update chunks on upgrade.
+- Placeholders with gallery files on web page.
+- Ability to disable files in gallery.
+- Various fixes.
+- UI improvements.
+- Fixed uninstall issue.
+- Progressive JPG thumbnails.
+- Fixed parameter "offset" in snippet.
+- Fixed parameter "idx" in snippet.
+
+1.0.4 rc5
+==============
+- fix initialize ms2Gallery class in snippets
+
+1.0.4 rc4
+==============
+- fix mediasource load properties
+
+1.0.4 rc3
+==============
+- fix resize on client
+
+1.0.4 rc2
+==============
+- fix view ms2Gallery panel in mgr
+
+1.0.4 rc1
+==============
+- fix resource param in snippet
+- fix config in tv call
+- fix file date
+
+Added changes from https://github.com/bezumkin/miniShop2/ (Thanks to bezumkin):
+- Added new fields in "msProductFile": "hash" for sha1 of file and json field "properties".
+- Added renaming files of resource gallery together with thumbnails.
+- [#63] Added new parameters for media source: "imageNameType". Switching to "friendly" will generate names for uploaded files by FURLs algorithm.
+- [#62] Fixed work with "*.gif" files in products gallery.
+- [#56] Added JSON field "properties" to "msResourceFile".
+- Updated jQuery to version 1.10.2
+- Added german lexicon.
+
+1.0.3 rc7
+==============
+- fix error change source
+- move the gallery to tab "ms2Gallery"
+
+1.0.3 rc6
+==============
+- fix lexicon for system settings
+
+1.0.3 rc5
+==============
+- Update all changes from http://github.com/bezumkin/miniShop2/
+- Change file uploader to Plupload (http://www.plupload.com/)
+- Add resize images before upload, add this size to settings
+- Update languages
+- Fix bug's
+
+1.0.1 beta-1
+==============
+- Initial release.

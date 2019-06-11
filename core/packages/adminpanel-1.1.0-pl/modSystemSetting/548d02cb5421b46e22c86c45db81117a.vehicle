@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'adminpanel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b41a88f2aa1a0b502d53884bf7efd160',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '548d02cb5421b46e22c86c45db81117a',
+  'native_key' => 'ap_active_opacity',
+  'object' => '{"key":"ap_active_opacity","value":"10","xtype":"numberfield","namespace":"adminpanel","area":"ap_style","editedon":null}',
+);

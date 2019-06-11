@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'versionx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a9117560784e5be072b008a143a8ae60',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '841cfa4beaf60d2d6eaa7039cbd8d9ce',
+  'native_key' => 'versionx.enable.snippets',
+  'object' => '{"key":"versionx.enable.snippets","value":true,"xtype":"combo-boolean","namespace":"versionx","area":"enable","editedon":null}',
+);

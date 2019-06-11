@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fastuploadtv',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '426cd87ae8637f343b2e7138b98d9b37',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0ad6312f6c274197da16bdb917be5abf',
+  'native_key' => 'fastuploadtv.random_lenght',
+  'object' => '{"key":"fastuploadtv.random_lenght","value":6,"xtype":"textfield","namespace":"fastuploadtv","area":"Default","editedon":null}',
+);

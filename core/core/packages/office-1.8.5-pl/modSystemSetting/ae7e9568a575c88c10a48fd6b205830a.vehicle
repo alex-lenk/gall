@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5fb8e142c52090d76860840f74f79cf0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ae7e9568a575c88c10a48fd6b205830a',
+  'native_key' => 'office_check_csrf',
+  'object' => '{"key":"office_check_csrf","value":true,"xtype":"combo-boolean","namespace":"office","area":"office_main","editedon":null}',
+);

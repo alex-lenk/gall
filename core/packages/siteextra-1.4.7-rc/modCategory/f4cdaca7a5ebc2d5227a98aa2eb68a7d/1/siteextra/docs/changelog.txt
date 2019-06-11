@@ -1,0 +1,148 @@
+1.4.7-rc
+==============
+- Site_url changed to http_host in emails
+- Fenom syntax changed to short version
+- Container suffix and html-extention are removed
+- Added manager favicon
+
+1.4.6-rc
+==============
+- Added SmushIt addon
+- Added favicon.ico
+- Added quote and asterisk to friendly_alias_restrict_chars_pattern
+
+1.4.5-beta
+==============
+- Hide modx parse error window
+- Fix width for MIGX multiform field
+- Richtext field styles
+- Content is default for description tag
+- strtolower in SiteRedirect plugin
+
+1.4.4-beta
+==============
+- Fix addManagerCss bug
+- Fix elements columns of MIGX tv
+
+1.4.3-beta
+==============
+- New TVs: subtitle, keywords, elements
+- Sample of extending chunks
+- Sample using contact_form in contacts
+- Replace assets and siteextra path in chunk head
+
+1.4.2-beta
+==============
+- Added og:image meta tag
+- Added css fot TVTable plugin
+
+1.4.1-beta
+==============
+- Snippets "years" and "contain" removed
+- Checking for execute set_start_year resolver
+
+1.4.0-beta
+==============
+- Syntax of templates changed to Fenom
+
+1.3.2-beta
+==============
+- Fix setup on 2.5.7
+
+1.3.1-beta
+==============
+- Removing FancyBox3
+
+1.3.0-beta
+==============
+- Selecting addons to install
+
+1.2.5-beta
+==============
+- Added snippet clearPhone
+- Added redirect from index.php
+- FancyBox2 replaced by Fancybox3
+- Script for AjaxForm moved to footer
+
+1.2.4-beta
+==============
+- Script for AjaxForm moved to scripts.js
+
+1.2.3-beta
+==============
+- Uncacheable http_host and site_url
+- Added class row for menu
+- Set current year for start parameter of snippet year
+- Added emailFrom to AjaxForm call
+- Script for message in window moved to footer
+- Added show_on_page TV
+- 404 page hide in site map
+
+1.2.2-beta
+==============
+- Prefix for img separated by dash
+- Chunks and templates will not updates
+
+1.2.1-beta
+==============
+- Right URIs for children
+- Plugin "siteRedirect" disabled
+- Prefix for img TV
+- Excludes for sitemap.xml
+- Http_host to robots.txt
+- Comma excludes from URIs (settings)
+- Path for CSS-file in plugin
+
+1.2.0-beta
+==============
+- Added site_folder_name for customize extra
+
+1.1.9-beta
+==============
+- Fix 404 setting
+
+1.1.8-beta
+==============
+- Customize specs list
+
+1.1.7-beta
+==============
+- Images optimized
+- Fix template & category setting
+
+1.1.6-beta
+==============
+- Aside and mainpage
+
+1.1.5-beta
+==============
+- Bootstrap template
+- Content for resources
+- MIGX Gallery & Fancybox
+
+1.1.4-beta
+==============
+- Add snippets
+- Add TV show_child
+
+1.1.3-beta
+==============
+- Add template
+
+1.1.2-beta
+==============
+- Add siteRedirect
+- Add DirectResize
+
+1.1.1-beta
+==============
+- Form customisation
+- Add manager CSS
+
+1.1.0-beta
+==============
+- Added fixes and resolvers
+
+1.0.0-beta
+==============
+- First release

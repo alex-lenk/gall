@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0e35f6765485294d6a194eccc39f028c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '536e75b610d2bbbc7cf8b4d82bc3a316',
+  'native_key' => 'ec_frontend_css',
+  'object' => '{"key":"ec_frontend_css","value":"[[+cssUrl]]web\\/ec.default.css","xtype":"textfield","namespace":"easycomm","area":"ec_main","editedon":null}',
+);

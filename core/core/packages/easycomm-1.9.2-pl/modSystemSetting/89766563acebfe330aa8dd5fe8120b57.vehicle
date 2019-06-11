@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2769be3a2c1a55ab670508e381de8048',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '89766563acebfe330aa8dd5fe8120b57',
+  'native_key' => 'ec_gravatar_size',
+  'object' => '{"key":"ec_gravatar_size","value":"50","xtype":"textfield","namespace":"easycomm","area":"ec_gravatar","editedon":null}',
+);

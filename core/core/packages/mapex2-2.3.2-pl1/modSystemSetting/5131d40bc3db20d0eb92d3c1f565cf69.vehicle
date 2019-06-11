@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mapex2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2a940eaeaf10bc92c65b5a3ba70dda50',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5131d40bc3db20d0eb92d3c1f565cf69',
+  'native_key' => 'mapex2_manager_map_default_center',
+  'object' => '{"key":"mapex2_manager_map_default_center","value":"55.751565, 37.617935","xtype":"textfield","namespace":"mapex2","area":"mapex2_manager","editedon":null}',
+);

@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      'd2860e19d75d77809e011e59140b26bd' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"simpleupdater","controller":"index","haslayout":1,"lang_topics":"simpleupdater:default","assets":"","help_url":"","parent":0}',
+        'guid' => 'f627c150322ad2011c43679a68f2aef0',
+        'native_key' => 0,
+        'signature' => 'b52c664a794f61281a131c5f6d4e6eaa',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'simpleupdater',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '00424e4298043dc5eade6722a2151b1d',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '70a2b1f8a10a199a52cba66491d4a447',
+  'native_key' => 'simpleupdater',
+  'object' => '{"text":"simpleupdater","parent":"components","action":0,"description":"simpleupdater_menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

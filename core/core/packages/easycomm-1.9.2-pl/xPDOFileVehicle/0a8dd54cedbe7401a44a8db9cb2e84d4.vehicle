@@ -1,0 +1,23 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'easycomm-1.9.2-pl/xPDOFileVehicle/0a8dd54cedbe7401a44a8db9cb2e84d4/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'easycomm',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"easycomm-1.9.2-pl\\/xPDOFileVehicle\\/0a8dd54cedbe7401a44a8db9cb2e84d4.resolve.encryption.resolver","name":"resolve.encryption"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '080e4a6ee97fd1f549fde00ee1c1755c',
+  'package' => '',
+  'signature' => '0a8dd54cedbe7401a44a8db9cb2e84d4',
+  'native_key' => '080e4a6ee97fd1f549fde00ee1c1755c',
+);

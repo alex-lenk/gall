@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'adminpanel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c6e5899c27447625f4867fa431a1b1f7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'adcfc74f1925116e2a172df98283ffc8',
+  'native_key' => 'ap_show_users',
+  'object' => '{"key":"ap_show_users","value":"","xtype":"textfield","namespace":"adminpanel","area":"ap_main","editedon":null}',
+);

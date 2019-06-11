@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mapex2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f2d54c9b036ac07592d327a9e95e5c3f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2ad27a95ba6a423e11f9842d70592e47',
+  'native_key' => 'mapex2_manager_map_default_type',
+  'object' => '{"key":"mapex2_manager_map_default_type","value":"yandex#map","xtype":"textfield","namespace":"mapex2","area":"mapex2_manager","editedon":null}',
+);

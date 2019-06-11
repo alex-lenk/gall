@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '162b5466b3949ecf20661c5611ee77a4',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a99a73c0d5f4f99bda90e0cb9983dea0',
+  'native_key' => 'ec_message_grid_filters',
+  'object' => '{"key":"ec_message_grid_filters","value":"","xtype":"textfield","namespace":"easycomm","area":"ec_main","editedon":null}',
+);

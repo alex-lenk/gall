@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbon',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5af2db89295a5397238f1f245b30cf4d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '246f68c777c0a7a2369afd0d1c429276',
+  'native_key' => 'phpthumbon.noimage',
+  'object' => '{"key":"phpthumbon.noimage","value":"{assets_path}components\\/phpthumbon\\/noimage.jpg","xtype":"textfield","namespace":"phpthumbon","area":"path","editedon":null}',
+);

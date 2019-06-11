@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbon',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '71fa3959546b178577fbb4f20006d1eb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4b89fa14f8d10255bc89fa40b3f1efd4',
+  'native_key' => 'phpthumbon.make_cachename',
+  'object' => '{"key":"phpthumbon.make_cachename","value":"","xtype":"textfield","namespace":"phpthumbon","area":"general","editedon":null}',
+);

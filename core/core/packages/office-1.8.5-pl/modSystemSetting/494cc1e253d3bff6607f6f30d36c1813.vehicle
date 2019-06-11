@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6a87cef5083ef02fb0d7671e176110de',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '494cc1e253d3bff6607f6f30d36c1813',
+  'native_key' => 'office_auth_frontend_css',
+  'object' => '{"key":"office_auth_frontend_css","value":"[[++assets_url]]components\\/office\\/css\\/auth\\/default.css","xtype":"textfield","namespace":"office","area":"office_auth","editedon":null}',
+);

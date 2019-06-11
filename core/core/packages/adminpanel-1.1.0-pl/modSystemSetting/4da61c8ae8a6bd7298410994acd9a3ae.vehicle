@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'adminpanel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '940319cf6d900f2c7b14148fd43a7f70',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4da61c8ae8a6bd7298410994acd9a3ae',
+  'native_key' => 'ap_frontend_js',
+  'object' => '{"key":"ap_frontend_js","value":"[[+assetsUrl]]js\\/default.js","xtype":"textfield","namespace":"adminpanel","area":"ap_style","editedon":null}',
+);

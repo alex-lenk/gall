@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'seetoo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '420ff99c177cc8d6502d7c25262592e5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f4970aacdd37430cd5bde5d49dab686c',
+  'native_key' => 'seetoo_exclude_content_type',
+  'object' => '{"key":"seetoo_exclude_content_type","value":"text\\/css,text\\/javascript,application\\/json,application\\/pdf,application\\/rss+xml,text\\/plain,text\\/xml","xtype":"textfield","namespace":"seetoo","area":"seetoo_main","editedon":null}',
+);

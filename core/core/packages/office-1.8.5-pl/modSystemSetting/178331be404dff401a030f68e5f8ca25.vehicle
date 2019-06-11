@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ed85bd62ef57120e18c75095ac98a335',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '178331be404dff401a030f68e5f8ca25',
+  'native_key' => 'office_auth_mode',
+  'object' => '{"key":"office_auth_mode","value":"email","xtype":"textfield","namespace":"office","area":"office_auth","editedon":null}',
+);

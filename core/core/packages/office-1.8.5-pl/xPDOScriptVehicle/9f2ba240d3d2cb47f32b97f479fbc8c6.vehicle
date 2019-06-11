@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'office-1.8.5-pl/xPDOScriptVehicle/9f2ba240d3d2cb47f32b97f479fbc8c6.resolve.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '7415b9f2a0f707e1691b6eea409ff422',
+  'package' => '',
+  'signature' => '9f2ba240d3d2cb47f32b97f479fbc8c6',
+  'native_key' => '7415b9f2a0f707e1691b6eea409ff422',
+);

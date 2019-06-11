@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4c1792bf9257a280afc6cb4ae9be4dc9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ff8ff446bc455a1db1b4857d9add78a7',
+  'native_key' => 'ec_gravatar_default',
+  'object' => '{"key":"ec_gravatar_default","value":"[[++site_url]]assets\\/components\\/easycomm\\/img\\/web\\/avatar-simple.png","xtype":"textfield","namespace":"easycomm","area":"ec_gravatar","editedon":null}',
+);

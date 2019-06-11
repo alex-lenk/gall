@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mapex2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f74bce6e3a3a349e3ed3eaa6437c61cc',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a664b68ea005bdf1cce09ac657127121',
+  'native_key' => 'mapex2_manager_jquery_url',
+  'object' => '{"key":"mapex2_manager_jquery_url","value":"https:\\/\\/ajax.googleapis.com\\/ajax\\/libs\\/jquery\\/1.8.2\\/jquery.min.js","xtype":"textfield","namespace":"mapex2","area":"mapex2_manager","editedon":null}',
+);

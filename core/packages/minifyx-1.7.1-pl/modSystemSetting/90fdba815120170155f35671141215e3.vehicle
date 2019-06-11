@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'minifyx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '99e283a266c5c81203b7758f2447ce08',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '90fdba815120170155f35671141215e3',
+  'native_key' => 'minifyx_minifyJs',
+  'object' => '{"key":"minifyx_minifyJs","value":false,"xtype":"combo-boolean","namespace":"minifyx","area":"minifyx_main","editedon":null}',
+);

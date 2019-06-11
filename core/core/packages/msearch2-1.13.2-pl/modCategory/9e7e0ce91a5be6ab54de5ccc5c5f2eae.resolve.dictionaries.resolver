@@ -1,0 +1,100 @@
+<?php
+
+if (!function_exists('downloadPackage')) {
+	function downloadPackage($src, $dst) {
+		if (ini_get('allow_url_fopen')) {
+			$file = @file_get_contents($src);
+		}
+		else {
+			if (function_exists('curl_init')) {
+				$ch = curl_init();
+				curl_setopt($ch, CURLOPT_URL, $src);
+				curl_setopt($ch, CURLOPT_HEADER, 0);
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+				curl_setopt($ch, CURLOPT_TIMEOUT, 180);
+				$safeMode = @ini_get('safe_mode');
+				$openBasedir = @ini_get('open_basedir');
+				if (empty($safeMode) && empty($openBasedir)) {
+					curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+				}
+
+				$file = curl_exec($ch);
+				curl_close($ch);
+			}
+			else {
+				return false;
+			}
+		}
+		file_put_contents($dst, $file);
+
+		return file_exists($dst);
+	}
+}
+
+$success = false;
+switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+	case xPDOTransport::ACTION_INSTALL:
+	case xPDOTransport::ACTION_UPGRADE:
+		/* @var modX $modx */
+		$modx = &$object->xpdo;
+
+		$path = MODX_CORE_PATH . 'components/msearch2/';
+		if (!file_exists($path . '/phpmorphy/dicts/.installed')) {
+			//if (!file_exists($path)) {
+			@mkdir($path);
+			@mkdir($path . 'phpmorphy/');
+			@mkdir($path . 'phpmorphy/dicts/');
+			//}
+
+			if (!class_exists('PclZip')) {
+			    if (file_exists(XPDO_CORE_PATH. 'Compression/pclzip.lib.php')) {
+                    require XPDO_CORE_PATH. 'Compression/pclzip.lib.php';
+                } else {
+                    require XPDO_CORE_PATH. 'compression/pclzip.lib.php';
+                }
+			}
+			$dicts = $path . 'phpmorphy/dicts/';
+			$src_ru = 'http://modhost.pro/dists/morphy-0.3.x-ru_RU-nojo-utf8.zip';
+			$dst_ru = $dicts . 'dict_ru.zip';
+			$src_en = 'http://modhost.pro/dists/morphy-0.3.x-en_EN-windows-1250.zip';
+			$dst_en = $dicts . 'dict_en.zip';
+
+			$modx->log(modX::LOG_LEVEL_INFO, 'Trying to download <b>russian</b> dictionary. Please wait...');
+			if (!file_exists($dst_ru)) {
+				downloadPackage($src_ru, $dst_ru);
+			}
+			$file = new PclZip($dst_ru);
+			if ($ru = $file->extract(PCLZIP_OPT_PATH, $dicts)) {
+				unlink($dst_ru);
+			}
+			else {
+				$modx->log(xPDO::LOG_LEVEL_ERROR, 'Could not extract dictionaries from ' . $dst_ru . ' to ' . $dicts . '. Error: ' . $file->errorInfo());
+			}
+
+
+			$modx->log(modX::LOG_LEVEL_INFO, 'Trying to download <b>english</b> dictionary. Please wait...');
+			if (!file_exists($dst_en)) {
+				downloadPackage($src_en, $dst_en);
+			}
+			$file = new PclZip($dst_en);
+			if ($en = $file->extract(PCLZIP_OPT_PATH, $dicts)) {
+				unlink($dst_en);
+			}
+			else {
+				$modx->log(xPDO::LOG_LEVEL_ERROR, 'Could not extract dictionaries from ' . $dst_en . ' to ' . $dicts . '. Error: ' . $file->errorInfo());
+			}
+
+			if ($ru && $en) {
+				file_put_contents($path . 'phpmorphy/dicts/.installed', date('Y-m-d H:i:s'));
+			}
+		}
+
+		$success = true;
+		break;
+
+	case xPDOTransport::ACTION_UNINSTALL:
+		$success = true;
+		break;
+}
+
+return $success;

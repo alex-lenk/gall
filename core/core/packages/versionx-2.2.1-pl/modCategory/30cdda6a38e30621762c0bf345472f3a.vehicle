@@ -1,0 +1,39 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => false,
+  'namespace' => 'versionx',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"versionx-2.2.1-pl\\/modCategory\\/30cdda6a38e30621762c0bf345472f3a.tables.resolver.resolver","type":"php","name":"tables.resolver"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"versionx-2.2.1-pl\\/modCategory\\/30cdda6a38e30621762c0bf345472f3a.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"versionx-2.2.1-pl\\/modCategory\\/30cdda6a38e30621762c0bf345472f3a.dashboardwidgets.resolver.resolver","type":"php","name":"dashboardwidgets.resolver"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"versionx-2.2.1-pl\\/modCategory\\/30cdda6a38e30621762c0bf345472f3a.cleanup.resolver.resolver","type":"php","name":"cleanup.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2075b96c5248f2156aca67e8a45c3bea',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '30cdda6a38e30621762c0bf345472f3a',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"VersionX","rank":0}',
+);

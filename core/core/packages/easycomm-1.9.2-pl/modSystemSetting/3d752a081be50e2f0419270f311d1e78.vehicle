@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '725f0af44513d1244e4f8b1591661a5b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3d752a081be50e2f0419270f311d1e78',
+  'native_key' => 'ec_rating_max',
+  'object' => '{"key":"ec_rating_max","value":"5","xtype":"numberfield","namespace":"easycomm","area":"ec_rating","editedon":null}',
+);

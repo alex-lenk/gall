@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '23fcf5e9d07ee61cedc9b7174601c697',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6e6c6e3371faabd6caec36517906ddaa',
+  'native_key' => 'ec_rating_visual_editor',
+  'object' => '{"key":"ec_rating_visual_editor","value":true,"xtype":"combo-boolean","namespace":"easycomm","area":"ec_rating","editedon":null}',
+);

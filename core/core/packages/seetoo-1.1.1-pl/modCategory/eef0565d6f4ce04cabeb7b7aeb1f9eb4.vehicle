@@ -1,0 +1,161 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      'b981bde274f37dda541f56c4fcb225a9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"SeeTooResources","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"$fqn = $modx->getOption(\'pdoFetch.class\', null, \'pdotools.pdofetch\', true);\\r\\nif ($pdoClass = $modx->loadClass($fqn, \'\', false, true)) {\\r\\n\\t$pdoFetch = new $pdoClass($modx, $scriptProperties);\\r\\n} elseif ($pdoClass = $modx->loadClass($fqn, MODX_CORE_PATH . \'components\\/pdotools\\/model\\/\', false, true)) {\\r\\n\\t$pdoFetch = new $pdoClass($modx, $scriptProperties);\\r\\n} else {\\r\\n\\t$modx->log(modX::LOG_LEVEL_ERROR, \'Could not load pdoFetch from \\"MODX_CORE_PATH\\/components\\/pdotools\\/model\\/\\".\');\\r\\n\\treturn false;\\r\\n}\\r\\n\\r\\nif (empty($class)) {\\r\\n\\t$class = $modx->getOption(\'class\', $scriptProperties, \'modResource\');\\r\\n}\\r\\nif (empty($useRandom)) {\\r\\n\\t$useRandom = $modx->getOption(\'useRandom\', $scriptProperties, 1);\\r\\n}\\r\\nif (empty($resource)) {\\r\\n\\t$resource = $modx->resource->id;\\r\\n}\\r\\nif (empty($resources)) {\\r\\n\\t$resources = \'-\' . $modx->resource->id;\\r\\n}\\r\\n$leftJoin = array(\\r\\n\\t\'See\' => array(\\r\\n\\t\\t\'class\' => \'SeeTooResource\',\\r\\n\\t\\t\'on\' => $class . \'.id = See.resource_to AND See.key = \\"\' . $filter . \'\\" AND See.resource_from = \' . $resource . \' AND See.view >= \' . $scriptProperties[\'minCount\']\\r\\n\\t)\\r\\n);\\r\\nif (!$showUnactive) {\\r\\n\\t$leftJoin[\'See\'][\'on\'] .= \' AND See.active = 1\';\\r\\n}\\r\\n\\r\\n$select = array(\\r\\n\\t$class => \'*\',\\r\\n\\t\'See\' => \'IFNULL(See.view, 0) as view\'\\r\\n);\\r\\nif (isset($scriptProperties[\'select\'])) {\\r\\n\\t$selectCustom = $modx->fromJson($scriptProperties[\'select\']);\\r\\n\\t$select = array_merge($select, $selectCustom);\\r\\n}\\r\\n\\r\\n$sortBy = array(\\r\\n\\t\\"See.view\\" => \\"DESC\\",\\r\\n\\t\\"RAND()\\" => \\"\\"\\r\\n);\\r\\nif (isset($scriptProperties[\'sortby\'])) {\\r\\n\\t$sortBy = $modx->fromJson($scriptProperties[\'sortby\']);\\r\\n}\\r\\n\\r\\n$custom = array(\\r\\n\\t\'class\' => $class,\\r\\n\\t\'resource\' => $resource,\\r\\n\\t\'resources\' => $resources,\\r\\n\\t\'loadModels\' => \'seetoo\',\\r\\n\\t\'sortby\' => $modx->toJson($sortBy),\\r\\n\\t\'select\' => $modx->toJson($select)\\r\\n);\\r\\n\\r\\nif ($useRandom) {\\r\\n\\tif (isset($scriptProperties[\'leftJoin\'])) {\\r\\n\\t\\t$leftJoinCustom = $modx->fromJson($scriptProperties[\'leftJoin\']);\\r\\n\\t\\t$leftJoin = array_merge($leftJoin, $leftJoinCustom);\\r\\n\\t}\\r\\n\\t$custom[\'leftJoin\'] = $modx->toJSON($leftJoin);\\r\\n} else {\\r\\n\\tif (isset($scriptProperties[\'innerJoin\'])) {\\r\\n\\t\\t$leftJoinCustom = $modx->fromJson($scriptProperties[\'innerJoin\']);\\r\\n\\t\\t$leftJoin = array_merge($leftJoin, $leftJoinCustom);\\r\\n\\t}\\r\\n\\t$custom[\'innerJoin\'] = $modx->toJSON($leftJoin);;\\r\\n}\\r\\n$scriptProperties = array_merge($scriptProperties, $custom);\\r\\n\\r\\n$data = $cache ? $pdoFetch->getCache($scriptProperties) : array();\\r\\nif (empty($data)) {\\r\\n\\t$data = $modx->runSnippet($scriptProperties[\'element\'], $scriptProperties);\\r\\n\\tif ($cache) {\\r\\n\\t\\t$pdoFetch->setCache($data, $scriptProperties);\\r\\n\\t}\\r\\n}\\r\\n\\r\\nreturn $data;","locked":0,"properties":"a:8:{s:5:\\"cache\\";a:7:{s:4:\\"name\\";s:5:\\"cache\\";s:4:\\"desc\\";s:17:\\"seetoo_prop_cache\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"cacheTime\\";a:7:{s:4:\\"name\\";s:9:\\"cacheTime\\";s:4:\\"desc\\";s:21:\\"seetoo_prop_cacheTime\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:3600;s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"element\\";a:7:{s:4:\\"name\\";s:7:\\"element\\";s:4:\\"desc\\";s:19:\\"seetoo_prop_element\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:12:\\"pdoResources\\";s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"parents\\";a:7:{s:4:\\"name\\";s:7:\\"parents\\";s:4:\\"desc\\";s:19:\\"seetoo_prop_parents\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"0\\";s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"showUnactive\\";a:7:{s:4:\\"name\\";s:12:\\"showUnactive\\";s:4:\\"desc\\";s:24:\\"seetoo_prop_showUnactive\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"minCount\\";a:7:{s:4:\\"name\\";s:8:\\"minCount\\";s:4:\\"desc\\";s:20:\\"seetoo_prop_minCount\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:10;s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"useRandom\\";a:7:{s:4:\\"name\\";s:9:\\"useRandom\\";s:4:\\"desc\\";s:21:\\"seetoo_prop_useRandom\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:1;s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"filter\\";a:7:{s:4:\\"name\\";s:6:\\"filter\\";s:4:\\"desc\\";s:18:\\"seetoo_prop_filter\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:4:\\"view\\";s:7:\\"lexicon\\";s:17:\\"seetoo:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/seetoo\\/elements\\/snippets\\/snippet.SeeTooResources.php","content":"$fqn = $modx->getOption(\'pdoFetch.class\', null, \'pdotools.pdofetch\', true);\\r\\nif ($pdoClass = $modx->loadClass($fqn, \'\', false, true)) {\\r\\n\\t$pdoFetch = new $pdoClass($modx, $scriptProperties);\\r\\n} elseif ($pdoClass = $modx->loadClass($fqn, MODX_CORE_PATH . \'components\\/pdotools\\/model\\/\', false, true)) {\\r\\n\\t$pdoFetch = new $pdoClass($modx, $scriptProperties);\\r\\n} else {\\r\\n\\t$modx->log(modX::LOG_LEVEL_ERROR, \'Could not load pdoFetch from \\"MODX_CORE_PATH\\/components\\/pdotools\\/model\\/\\".\');\\r\\n\\treturn false;\\r\\n}\\r\\n\\r\\nif (empty($class)) {\\r\\n\\t$class = $modx->getOption(\'class\', $scriptProperties, \'modResource\');\\r\\n}\\r\\nif (empty($useRandom)) {\\r\\n\\t$useRandom = $modx->getOption(\'useRandom\', $scriptProperties, 1);\\r\\n}\\r\\nif (empty($resource)) {\\r\\n\\t$resource = $modx->resource->id;\\r\\n}\\r\\nif (empty($resources)) {\\r\\n\\t$resources = \'-\' . $modx->resource->id;\\r\\n}\\r\\n$leftJoin = array(\\r\\n\\t\'See\' => array(\\r\\n\\t\\t\'class\' => \'SeeTooResource\',\\r\\n\\t\\t\'on\' => $class . \'.id = See.resource_to AND See.key = \\"\' . $filter . \'\\" AND See.resource_from = \' . $resource . \' AND See.view >= \' . $scriptProperties[\'minCount\']\\r\\n\\t)\\r\\n);\\r\\nif (!$showUnactive) {\\r\\n\\t$leftJoin[\'See\'][\'on\'] .= \' AND See.active = 1\';\\r\\n}\\r\\n\\r\\n$select = array(\\r\\n\\t$class => \'*\',\\r\\n\\t\'See\' => \'IFNULL(See.view, 0) as view\'\\r\\n);\\r\\nif (isset($scriptProperties[\'select\'])) {\\r\\n\\t$selectCustom = $modx->fromJson($scriptProperties[\'select\']);\\r\\n\\t$select = array_merge($select, $selectCustom);\\r\\n}\\r\\n\\r\\n$sortBy = array(\\r\\n\\t\\"See.view\\" => \\"DESC\\",\\r\\n\\t\\"RAND()\\" => \\"\\"\\r\\n);\\r\\nif (isset($scriptProperties[\'sortby\'])) {\\r\\n\\t$sortBy = $modx->fromJson($scriptProperties[\'sortby\']);\\r\\n}\\r\\n\\r\\n$custom = array(\\r\\n\\t\'class\' => $class,\\r\\n\\t\'resource\' => $resource,\\r\\n\\t\'resources\' => $resources,\\r\\n\\t\'loadModels\' => \'seetoo\',\\r\\n\\t\'sortby\' => $modx->toJson($sortBy),\\r\\n\\t\'select\' => $modx->toJson($select)\\r\\n);\\r\\n\\r\\nif ($useRandom) {\\r\\n\\tif (isset($scriptProperties[\'leftJoin\'])) {\\r\\n\\t\\t$leftJoinCustom = $modx->fromJson($scriptProperties[\'leftJoin\']);\\r\\n\\t\\t$leftJoin = array_merge($leftJoin, $leftJoinCustom);\\r\\n\\t}\\r\\n\\t$custom[\'leftJoin\'] = $modx->toJSON($leftJoin);\\r\\n} else {\\r\\n\\tif (isset($scriptProperties[\'innerJoin\'])) {\\r\\n\\t\\t$leftJoinCustom = $modx->fromJson($scriptProperties[\'innerJoin\']);\\r\\n\\t\\t$leftJoin = array_merge($leftJoin, $leftJoinCustom);\\r\\n\\t}\\r\\n\\t$custom[\'innerJoin\'] = $modx->toJSON($leftJoin);;\\r\\n}\\r\\n$scriptProperties = array_merge($scriptProperties, $custom);\\r\\n\\r\\n$data = $cache ? $pdoFetch->getCache($scriptProperties) : array();\\r\\nif (empty($data)) {\\r\\n\\t$data = $modx->runSnippet($scriptProperties[\'element\'], $scriptProperties);\\r\\n\\tif ($cache) {\\r\\n\\t\\t$pdoFetch->setCache($data, $scriptProperties);\\r\\n\\t}\\r\\n}\\r\\n\\r\\nreturn $data;"}',
+        'guid' => '3a70f86535e8bf5f3ea972be4c8babf0',
+        'native_key' => 0,
+        'signature' => '53cd509f80dd9fe2b27f7eeb7827a4f4',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '0813fcaba07e913adae397c4248d4c0a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"SeeToo","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch ($modx->event->name) {\\r\\n    case \\"OnWebPageComplete\\" :\\r\\n        $packageName = \'seetoo\';\\r\\n        $packagepath = $modx->getOption(\'seetoo_core_path\', null, MODX_CORE_PATH . \'components\\/\' . strtolower($packageName) . \'\\/\');\\r\\n        $modelpath = $packagepath . \'model\\/\';\\r\\n\\r\\n        if (!$modx->addPackage($packageName, $modelpath)) {\\r\\n            $modx->log(MODX::LOG_LEVEL_ERROR, \'There was a problem adding your package.\');\\r\\n            return;\\r\\n        }\\r\\n        $seetoo = $modx->getService(\'seetoo\', \'seetoo\');\\r\\n        \\r\\n        if (empty($_SERVER[\'HTTP_REFERER\'])) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer is not defined\');\\r\\n            return;\\r\\n        }\\r\\n        $url = parse_url($_SERVER[\'HTTP_REFERER\']);\\r\\n        if ($url[\'host\'] !== $modx->getOption(\'http_host\')) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer not local\');\\r\\n            return;\\r\\n        }\\r\\n        $url = $url[\'path\'];\\r\\n\\r\\n        if ($url === \'\\/\') {\\r\\n            if ($htmlType = $modx->getObject(\'modContentType\', array(\'mime_type\' => \'text\\/html\'))) {\\r\\n                $url = \'index\' . $htmlType->get(\'file_extensions\');\\r\\n            }\\r\\n        }\\r\\n\\r\\n        if (strpos($url, \'\\/\') === 0) {\\r\\n            $url = substr($url, 1);\\r\\n        }\\r\\n        if (!$url) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Url referrer not found\');\\r\\n            return;\\r\\n        }\\r\\n        if (empty($modx->context->aliasMap)) {\\r\\n            if (!$referer = $modx->getObject(\'modResource\', array(\'uri\' => $url))) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer resource not found\');\\r\\n                return;\\r\\n            }\\r\\n            $referer_id = $referer->get(\'id\');\\r\\n        } else {\\r\\n            $referer_id = $modx->context->aliasMap[$url];\\r\\n            if (!$referer_id) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Resource referrer not found\');\\r\\n                return;\\r\\n            }\\r\\n            if ($referer_id == $modx->resource->id) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Resource not new\');\\r\\n                return;\\r\\n            }\\r\\n            if (!$referer = $modx->getObject(\'modResource\', $referer_id)) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer resource not found\');\\r\\n                return;\\r\\n            }\\r\\n        }\\r\\n\\r\\n        \\/\\/ exclude by content type\\r\\n        $exclude_ct = $modx->getOption(\'seetoo_exclude_content_type\');\\r\\n        $exclude_ct = explode(\',\', $exclude_ct);\\r\\n        $exclude_ct = array_map(\'trim\', $exclude_ct);\\r\\n\\r\\n        if (in_array($referer->get(\'contentType\'), $exclude_ct) || in_array($modx->resource->get(\'contentType\'), $exclude_ct)) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Resource excluded by content type\');\\r\\n            return;\\r\\n        }\\r\\n        \\/\\/ end exclude by content type\\r\\n\\r\\n        \\/\\/ exclude by system pages\\r\\n        $system_pages = array(\\r\\n            $modx->getOption(\'error_page\'),\\r\\n            $modx->getOption(\'site_unavailable_page\'),\\r\\n            $modx->getOption(\'unauthorized_page\'),\\r\\n        );\\r\\n        if (in_array($referer->id, $system_pages) || in_array($modx->resource->id, $system_pages)) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Link \' . $referer->id . \' --> \' . $modx->resource->id . \' excluded by system pages\');\\r\\n            return;\\r\\n        }\\r\\n        \\/\\/ end exclude by system pages\\r\\n\\r\\n        \\/\\/ exclude by excluder\\r\\n        if (!$seetoo->excluder->check($referer, $modx->resource)) {\\r\\n            return;\\r\\n        }\\r\\n        \\/\\/ end exclude by excluder\\r\\n\\r\\n        $class = \'SeeTooResource\';\\r\\n        $resource_from = $referer_id;\\r\\n        $resource_to = $modx->resource->id;\\r\\n        if ($st_resource = $modx->getObject($class, array(\'resource_from\' => $resource_from, \'resource_to\' => $resource_to))) {\\r\\n            $view = $st_resource->get(\'view\');\\r\\n            $st_resource->set(\'view\', $view + 1);\\r\\n        } else {\\r\\n            $st_resource = $modx->newObject($class, array(\'resource_from\' => $resource_from, \'resource_to\' => $resource_to, \'view\' => 1));\\r\\n        }\\r\\n        $st_resource->save();\\r\\n        break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/seetoo\\/elements\\/plugins\\/plugin.SeeToo.php","content":"switch ($modx->event->name) {\\r\\n    case \\"OnWebPageComplete\\" :\\r\\n        $packageName = \'seetoo\';\\r\\n        $packagepath = $modx->getOption(\'seetoo_core_path\', null, MODX_CORE_PATH . \'components\\/\' . strtolower($packageName) . \'\\/\');\\r\\n        $modelpath = $packagepath . \'model\\/\';\\r\\n\\r\\n        if (!$modx->addPackage($packageName, $modelpath)) {\\r\\n            $modx->log(MODX::LOG_LEVEL_ERROR, \'There was a problem adding your package.\');\\r\\n            return;\\r\\n        }\\r\\n        $seetoo = $modx->getService(\'seetoo\', \'seetoo\');\\r\\n        \\r\\n        if (empty($_SERVER[\'HTTP_REFERER\'])) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer is not defined\');\\r\\n            return;\\r\\n        }\\r\\n        $url = parse_url($_SERVER[\'HTTP_REFERER\']);\\r\\n        if ($url[\'host\'] !== $modx->getOption(\'http_host\')) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer not local\');\\r\\n            return;\\r\\n        }\\r\\n        $url = $url[\'path\'];\\r\\n\\r\\n        if ($url === \'\\/\') {\\r\\n            if ($htmlType = $modx->getObject(\'modContentType\', array(\'mime_type\' => \'text\\/html\'))) {\\r\\n                $url = \'index\' . $htmlType->get(\'file_extensions\');\\r\\n            }\\r\\n        }\\r\\n\\r\\n        if (strpos($url, \'\\/\') === 0) {\\r\\n            $url = substr($url, 1);\\r\\n        }\\r\\n        if (!$url) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Url referrer not found\');\\r\\n            return;\\r\\n        }\\r\\n        if (empty($modx->context->aliasMap)) {\\r\\n            if (!$referer = $modx->getObject(\'modResource\', array(\'uri\' => $url))) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer resource not found\');\\r\\n                return;\\r\\n            }\\r\\n            $referer_id = $referer->get(\'id\');\\r\\n        } else {\\r\\n            $referer_id = $modx->context->aliasMap[$url];\\r\\n            if (!$referer_id) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Resource referrer not found\');\\r\\n                return;\\r\\n            }\\r\\n            if ($referer_id == $modx->resource->id) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Resource not new\');\\r\\n                return;\\r\\n            }\\r\\n            if (!$referer = $modx->getObject(\'modResource\', $referer_id)) {\\r\\n                $modx->log(MODX::LOG_LEVEL_INFO, \'Referrer resource not found\');\\r\\n                return;\\r\\n            }\\r\\n        }\\r\\n\\r\\n        \\/\\/ exclude by content type\\r\\n        $exclude_ct = $modx->getOption(\'seetoo_exclude_content_type\');\\r\\n        $exclude_ct = explode(\',\', $exclude_ct);\\r\\n        $exclude_ct = array_map(\'trim\', $exclude_ct);\\r\\n\\r\\n        if (in_array($referer->get(\'contentType\'), $exclude_ct) || in_array($modx->resource->get(\'contentType\'), $exclude_ct)) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Resource excluded by content type\');\\r\\n            return;\\r\\n        }\\r\\n        \\/\\/ end exclude by content type\\r\\n\\r\\n        \\/\\/ exclude by system pages\\r\\n        $system_pages = array(\\r\\n            $modx->getOption(\'error_page\'),\\r\\n            $modx->getOption(\'site_unavailable_page\'),\\r\\n            $modx->getOption(\'unauthorized_page\'),\\r\\n        );\\r\\n        if (in_array($referer->id, $system_pages) || in_array($modx->resource->id, $system_pages)) {\\r\\n            $modx->log(MODX::LOG_LEVEL_INFO, \'Link \' . $referer->id . \' --> \' . $modx->resource->id . \' excluded by system pages\');\\r\\n            return;\\r\\n        }\\r\\n        \\/\\/ end exclude by system pages\\r\\n\\r\\n        \\/\\/ exclude by excluder\\r\\n        if (!$seetoo->excluder->check($referer, $modx->resource)) {\\r\\n            return;\\r\\n        }\\r\\n        \\/\\/ end exclude by excluder\\r\\n\\r\\n        $class = \'SeeTooResource\';\\r\\n        $resource_from = $referer_id;\\r\\n        $resource_to = $modx->resource->id;\\r\\n        if ($st_resource = $modx->getObject($class, array(\'resource_from\' => $resource_from, \'resource_to\' => $resource_to))) {\\r\\n            $view = $st_resource->get(\'view\');\\r\\n            $st_resource->set(\'view\', $view + 1);\\r\\n        } else {\\r\\n            $st_resource = $modx->newObject($class, array(\'resource_from\' => $resource_from, \'resource_to\' => $resource_to, \'view\' => 1));\\r\\n        }\\r\\n        $st_resource->save();\\r\\n        break;\\r\\n}"}',
+        'guid' => 'cfb921dff33aaeb82cfcb750263e8ca7',
+        'native_key' => NULL,
+        'signature' => '091dc682773f990563f97c8cce0755dd',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '98ffdf83c3d5ac0d385f9f7ec26ee626' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebPageComplete","priority":0,"propertyset":0}',
+              'guid' => '96e15baee2d20cdb2a98f1d2c53cfb26',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebPageComplete',
+              ),
+              'signature' => '9cae1811482ec127ec959350a6bd565b',
+            ),
+          ),
+        ),
+      ),
+      '8110f298d0ee030b29c3a9593b7f401c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"SeeTooMgr","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch ($modx->event->name) {\\r\\n\\r\\n    case \\"OnDocFormRender\\" :\\r\\n        \\/** @var modResource $resource *\\/\\r\\n        if ($mode == \'new\') {\\r\\n            return;\\r\\n        }\\r\\n        $modx23 = !empty($modx->version) && version_compare($modx->version[\'full_version\'], \'2.3.0\', \'>=\');\\r\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\r\\n\\t\\t\\tExt.onReady(function() {\\r\\n\\t\\t\\t\\tMODx.modx23 = \'.(int)$modx23.\';\\r\\n\\t\\t\\t});\\r\\n\\t\\t<\\/script>\');\\r\\n\\r\\n        $seeToo = $modx->getService(\'seetoo\',\'seetoo\', $modx->getOption(\'seetoo_core_path\', null, MODX_CORE_PATH . \'components\\/seetoo\\/\') . \'model\\/seetoo\\/\');\\r\\n        $modx->controller->addLexiconTopic(\'SeeToo:default\');\\r\\n        $url = $seeToo->config[\'assetsUrl\'];\\r\\n\\r\\n        $modx->controller->addJavascript($url . \'js\\/mgr\\/seetoo.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/misc\\/utils.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/widgets\\/resource.windows.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/widgets\\/resource.grid.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/widgets\\/resource.panel.js\');\\r\\n        $modx->controller->addCss($url . \'css\\/mgr\\/main.css\');\\r\\n        if (!$modx23) {\\r\\n            $modx->controller->addCss($url . \'css\\/mgr\\/font-awesome.min.css\');\\r\\n        }\\r\\n\\r\\n        if ($modx->getCount(\'modPlugin\', array(\'name\' => \'AjaxManager\', \'disabled\' => false))) {\\r\\n            $modx->controller->addHtml(\'\\r\\n\\t\\t\\t<script type=\\"text\\/javascript\\">\\r\\n\\t\\t\\t\\tSeeToo.config = \' . $modx->toJSON($seeToo->config) . \';\\r\\n\\t\\t\\t\\tExt.onReady(function() {\\r\\n\\t\\t\\t\\t\\twindow.setTimeout(function() {\\r\\n\\t\\t\\t\\t\\t\\tvar tabs = Ext.getCmp(\\"modx-resource-tabs\\");\\r\\n\\t\\t\\t\\t\\t\\tif (tabs) {\\r\\n\\t\\t\\t\\t\\t\\t\\ttabs.add({\\r\\n\\t\\t\\t\\t\\t\\t\\t\\txtype: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tid: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\t\\ttitle: _(\\"seetoo\\")\\r\\n\\t\\t\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t\\t\\t}\\r\\n\\t\\t\\t\\t\\t}, 10);\\r\\n\\t\\t\\t\\t});\\r\\n\\t\\t\\t<\\/script>\');\\r\\n        }\\r\\n        else {\\r\\n            $modx->controller->addHtml(\'\\r\\n\\t\\t\\t<script type=\\"text\\/javascript\\">\\r\\n\\t\\t\\t\\tSeeToo.config = \' . $modx->toJSON($seeToo->config) . \';\\r\\n\\t\\t\\t\\t\\/\\/ console.log(SeeToo.config);\\r\\n\\t\\t\\t\\tExt.ComponentMgr.onAvailable(\\"modx-resource-tabs\\", function() {\\r\\n\\t\\t\\t\\t\\tthis.on(\\"beforerender\\", function() {\\r\\n\\t\\t\\t\\t\\t\\tthis.add({\\r\\n\\t\\t\\t\\t\\t\\t\\txtype: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\tid: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\ttitle: _(\\"seetoo\\")\\r\\n\\t\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t\\tExt.apply(this, {\\r\\n\\t\\t\\t\\t\\t\\t\\tstateful: true,\\r\\n\\t\\t\\t\\t\\t\\t\\tstateId: \\"modx-resource-tabs-state\\",\\r\\n\\t\\t\\t\\t\\t\\t\\tstateEvents: [\\"tabchange\\"],\\r\\n\\t\\t\\t\\t\\t\\t\\tgetState: function() {return {activeTab:this.items.indexOf(this.getActiveTab())};\\r\\n\\t\\t\\t\\t\\t\\t}\\r\\n\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t});\\r\\n\\t\\t\\t<\\/script>\');\\r\\n        }\\r\\n        break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/seetoo\\/elements\\/plugins\\/plugin.SeeTooMgr.php","content":"switch ($modx->event->name) {\\r\\n\\r\\n    case \\"OnDocFormRender\\" :\\r\\n        \\/** @var modResource $resource *\\/\\r\\n        if ($mode == \'new\') {\\r\\n            return;\\r\\n        }\\r\\n        $modx23 = !empty($modx->version) && version_compare($modx->version[\'full_version\'], \'2.3.0\', \'>=\');\\r\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\r\\n\\t\\t\\tExt.onReady(function() {\\r\\n\\t\\t\\t\\tMODx.modx23 = \'.(int)$modx23.\';\\r\\n\\t\\t\\t});\\r\\n\\t\\t<\\/script>\');\\r\\n\\r\\n        $seeToo = $modx->getService(\'seetoo\',\'seetoo\', $modx->getOption(\'seetoo_core_path\', null, MODX_CORE_PATH . \'components\\/seetoo\\/\') . \'model\\/seetoo\\/\');\\r\\n        $modx->controller->addLexiconTopic(\'SeeToo:default\');\\r\\n        $url = $seeToo->config[\'assetsUrl\'];\\r\\n\\r\\n        $modx->controller->addJavascript($url . \'js\\/mgr\\/seetoo.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/misc\\/utils.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/widgets\\/resource.windows.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/widgets\\/resource.grid.js\');\\r\\n        $modx->controller->addLastJavascript($url . \'js\\/mgr\\/widgets\\/resource.panel.js\');\\r\\n        $modx->controller->addCss($url . \'css\\/mgr\\/main.css\');\\r\\n        if (!$modx23) {\\r\\n            $modx->controller->addCss($url . \'css\\/mgr\\/font-awesome.min.css\');\\r\\n        }\\r\\n\\r\\n        if ($modx->getCount(\'modPlugin\', array(\'name\' => \'AjaxManager\', \'disabled\' => false))) {\\r\\n            $modx->controller->addHtml(\'\\r\\n\\t\\t\\t<script type=\\"text\\/javascript\\">\\r\\n\\t\\t\\t\\tSeeToo.config = \' . $modx->toJSON($seeToo->config) . \';\\r\\n\\t\\t\\t\\tExt.onReady(function() {\\r\\n\\t\\t\\t\\t\\twindow.setTimeout(function() {\\r\\n\\t\\t\\t\\t\\t\\tvar tabs = Ext.getCmp(\\"modx-resource-tabs\\");\\r\\n\\t\\t\\t\\t\\t\\tif (tabs) {\\r\\n\\t\\t\\t\\t\\t\\t\\ttabs.add({\\r\\n\\t\\t\\t\\t\\t\\t\\t\\txtype: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tid: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\t\\ttitle: _(\\"seetoo\\")\\r\\n\\t\\t\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t\\t\\t}\\r\\n\\t\\t\\t\\t\\t}, 10);\\r\\n\\t\\t\\t\\t});\\r\\n\\t\\t\\t<\\/script>\');\\r\\n        }\\r\\n        else {\\r\\n            $modx->controller->addHtml(\'\\r\\n\\t\\t\\t<script type=\\"text\\/javascript\\">\\r\\n\\t\\t\\t\\tSeeToo.config = \' . $modx->toJSON($seeToo->config) . \';\\r\\n\\t\\t\\t\\t\\/\\/ console.log(SeeToo.config);\\r\\n\\t\\t\\t\\tExt.ComponentMgr.onAvailable(\\"modx-resource-tabs\\", function() {\\r\\n\\t\\t\\t\\t\\tthis.on(\\"beforerender\\", function() {\\r\\n\\t\\t\\t\\t\\t\\tthis.add({\\r\\n\\t\\t\\t\\t\\t\\t\\txtype: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\tid: \\"seetoo-page\\",\\r\\n\\t\\t\\t\\t\\t\\t\\ttitle: _(\\"seetoo\\")\\r\\n\\t\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t\\tExt.apply(this, {\\r\\n\\t\\t\\t\\t\\t\\t\\tstateful: true,\\r\\n\\t\\t\\t\\t\\t\\t\\tstateId: \\"modx-resource-tabs-state\\",\\r\\n\\t\\t\\t\\t\\t\\t\\tstateEvents: [\\"tabchange\\"],\\r\\n\\t\\t\\t\\t\\t\\t\\tgetState: function() {return {activeTab:this.items.indexOf(this.getActiveTab())};\\r\\n\\t\\t\\t\\t\\t\\t}\\r\\n\\t\\t\\t\\t\\t});\\r\\n\\t\\t\\t\\t});\\r\\n\\t\\t\\t<\\/script>\');\\r\\n        }\\r\\n        break;\\r\\n}"}',
+        'guid' => '6c7b326abef964a4fadb0a0f3b5e5325',
+        'native_key' => NULL,
+        'signature' => 'f640af6b52d827186078fc66f016bec6',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '9e8e4a569604f58e20842b15a4cb4eca' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormRender","priority":0,"propertyset":0}',
+              'guid' => 'f87479fe1ff71c0807fabd919ab951d7',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormRender',
+              ),
+              'signature' => '13831bab13df906453deac34470e3bea',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'seetoo',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seetoo-1.1.1-pl\\/modCategory\\/eef0565d6f4ce04cabeb7b7aeb1f9eb4\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"seetoo"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seetoo-1.1.1-pl\\/modCategory\\/eef0565d6f4ce04cabeb7b7aeb1f9eb4\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"seetoo"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"seetoo-1.1.1-pl\\/modCategory\\/eef0565d6f4ce04cabeb7b7aeb1f9eb4.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"seetoo-1.1.1-pl\\/modCategory\\/eef0565d6f4ce04cabeb7b7aeb1f9eb4.resolve.setup.resolver","type":"php","name":"resolve.setup"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2ce9255a45f2343ec997807d8b24af49',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'eef0565d6f4ce04cabeb7b7aeb1f9eb4',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"seetoo","rank":0}',
+);
