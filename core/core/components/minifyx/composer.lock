@@ -1,10 +1,9 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "cdafa14e8a1c004dbd0277b88d01bee7",
     "content-hash": "02aecb22c961d880c3b6ae4410617394",
     "packages": [
         {
@@ -49,19 +48,20 @@
                 "coffeescript",
                 "javascript"
             ],
-            "time": "2012-08-04 14:44:51"
+            "abandoned": true,
+            "time": "2012-08-04T14:44:51+00:00"
         },
         {
             "name": "imagine/imagine",
             "version": "v0.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/avalanche123/Imagine.git",
+                "url": "https://github.com/php-imagine/Imagine.git",
                 "reference": "a9a702a946073cbca166718f1b02a1e72d742daa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/a9a702a946073cbca166718f1b02a1e72d742daa",
+                "url": "https://api.github.com/repos/php-imagine/Imagine/zipball/a9a702a946073cbca166718f1b02a1e72d742daa",
                 "reference": "a9a702a946073cbca166718f1b02a1e72d742daa",
                 "shasum": ""
             },
@@ -107,7 +107,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2017-05-16 10:31:22"
+            "time": "2017-05-16T10:31:22+00:00"
         },
         {
             "name": "leafo/scssphp",
@@ -159,7 +159,8 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2018-07-22 01:22:08"
+            "abandoned": "scssphp/scssphp",
+            "time": "2018-07-22T01:22:08+00:00"
         },
         {
             "name": "meenie/Munee",
@@ -225,7 +226,7 @@
             "support": {
                 "source": "https://github.com/sergant210/munee/tree/1.7.2"
             },
-            "time": "2018-01-21 15:50:07"
+            "time": "2018-01-22T12:37:11+00:00"
         },
         {
             "name": "meenie/javascript-packer",
@@ -262,7 +263,7 @@
             "keywords": [
                 "javascript packer"
             ],
-            "time": "2013-03-25 21:54:33"
+            "time": "2013-03-25T21:54:33+00:00"
         },
         {
             "name": "oyejorge/less.php",
@@ -324,26 +325,28 @@
                 "php",
                 "stylesheet"
             ],
-            "time": "2017-03-28 22:19:25"
+            "abandoned": true,
+            "time": "2017-03-28T22:19:25+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
-            "version": "8.2.0",
+            "version": "8.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
-                "reference": "8be357d90c29c2f6dd426be4cb60bf09ef6d0120"
+                "reference": "d217848e1396ef962fb1997cf3e2421acba7f796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/8be357d90c29c2f6dd426be4cb60bf09ef6d0120",
-                "reference": "8be357d90c29c2f6dd426be4cb60bf09ef6d0120",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/d217848e1396ef962fb1997cf3e2421acba7f796",
+                "reference": "d217848e1396ef962fb1997cf3e2421acba7f796",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "require-dev": {
+                "codacy/coverage": "^1.4",
                 "phpunit/phpunit": "~4.8"
             },
             "type": "library",
@@ -368,7 +371,7 @@
                 "parser",
                 "stylesheet"
             ],
-            "time": "2018-07-13 13:23:56"
+            "time": "2020-06-01T09:10:00+00:00"
         },
         {
             "name": "tedivm/jshrink",
@@ -414,7 +417,7 @@
                 "javascript",
                 "minifier"
             ],
-            "time": "2018-09-16 00:02:51"
+            "time": "2018-09-16T00:02:51+00:00"
         },
         {
             "name": "tubalmartin/cssmin",
@@ -467,7 +470,7 @@
                 "minify",
                 "yui"
             ],
-            "time": "2018-01-15 15:26:51"
+            "time": "2018-01-15T15:26:51+00:00"
         }
     ],
     "packages-dev": [],
@@ -479,5 +482,6 @@
     "platform": {
         "php": ">=5.6.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
